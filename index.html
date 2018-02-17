@@ -132,66 +132,104 @@
 												</div>
 
 
-											 <label class="arrow">
-											 <select class="row_style" name="source_language" id="source-language" data-placeholder="Ausgangssprache" tabindex="2">
-											 <option style="display:none;">Ausgangssprache</option>
-											 <option value="de">Deutsch</option>
-											 <option value="en">Englisch</option>
-											 <option value="fr">Französisch</option>
-											 <option value="el">Griechisch</option>
-											 <option value="it">Italienisch</option>
-											 <option value="pl">Polnisch</option>
-											 <option value="pt">Portugiesisch</option>
-											 <option value="ru">Russisch</option>
-											 <option value="es">Spanisch</option>
-											 <option value="tr">Türkisch</option></select>
-											 </label>
+								 <label class="arrow">
+										<select class="row_style" name="source_language" id="source-language" data-placeholder="Ausgangssprache" tabindex="2" onchange="showCalc(); daleteLang(); priceCoef1(this.value); pricecalc()">
+											 <option value="error" style="display:none;">Ausgangssprache</option>
+
+											 <option value="Arabisch">Arabisch</option>
+											 <option value="Bosnisch">Bosnisch</option>
+											 <option value="Bulgarisch">Bulgarisch</option>
+											 <option value="Chinesisch (traditionell)">Chinesisch</option>
+											 <option value="Deutsch">Deutsch</option>
+											 <option value="Dänisch">Dänisch</option>
+											 <option value="Estnisch">Estnisch</option>
+											 <option value="Finnisch">Finnisch</option>
+											 <option value="Französisch">Französisch</option>
+											 <option value="Griechisch">Griechisch</option>
+											 <option value="Italienisch">Italienisch</option>
+											 <option value="Japanisch">Japanisch</option>
+											 <option value="Kasachisch">Kasachisch</option>
+											 <option value="Katalanisch">Katalanisch</option>
+											 <option value="Koreanisch">Koreanisch</option>
+											 <option value="Kroatisch">Kroatisch</option>
+											 <option value="Lettisch">Lettisch</option>
+											 <option value="Litauisch">Litauisch</option>
+											 <option value="Mazedonisch">Mazedonisch</option>
+											 <option value="Montenegrinisch">Montenegrinisch</option>
+											 <option value="Niederländisch (Belgien)">Niederländisch</option>
+											 <option value="Polnisch">Polnisch</option>
+											 <option value="Portugiesisch (Brasilien)">Portugiesisch</option>
+											 <option value="Rumänisch">Rumänisch</option>
+											 <option value="Russisch">Russisch</option>
+											 <option value="Schwedisch">Schwedisch</option>
+											 <option value="Serbisch">Serbisch</option>
+											 <option value="Slowakisch">Slowakisch</option>
+											 <option value="Slowenisch">Slowenisch</option>
+											 <option value="Spanisch (Spanien)">Spanisch</option>
+											 <option value="Tschechisch">Tschechisch</option>
+											 <option value="Türkisch">Türkisch</option>
+											 <option value="Ukrainisch">Ukrainisch</option>
+											 <option value="Ungarisch">Ungarisch</option>
+									 </select>
+							 </label>
 												<i class="fas fa-arrow-down"></i>
-											 <label class="">
-											 <select class="row_style" name="target_language" id="target-language" data-placeholder="Zielsprache" tabindex="3" >
-										<option value="" style="display:none" disabled selected>Zielsprache</option>
-											 <option value="ar">Arabisch</option>
-											 <option value="bg">Bulgarisch</option>
-											 <option value="zh_TW">Chinesisch (traditionell)</option>
-											 <option value="zh_CN">Chinesisch (vereinfacht)</option>
-											 <option value="da">Dänisch</option>
-											 <option value="en_US">Englisch (Amerikanisches Englisch)</option>
-											 <option value="en_GB">Englisch (Britisches Englisch)</option>
-											 <option value="et">Estnisch</option>
-											 <option value="fr_BE">Franz. (Belgien)</option>
-											 <option value="fr_FR">Französisch</option>
-											 <option value="el">Griechisch</option>
-											 <option value="it">Italienisch</option>
-											 <option value="ja">Japanisch</option>
-											 <option value="hr">Kroatisch</option>
-											 <option value="mk">Mazedonisch</option>
-											 <option value="nl_BE">Niederländisch (Belgien)</option>
-											 <option value="nl_NL">Niederländisch (Niederlande)</option>
-											 <option value="pl">Polnisch</option>
-											 <option value="pt_BR">Portugiesisch (Brasilien)</option>
-											 <option value="pt_PT">Portugiesisch (Portugal)</option>
-											 <option value="ro">Rumänisch</option>
-											 <option value="ru">Russisch</option>
-											 <option value="sv">Schwedisch</option>
-											 <option value="sr">Serbisch</option>
-											 <option value="sk">Slowakisch</option>
-											 <option value="sl">Slowenisch</option>
-											 <option value="es_AR">Spanisch (Argentinien)</option>
-											 <option value="es_MX">Spanisch (Mexiko)</option>
-											 <option value="es_ES">Spanisch (Spanien)</option>
-											 <option value="cs">Tschechisch</option>
-											 <option value="tr">Türkisch</option>
-											 <option value="uk">Ukrainisch</option>
-											 <option value="hu">Ungarisch</option></select>
-											 </label>
+									 <label class="">
+											 <select class="row_style" name="target_language" id="target-language" data-placeholder="Zielsprache" tabindex="3" onchange="showCalc(); priceCoef2(this.value); pricecalc() ">
+										   <option value="error" style="display:none">Zielsprache</option>
+
+											 <option value="Arabisch">Arabisch</option>
+											 <option value="Bosnisch">Bosnisch</option>
+											 <option value="Bulgarisch">Bulgarisch</option>
+											 <option value="Chinesisch (traditionell)">Chinesisch (traditionell)</option>
+											 <option value="Chinesisch (vereinfacht)">Chinesisch (vereinfacht)</option>
+											 <option value="Deutsch">Deutsch</option>
+											 <option value="Dänisch">Dänisch</option>
+											 <option value="Estnisch">Estnisch</option>
+											 <option value="Finnisch">Finnisch</option>
+											 <option value="Franz. (Belgien)">Franz. (Belgien)</option>
+											 <option value="Französisch">Französisch</option>
+											 <option value="Griechisch">Griechisch</option>
+											 <option value="Italienisch">Italienisch</option>
+											 <option value="Japanisch">Japanisch</option>
+											 <option value="Kasachisch">Kasachisch</option>
+											 <option value="Katalanisch">Katalanisch</option>
+											 <option value="Koreanisch">Koreanisch</option>
+											 <option value="Kroatisch">Kroatisch</option>
+											 <option value="Lettisch">Lettisch</option>
+											 <option value="Litauisch">Litauisch</option>
+											 <option value="Mazedonisch">Mazedonisch</option>
+											 <option value="Montenegrinisch">Montenegrinisch</option>
+											 <option value="Niederländisch (Belgien)">Niederländisch (Belgien)</option>
+											 <option value="Niederländisch (Niederlande)">Niederländisch (Niederlande)</option>
+											 <option value="Polnisch">Polnisch</option>
+											 <option value="Portugiesisch (Brasilien)">Portugiesisch (Brasilien)</option>
+											 <option value="Portugiesisch (Portugal)">Portugiesisch (Portugal)</option>
+											 <option value="Rumänisch">Rumänisch</option>
+											 <option value="Russisch">Russisch</option>
+											 <option value="Schwedisch">Schwedisch</option>
+											 <option value="Serbisch">Serbisch</option>
+											 <option value="Slowakisch">Slowakisch</option>
+											 <option value="Slowenisch">Slowenisch</option>
+											 <option value="Spanisch (Argentinien)">Spanisch (Argentinien)</option>
+											 <option value="Spanisch (Mexiko)">Spanisch (Mexiko)</option>
+											 <option value="Spanisch (Spanien)">Spanisch (Spanien)</option>
+											 <option value="Tschechisch">Tschechisch</option>
+											 <option value="Türkisch">Türkisch</option>
+											 <option value="Ukrainisch">Ukrainisch</option>
+											 <option value="Ungarisch">Ungarisch</option>
+										 </select>
+									</label>
 											 <p class="security"><i class="fas fa-lock"></i> Sicherheitsgarantie</p>
 						 </div>
 
 							<div class="second_container blok-shadow">
+								<div class="hide_this_block"></div>
+
 												<div class="form-intro form-intro--castom2">
 													<i class="intro-numb">2</i>
 													<p class="intro-text">Anzahl der Wörter</p>
 												</div>
+
 
 											<div class="methods_of_calculation">
 																<div onclick='check()'>
@@ -206,7 +244,7 @@
 															</div>
 															<div onclick='check()'>
 																			<input type="radio" name="method_of_calculation" value="download_files" id="download_files_id" checked>
-																			<label for="download_files_id" ><i class="fas fa-download"></i>Dateien hochladen</label>
+																			<label class="download_files-hide download_files" for="download_files_id" ><i class="fas fa-download"></i>Dateien hochladen</label>
 															</div>
 											</div>
 
@@ -228,7 +266,7 @@
 													</div>
 												</div>
 												<label style="font-weight:400;">Total:<input class="total_input" type="text" value="56165" name="file_words" id="fileWords" disabled><span>Wörter</span></label>
-												<div class="count_error">
+												<div class="count_error hide-block">
 													<i class="fas fa-exclamation"></i>
 													<p>Ihre Datei ist erfolgreich zugefügt. Die Wörter sind leider nicht zahlbar, deshalb analysieren wir gern Ihre Datei und erstellen ein Angebot auf Basis des rechts angegebenen Wortpreises.</p>
 												</div>
@@ -254,23 +292,24 @@
 							 </div>
 						 -->
 							<div class="price-wrapper">
+
 							 <div class="price-info">
 													 <div class="form-intro form-intro--castom">
 														<p class="intro-text">Preis</p>
 													 </div>
 													<div class="price_container">
 										 				<input type="text" name="price"  value="" id="price" readonly>
-														<p class="price_word">12ct./Wort</p>
+														<p class="price_word">ct./Wort</p>
 													</div>
 									 				<div class="taxes">
 														zzgl. Grundpreis und MwSt.
 									 				</div>
 
-													<div class="price-discount"><i class="fas fa-tags"></i><i>für Neukunden</i><span>-15%</span>
+													<div class="price-discount price-discount-hide"><i class="fas fa-tags"></i><i>für Neukunden</i><span>-15%</span>
 													</div>
 				 			</div>
 							<p class="order_time"><i class="far fa-clock"></i>Erhalten Sie Ihre Übersetzung bis zum <strong> 20. Februar 2018, 10:00 Uhr</strong></p>
-							<button type="button" name="button_order" class="order_btn">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
+							<button type="button" name="button_order" class="order_btn order_btn-hide">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
 						</div>
 					</div>
 

@@ -78,6 +78,9 @@
       background: #EB7D13;
       color:white;
   }
+  .download_files-hide{
+    background: #F0B882 !important;
+  }
     input[type="radio"]:checked~i{
       color:white;
     }
@@ -357,6 +360,7 @@ textarea[name="text_input"]{
       text-shadow: none;
       font-weight: 400;
     }
+
     .price-discount{
       position: relative;
       top: 10px;
@@ -392,6 +396,9 @@ textarea[name="text_input"]{
 
       }
     }
+    .price-discount-hide{
+      background: #F0B882;
+    }
   }
   .order_btn{
     background: #D83B0A;
@@ -410,6 +417,10 @@ textarea[name="text_input"]{
     animation: blinking 3s infinite;
     animation-timing-function: ease;
     font-weight: 400;
+  }
+  .order_btn-hide{
+    background: #F0B882 !important;
+    animation: none;
   }
   .order_time{
     font-weight: 400;
@@ -510,3 +521,14 @@ textarea[name="text_input"]{
     text-align: center;
     text-shadow: none;
   }
+.hide_this_block{
+  width: 176.4%;
+  height: 400px;
+  position: absolute !important;
+  top: -70px;
+  left: -3.5%;
+  z-index: 10;
+  background: rgba(255,255,255,0.25);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
