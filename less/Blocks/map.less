@@ -1,0 +1,28 @@
+.map{
+  background: #eeeeee;
+  position: relative;
+  img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    display: block;
+  }
+  &::before,
+  &::after{
+    content: "";
+    display: block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+  }
+  &::after{
+    width: 17px;
+    height: 17px;
+    background: #81b4d4;
+  }
+}

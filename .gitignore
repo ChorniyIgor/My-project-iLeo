@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.zip
+*.sublime*
+node_modules/
+npm-debug.*
+Thumbs.db
+final/
+Макети/
+мусор/

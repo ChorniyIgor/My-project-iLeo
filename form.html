@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>SEDONA - Обратная связь</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--no-js">
+			<button class="main-nav__toggle" type="button" >Открить меню</button>
+			<div class="nav__wrapper">
+				<ul class="main__nav-list">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="photo.html">Фото и видео</a></li>
+					<li class="active"><span>Форма отзыва</span></li>
+					<li><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+				</ul>
+			</div>
+			<div class="nav__logo">
+				<a href="index.html">
+					<picture>
+	          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
+	          <source media="(min-width: 768px)" srcset="img/logotype-tablet.png">
+	          <img src="img/logotyle-mobile.png" alt="Sedona" >
+	        </picture>
+
+				</a>
+			</div>
+		</nav>
+		<div class="page-header__background page-header__background--min-hight">
+
+		</div>
+</header>
+
+<main>
+		<section class="feedback">
+				<h2 class="feedback-title">Оставьте свой отзыв</h2>
+				<p class="feedback-descr">Помогите нашим отелям стать лучше!
+					 оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+					 <form class="feedback-form" action="post">
+
+						 <div class="form__user-info">
+							 <h2 class="block__title">Представьтесь<span class="hidden">, пожалуйста</span>:</h2>
+							 <label><span>ИМЯ:</span><input type="text" name="name" value="" ></label>
+							 <label><span>ФАМИЛИЯ:</span><input type="text" name="last_name" value="" ></label>
+							 <label><span>Отчество:</span><input type="text" name="father_name" value=""></label>
+						 </div>
+
+						 <div class="form__contact_information">
+							  <div class="h2-custom h2-custom--no-desktop"><h2 class="block__title">Контактная информация:</h2></div>
+						 		<label class="phone"><span><div class="desktop-hidden">Контактный </div>телефон:</span><input type="phone" name="phone" value="" placeholder="Введите телефон"></label>
+								<label class="email"><span>Электронная почта:</span><input type="email" name="email" value="" placeholder="Введите e-mail"></label>
+						 </div>
+
+						 <div class="form__overall_impression">
+							  <h2 class="block__title">Ваше Общее впечатление:</h2>
+						 		<label><input type="radio" name="impression" value="Скорее положительное" checked><span>Скорее положительное</span></label>
+								<label><input type="radio" name="impression" value="Скорее отрицательное"><span>Скорее отрицательное</span></label>
+								<label><input type="radio" name="impression" value="Затрудняюсь ответить"><span>Затрудняюсь ответить</span></label>
+						 </div>
+
+						 <div class="form__visited_places">
+							<div class="h2-custom"><h2 class="block__title">посещенные достопримечательности:</h2></div>
+							<div class="form__visited_places-list">
+							 	<label><input type="checkbox" name="places" value="Мост Дьявола"><span>Мост Дьявола</span></label>
+								<label><input type="checkbox" name="places" value="Слайд-парк"><span>Слайд-парк</span></label>
+								<label><input type="checkbox" name="places" value="Гора-Колокол"><span>Гора-Колокол</span></label>
+								<label><input type="checkbox" name="places" value="Красные скалы"><span>Красные скалы</span></label>
+							</div>
+						 </div>
+
+						 <div class="form__impression_descr">
+							<div class="h2-custom"><h2 class="block__title">Опишите свои эмоции:</h2></div>
+						 	<textarea name="impression_description" rows="8" cols="80" placeholder="Опишите подробно все свои восторги"></textarea>
+						 </div>
+
+						<button type="submit" class="user-form__btn" name="form_send">Отправить заявку</button>
+						<p class="mobile-hidden form__hint">* — обязательные поля</p>
+					 </form>
+
+
+	</section>
+
+	<div class="form-popap__wrapper">
+		<div class="form-popap">
+			<button class="form-popap-close" type="button" title="Закрить">Закрить</button>
+			<p class="form-popap__text">Мы благодарны вам за ваш отзыв. <br>С нетерпением снова ждем вас в гости!</p>
+		</div>
+  </div>
+
+	<div class="form-overlay"></div>
+
+
+	<footer class="page-footer">
+		<span class="page-footer__promo">#visitSEDONA</span>
+		<div class="page-footer__social">
+				<ul class="social-links">
+					<li><a  class="social-links-tw" href="#">Twitter</a></li>
+					<li><a class="social-links-fb" href="#">Facebook</a></li>
+					<li><a class="social-links-yt" href="#">YouTube</a></li>
+				</ul>
+		</div>
+		<p class="page-footer__copyright">
+			Разработано
+			<a href="" class="page-footer__copiright-link">HTML Academy</a>
+		</p>
+
+	</footer>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<script>
+
+	<!--Menu -->
+    var button=document.querySelector(".main-nav__toggle");
+    var nav=document.querySelector(".main-nav");
+
+    nav.classList.remove("main-nav--no-js");
+
+    button.addEventListener("click", function(){
+      if (nav.classList.contains("main-nav--closed")){
+        nav.classList.remove("main-nav--closed");
+        nav.classList.add("main-nav--opened");
+      }
+      else {
+        nav.classList.add("main-nav--closed");
+        nav.classList.remove("main-nav--opened");
+      }
+
+    });
+
+		<!--Popap -->
+	var send=document.querySelector(".user-form__btn");
+	var popap=document.querySelector(".form-popap");
+	var close=document.querySelector(".form-popap-close");
+	var overlay=document.querySelector(".form-overlay");
+
+	send.addEventListener("click",function(event){
+	event.preventDefault();
+	popap.classList.add("show-block");
+	overlay.classList.add("show-block");
+	});
+
+	close.addEventListener("click",function(event){
+	event.preventDefault();
+	popap.classList.remove("show-block");
+	overlay.classList.remove("show-block");
+});
+
+window.addEventListener("keydown", function(event){
+	if (event.keyCode === 27){
+		if (popap.classList.contains("show-block")  && overlay.classList.contains("show-block")){
+		popap.classList.remove("show-block");
+		overlay.classList.remove("show-block");
+	}}
+});
+
+  </script>
+
+</body>
+</html>

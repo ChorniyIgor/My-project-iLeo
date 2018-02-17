@@ -1,0 +1,345 @@
+ul{
+  list-style: none;
+}
+@media @desktop-widths {
+  .advantages__title{
+     color: #B4A494;
+  }
+  .advantage__list-container{
+      background: white;
+      color:black;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+      min-height: 980px;
+  }
+  .advantages__item{
+        transition: all 0.9s;
+    flex-basis: 29%;
+    box-sizing: border-box;
+    padding-right:25px;
+    padding-left: 42px;
+    background: #F8F2EC;
+    min-height: 390px;
+    p{
+      font-size:16px;
+      line-height:20px;
+      margin-bottom: 10px;
+    }
+  }
+  .advantages__container{
+    width: 100%;
+  }
+  .advantage__descr__full{
+    display: none;
+  }
+  .advantage__descr{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantage__descr-promo{
+    width: 100%;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin: 0;
+    position: relative;
+    .fa-check{
+      position: absolute;
+      left: -17px;
+      top: 4px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  .advantage__descr-icon{
+    display: block;
+    height: 60px;
+    width: 70px;
+    position: relative;
+    margin-top: 20px;
+    .far{
+      display: block;
+      width: 100%;
+      font-size: 60px;
+      line-height: 60px;
+      position: absolute;
+    top: 0;
+    left: 0;
+      text-align: center;
+    }
+    .fas{
+      display: block;
+      width: 100%;
+      font-size: 60px;
+      line-height: 60px;
+      position: absolute;
+  top: 0;
+   left: 0;
+      text-align: center;
+    }
+    #cas{
+      font-size: 45px;
+      line-height: 45px;
+      position: relative;
+      top: 7px;
+    }
+}
+
+  .adventage__title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .advantage__descr-promo{
+    font-size: 14px;
+    font-style: none;
+    text-transform: none;
+  }
+  .advantage__descr-icon{
+    transition: all 0.9s;
+    color:#B4A494;
+  }
+  .adventage__title{
+    transition: all 0.9s;
+    color: #B4A494;
+  }
+  .advantage__descr-promo{
+    transition: all 0.9s;
+    color: #6F6153;
+  }
+  .advantages__item:hover{
+    transition: all 0.9s;
+    background: white;
+    box-shadow:
+     0 1px 4px rgba(0, 0, 0, .3),
+     -23px 0 20px -23px rgba(0, 0, 0, .8),
+     23px 0 20px -23px rgba(0, 0, 0, .8),
+     0 0 40px rgba(0, 0, 0, .1) inset;
+    .advantage__descr-icon{
+      transition: all 0.9s;
+      color:#EB6413;
+    }
+    .adventage__title{
+      transition: all 0.9s;
+      color: #EB6413;
+    }
+    .advantage__descr-promo{
+      transition: all 0.9s;
+      color: #403D3B;
+    }
+  }
+}
+
+
+/*
+@media @desktop-widths {
+  .adventages__promo{
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  .advantages__title{
+    margin-top:0px;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 24px;
+  }
+  .advantage__descr{
+    width: 400px;
+  }
+  .adventage__title--less-margin,
+  .adventage__title--first{
+    font-size: 21px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .list__item-descr{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .adventages__descr{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    background: white;
+  }
+  .advantages__item{
+
+  }
+  .adventage__title--first{
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .number{
+    margin-bottom: 10px;
+  }
+  .advantage__descr-promo{
+    width: 90%;
+    margin: 0;
+    margin-left: 30px;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.advantage__descr-promo ~.advantage__descr-promo{
+  margin-top: 0px;
+}
+.margin-buttom0{
+  margin-bottom: 0 !important;
+  padding-bottom: 5px !important;
+};
+
+
+
+.container {
+	width: 400px;
+  height: 264px;
+	-webkit-perspective: 1000;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 400px;
+  height: 264px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 1.2s;
+}
+	.container:hover .card {
+		-webkit-transform: rotateY(180deg);
+	}
+
+.face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+.front{
+  background: #F49D2E;
+  box-sizing: border-box;
+  width: 400px;
+  height: 264px;
+}
+.back {
+    box-sizing: border-box;
+    width: 400px;
+    height: 264px;
+		-webkit-transform: rotateY(180deg);
+		background: #FFC578 ;
+    color:black;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 20px;
+    padding-top: 15px;
+    font-style: italic;
+    p{
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 8px;
+    }
+	}
+  .advantage__img--border-top{
+    border-top:4px solid #F49D2E;
+  }
+  .advantage__img--border-bottom{
+    border-bottom:4px solid #F49D2E;
+  }
+.container:hover ~ .advantage__img--border-top{
+  border-top: 4px solid #FFC578 !important;
+  transition: border 1.2s;
+}
+.container ~ .advantage__img--border-top{
+  border-top: 4px solid #F49D2E !important;
+  transition: border 1.2s;
+}
+.container:hover ~ .advantage__img--border-bottom{
+  border-bottom: 4px solid #FFC578 !important;
+  transition: border 1.2s;
+}
+.container ~ .advantage__img--border-bottom{
+  border-bottom: 4px solid #F49D2E !important;
+  transition: border 1.2s;
+}
+
+
+.container--white{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  .adventage__title--less-margin{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 21px;
+  }
+  li{
+    width: 400px;
+    .container{
+      min-height: 500px;
+      .r;
+    }
+
+    margin: 0;
+    span{
+      color:black;
+      &:before, &:after{
+        background: black;
+      }
+    }
+  }
+  .card{
+    width: 400px;
+  }
+.front{
+  background: #eeeeee;
+  color:black;
+}
+}
+.advantages__item--right{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+.front {
+	z-index: 10;
+}
+.container:hover .front {
+	z-index: 0;
+}*/

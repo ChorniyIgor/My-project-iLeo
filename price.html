@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>SEDONA - Главная</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--no-js">
+			<button class="main-nav__toggle" type="button" >Открить меню</button>
+			<div class="nav__wrapper ">
+				<ul class="main__nav-list">
+					<li><a href="index.html">Startseite</a></li>
+					<li class="active"><span>Preise</span></li>
+					<li><a href="form.html">Qualität</a></li>
+					<li><a href="https://htmlacademy.ru/">HÜber uns</a></li>
+				</ul>
+			</div>
+			<div class="nav__logo">
+				<a href="#">
+					<picture>
+	          <source media="(min-width: 1200px)" srcset="img/logotype-deskto2.png">
+	          <source media="(min-width: 768px)" srcset="img/logotype-tablet.png">
+	          <img src="img/logotyle-mobile.png" alt="Sedona" >
+	        </picture>
+
+				</a>
+			</div>
+		</nav>
+
+		<div class="page-header__img">
+			<img src="img/slide2.jpg" alt="Preisen">
+		</div>
+</header>
+
+<main class="price_content">
+	<div class="price_content__info"></div>
+	<div class="price_content__calculator">
+		
+	</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="page-footer">
+		<span class="page-footer__promo">#visitSEDONA</span>
+		<div class="page-footer__social">
+				<ul class="social-links">
+					<li><a  class="social-links-tw" href="#">Twitter</a></li>
+					<li><a class="social-links-fb" href="#">Facebook</a></li>
+					<li><a class="social-links-yt" href="#">YouTube</a></li>
+				</ul>
+		</div>
+		<p class="page-footer__copyright">
+			Разработано
+			<a href="" class="page-footer__copiright-link">HTML Academy</a>
+		</p>
+	</footer>
+
+	<div class="orderSuccessful">
+		<button class="orderSuccessful-close" type="button" title="Закрить">Закрить</button>
+		<h2 class="orderSuccessful-title">Herzlichen Dank für Ihren Auftrag!</h2>
+  	<p class="orderSuccessful-text">In kürzester Zeit werden Sie mit Ihrem Ansprechpartner verbindet!</p>
+	</div>
+	<div class="overlay">
+
+	</div>
+
+</main>
+
+
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
+<script src="js/multiengine.js" type="text/javascript"></script>
+	<script src="js/core.js" type="text/javascript"></script>
+	<script src="js/upload.js" type="text/javascript"></script>
+<script type="text/javascript">
+		jQuery('document').ready(function($){
+			$('.upload').upload({
+					action:'php/multisend.php',
+					label:'',
+					postKey:'file',
+			});
+		});
+
+
+</script>
+
+<script type="text/javascript">
+var login=document.querySelector(".button1");
+var popap=document.querySelector(".orderSuccessful");
+var close=document.querySelector(".orderSuccessful-close");
+var overlay=document.querySelector(".overlay");
+
+login.addEventListener("click",function(event){
+event.preventDefault();
+popap.classList.add("show-block");
+overlay.classList.add("show-block");
+if (storage) {
+	loginfocus.value = storage;
+	password.focus();
+} else {
+	loginfocus.focus();
+}
+});
+
+close.addEventListener("click",function(event){
+event.preventDefault();
+popap.classList.remove("modal-error");
+popap.classList.remove("show-block");
+overlay.classList.remove("show-block");
+});
+
+window.addEventListener("keydown", function(event){
+    if (event.keyCode === 27){
+      if (popap.classList.contains("show-block")  && overlay.classList.contains("show-block")){
+      popap.classList.remove("show-block");
+      overlay.classList.remove("show-block");
+      popap.classList.remove("modal-error");
+
+    }}
+  });
+</script>
+
+
+
+<!--  плавное появление контента */ -->
+
+<script type="text/javascript">
+ function sBlock1() {
+ $(".slideText1").show(1400);
+ }
+ function sBlock2() {
+ $(".slideText2").slideToggle(1800);
+ }
+ function sBlock3() {
+ $(".slideText3").slideToggle(1800);
+ }
+
+
+ function efects(){
+ 	 $(".slideText1").css("display", "none");
+ 	 $(".slideText2").css("display", "none");
+ 	 $(".slideText3").css("display", "none");
+ 	sBlock1();
+	sBlock2();
+	sBlock3();
+ }
+	 $(document).ready(efects());
+
+</script>
+
+<script src="js/slider.js" charset="utf-8"></script>
+	<script src="js/calculator.js" charset="utf-8"></script>
+
+
+	<script>
+    var button=document.querySelector(".main-nav__toggle");
+    var nav=document.querySelector(".main-nav");
+
+    nav.classList.remove("main-nav--no-js");
+
+    button.addEventListener("click", function(){
+      if (nav.classList.contains("main-nav--closed")){
+        nav.classList.remove("main-nav--closed");
+        nav.classList.add("main-nav--opened");
+      }
+      else {
+        nav.classList.add("main-nav--closed");
+        nav.classList.remove("main-nav--opened");
+      }
+
+    });
+  </script>
+<!-- Зменшеннявисоти хедера-->
+
+<script type="text/javascript">
+var cbpAnimatedHeader = (function() {
+
+	var docElem = document.documentElement,
+			header = document.querySelector( '.nav__logo' ),
+			didScroll = false,
+			changeHeaderOn = 500;
+
+	function init() {
+			window.addEventListener( 'scroll', function( event ) {
+					if( !didScroll ) {
+							didScroll = true;
+							setTimeout( scrollPage, 250 );
+					}
+			}, false );
+	}
+
+	function scrollPage() {
+			var sy = scrollY();
+			if ( sy >= changeHeaderOn ) {
+					header.classList.add("nav__logo-small");
+			}
+			else {
+					header.classList.remove("nav__logo-small");
+			}
+			didScroll = false;
+	}
+
+	function scrollY() {
+			return window.pageYOffset || docElem.scrollTop;
+	}
+
+	init();
+
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+<script src="js/form.js" defer></script>
+
+
+
+</body>
+</html>

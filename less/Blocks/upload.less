@@ -1,0 +1,99 @@
+/*! formstone v1.4.3 [upload.css] 2018-01-25 | GPL-3.0 License | formstone.it */
+.fs-upload{position:relative;overflow:hidden}
+.fs-upload,.fs-upload *,.fs-upload :after,.fs-upload :before,.fs-upload:after,.fs-upload:before{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:none;transition:none;-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important}
+.fs-upload-input{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1px;
+  opacity:0;
+  pointer-events:none;
+  background: red;
+}
+.upload{
+  background: rgba(255,255,255,0.9);
+  transition: all 1s;
+  &:hover{
+    transition: all 1s;
+    background: rgba(0,0,0,0.05);
+    .fs-upload-target{
+        border: 2px dashed white;
+    }
+  }
+  height: 130px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.fs-upload-target{
+  border: 2px dashed #403d3b;
+  height: 100%;
+  position: relative;
+
+}
+#queue_files{
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 94%;
+  p{
+  font-size: 12px;
+  line-height: 10px;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  background: grey;
+  color:white;
+  text-shadow: none;
+  padding: 3px 5px;
+  text-align: center;
+  &:nth-child(n){
+    display: none;
+  }
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6)
+  {
+    display: block;
+  }
+}
+}
+.upload_img{
+  width: 75px;
+  height: 75px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.files_input {
+  label{
+    text-shadow: none;
+    padding-top: 5px;
+    display: block;
+    color:white;
+    font-size: 28px;
+    line-height: 28px;
+    i{
+      font-weight: 400;
+    }
+  }
+  .total_input{
+  display: inline-block;
+  width: 85px;
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  text-align: right;
+  margin-right: 5px;
+}
+}
+.fs-upload-target{cursor:pointer}.fs-upload-disabled .fs-upload-target,.no-touch .fs-upload-disabled:hover .fs-upload-target{cursor:default;cursor:not-allowed}

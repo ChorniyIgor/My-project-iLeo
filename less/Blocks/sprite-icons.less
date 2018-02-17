@@ -1,0 +1,84 @@
+.stitches-sprite-icons(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite-icons {
+    background-image: url('../img/icons/sprite-icons.png');    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-icons-htmlacademy {
+        .stitches-sprite-icons(-5px, -5px, 27px, 34px);
+    }
+
+    &.sprite-icons-htmlacademy-active {
+        .stitches-sprite-icons(-42px, -5px, 27px, 34px);
+    }
+
+    &.sprite-icons-htmlacademy-hover {
+        .stitches-sprite-icons(-79px, -5px, 27px, 34px);
+    }
+
+    &.sprite-icons-icon-burger {
+        .stitches-sprite-icons(-116px, -5px, 40px, 35px);
+    }
+
+    &.sprite-icons-icon-facebook {
+        .stitches-sprite-icons(-166px, -5px, 9px, 18px);
+    }
+
+    &.sprite-icons-icon-gift {
+        .stitches-sprite-icons(-185px, -5px, 32px, 38px);
+    }
+
+    &.sprite-icons-icon-house {
+        .stitches-sprite-icons(-227px, -5px, 39px, 37px);
+    }
+
+    &.sprite-icons-icon-twitter {
+        .stitches-sprite-icons(-276px, -5px, 18px, 14px);
+    }
+
+    &.sprite-icons-icon-youtube {
+        .stitches-sprite-icons(-304px, -5px, 20px, 14px);
+    }
+
+    &.sprite-icons-like-icon {
+        .stitches-sprite-icons(-334px, -5px, 23px, 21px);
+    }
+
+    &.sprite-icons-like-icon--white {
+        .stitches-sprite-icons(-367px, -5px, 23px, 21px);
+    }
+
+    &.sprite-icons-mail {
+        .stitches-sprite-icons(-400px, -5px, 16px, 12px);
+    }
+
+    &.sprite-icons-phone {
+        .stitches-sprite-icons(-426px, -5px, 18px, 18px);
+    }
+
+    &.sprite-icons-tick {
+        .stitches-sprite-icons(-454px, -5px, 24px, 16px);
+    }
+}
+
+
+.sprite-icons-tab {
+    background-image: url('../img/icons/sprite-icons-tablet.png');    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-icons-icon-burger-tab {
+        .stitches-sprite-icons(-5px, -5px, 77px, 68px);
+    }
+
+    &.sprite-icons-icon-gift-tab {
+        .stitches-sprite-icons(-92px, -5px, 64px, 75px);
+    }
+
+    &.sprite-icons-icon-house-tab {
+        .stitches-sprite-icons(-166px, -5px, 75px, 72px);
+    }
+}
