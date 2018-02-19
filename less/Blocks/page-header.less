@@ -1,6 +1,8 @@
+.page-header{
 
+}
 
-.main-nav{
+/* .main-nav{
   min-height: 55px;
   background: white;
   position: relative;
@@ -114,17 +116,7 @@
     color:#84b4d0;
   }
 }
-.nav__logo{
-  min-height: 55px;
-  z-index: 2;
-  img{
 
-      z-index: 2;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
 .main-nav--no-js{
   .nav__wrapper{
     display: block;
@@ -135,7 +127,7 @@
 }
 .page-header__background{
   min-height: 388px;
-  /*background: url('../img/header-mobile.png') center no-repeat;*/
+
   width: 100%;
   position: relative;
   z-index: 1;
@@ -189,60 +181,36 @@
     margin-right: 12%;
   }
 }
-  .nav__logo{
-    position: absolute;
-    height: 84px;
-    width: 102px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+
   .page-header__background{
-    /*background: url('../img/calculator2.jpg')  center top no-repeat;*/
+
     min-height: 480px;
     background-size: cover;
   }
-  .main__nav-list .active span{
-    display: block;
-    text-decoration: none;
-    font-size: 17px;
-    line-height: 58px;
-    color:black;
-    text-transform: uppercase;
-    font-weight: bold;
-    color:#8c3f01;
-    opacity: 0.6;
-    cursor: default;
-    &:hover{
-      color:#604e43;
-    }
-    &:active{
-      color:#766357;
-    }
-  }
+
   .page-header__background--min-hight{
     min-height: 290px;
     background: url('../img/header-tablet--min.png') center bottom no-repeat;
   }
+  .nav__wrapper{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+  .nav__logo{
+    flex-basis: 300px;
+  }
+  .main__nav-list{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-basis: 400px;
+  }
 }
 
 @media @desktop-widths {
-  .nav__logo{
-  width: 208px;
-  height: 120px;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
-  }
 
-  .nav__logo-small{
-  width: 132px;
-  height: 110px;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
 
-  }
 
   .page-header__background--min-hight{
     min-height: 300px;
@@ -260,36 +228,146 @@
   }
   .nav__wrapper{
     border-bottom: 3px solid #8F4508;
+    width: 100%;
   }
   .main-nav{
     position:fixed;
     top: 0;
     height: 50px;
     z-index: 10000;
-    width: 1200px;
+    width: 100%;
     opacity: 1;
 
   }
-  .page-header__background{
-    margin-top: -20px;
-  }
+
   .main__nav-list {
     background: white;
   }
   .main__nav-list li{
-  //  background: rgba(255,255,255,0.8);
+.r;
   }
-  .page-header__img{
-    display: block;
-    height: 350px;
-    width: 100%;
-    img{
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
+
+
+
+
+}
+*/
+.page-header{
+position: fixed;
+z-index: 10000;
+width: 100%;
+background: white;
+}
+.main-nav{
+
+}
+.main-nav__toggle{
+  display: none;
+}
+.borer-container{
+    border-bottom: 3px solid #8F4508;
+}
+.nav__wrapper{
+  transition: height 0.3s;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: left;
+  height: 80px;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  padding-top: 8px;
+}
+.nav__logo{
+  flex-basis: 215px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  a{
+    transition: all 0.3s;
+    height: 75px;
+    width: 160px;
+  }
+}
+.main__nav-list{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-basis: 60%;
+  align-items:baseline;
+  margin: 0;
+  padding: 0;
+  li{
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: none;
+    h
+    &:hover{
+      background: red;
+    }
+    a{
+      font-size: 17px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #8c3f01;
+      padding: 20px 15px;
+    }
+    a:hover{
+      color:#ffa90d ;
+    }
+    a:active{
+      color: #000000;
     }
   }
+}
+.nav__logo{
+  a{
+    display: block;
+  }
+  img{
 
+    height: 100%;
+    display: block;
+  }
+}
+.main__nav-list .active span{
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 40px;
+  color:black;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#8c3f01;
+  opacity: 0.6;
+  cursor: default;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:hover{
+    color:#604e43;
+  }
+  &:active{
+    color:#766357;
+  }
+}
+.page-header--small{
 
+    .nav__wrapper{
+      height: 40px;
+    }
+    .nav__logo{
+      a{
+          transition: all 0.3s;
 
+          height: 40px;
+          width: 85px;
+      }
+      img{
+
+      }
+    }
 }
