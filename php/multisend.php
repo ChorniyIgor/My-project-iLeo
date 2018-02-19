@@ -1,8 +1,8 @@
  <?php
-ini_set('display_errors', 0); 
+ini_set('display_errors', 0);
 error_reporting(0);
- 
- 
+
+
 $domain = "http://votvamdom.ru/nuova/project/forma1";
 #$domain = "http://aleney.com/project/form1";
 $to = 'maxim.demkiv@gmail.com';
@@ -23,34 +23,34 @@ if ( isset( $_POST['sendMail'] ) ) {
 	$orderDate = substr( $_POST['orderDate'], 0, 64 );
 	$message = substr( $_POST['message'], 0, 250 );
 	$filename = array();
-	
-	
-	
-	
+
+
+
+
 if($_FILES) {
 	$filepath = array();
-	
+
 	$file2 = array();
 	$i = 0;
-	
-	
-	
-	
+
+
+
+
 		foreach ($_FILES["file"]["error"] as $key => $error) {
 			if ($error == UPLOAD_ERR_OK) {
 				$uploadfile = "download/" . basename($_FILES['file']['name']);
-				
+
 				$filename[$i][0] = $_FILES["file"]["tmp_name"][$key];
 				$filename[$i][1] = $_FILES["file"]["name"][$key];
 				$i++;
 			}
 		}
 	};
-	
-	
+
+
 	foreach ($_REQUEST["loaded_files"] as $filename) {
-		$file_text .= "{$domain}/php/download/{$filename}\r\n";	
-	
+		$file_text .= "{$domain}/php/download/{$filename}\r\n";
+
 	};
 
 
@@ -71,49 +71,49 @@ if($_FILES) {
 
 if(isset($_FILES["file"]) && $_FILES["file"]["error"] == UPLOAD_ERR_OK) {
 		if ($error == UPLOAD_ERR_OK) {
-			
-			
+
+
 			$filename = preg_replace('#\s#', '-', basename($_FILES['file']['name']));
 			$ext = substr($_FILES['file']['name'], strrpos($_FILES['file']['name'], '.') + 1);
 			//$filename = md5($filename . time()) . "." . $ext;
 			if (file_exists("download/" . $filename)) $filename = basename($filename) . "-" . md5($filename . time()) . "." . $ext;
 			$uploadfile = "download/" . $filename;
-			
-			
+
+
 			if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
-				
+
 				switch ($ext):
 				case "docx";
 					$text = iCounter::docx2text( $uploadfile );
 					$data_res["count_word"] = mb_str_word_count($text);
-				
+
 				break;
 				case "odt";
 					$text = iCounter::odt2text( $uploadfile );
 					$data_res["count_word"] = mb_str_word_count($text);
-				
+
 				break;
 				case "pdf";
 					$text = iCounter::pdf2text( $uploadfile );
 					$data_res["count_word"] = mb_str_word_count($text);
-				
+
 				break;
 				case "txt";
 					$text = file_get_contents( $uploadfile );
 					$data_res["count_word"] = mb_str_word_count($text);
-				
-				break;				
+
+				break;
 				endswitch;
-			
-			
+
+
 				if ($data_res["count_word"] < 2) unset($data_res["count_word"]);
-			
+
 				$data_res["filename"] = $filename;
-			}			
-	
+			}
+
 		}
 
-		
+
 };
 
 // Вспомогательная функция для отправки почтового сообщения с вложением

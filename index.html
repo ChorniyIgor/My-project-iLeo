@@ -133,7 +133,7 @@
 
 
 								 <label class="arrow">
-										<select class="row_style" name="source_language" id="source-language" data-placeholder="Ausgangssprache" tabindex="2" onchange="showCalc(); daleteLang(); priceCoef1(this.value); pricecalc()">
+										<select class="row_style" name="source_language" id="source-language" data-placeholder="Ausgangssprache" tabindex="2" onchange="showCalc(); daleteLang(); priceCoef1(this.value); pricecalc(); totalPrice()">
 											 <option value="error" style="display:none;">Ausgangssprache</option>
 
 											 <option value="Arabisch">Arabisch</option>
@@ -174,7 +174,7 @@
 							 </label>
 												<i class="fas fa-arrow-down"></i>
 									 <label class="">
-											 <select class="row_style" name="target_language" id="target-language" data-placeholder="Zielsprache" tabindex="3" onchange="showCalc(); priceCoef2(this.value); pricecalc() ">
+											 <select class="row_style" name="target_language" id="target-language" data-placeholder="Zielsprache" tabindex="3" onchange="showCalc(); priceCoef2(this.value); pricecalc(); totalPrice() ">
 										   <option value="error" style="display:none">Zielsprache</option>
 
 											 <option value="Arabisch">Arabisch</option>
@@ -233,39 +233,40 @@
 
 											<div class="methods_of_calculation">
 																<div onclick='check()'>
-																				<input   type="radio" name="method_of_calculation" value="number_of_words" id="number_of_words_id">
+																				<input   type="radio" name="method_of_calculation" value="number_of_words" id="number_of_words_id" onclick="setTimeout(totalPrice, 100)">
 																				<label for="number_of_words_id" ><i class="fas fa-calculator"></i>Wortzahl</label>
 
 															</div>
 															<div onclick='check()'>
-																			<input type="radio" name="method_of_calculation" value="text_input" id="text_input_id">
+																			<input type="radio" name="method_of_calculation" value="text_input" id="text_input_id" onclick="setTimeout(totalPrice, 100)">
 																			<label for="text_input_id" ><i class="far fa-edit"></i>Text eingeben</label>
 
 															</div>
 															<div onclick='check()'>
-																			<input type="radio" name="method_of_calculation" value="download_files" id="download_files_id" checked>
+																			<input type="radio" name="method_of_calculation" value="download_files" id="download_files_id" checked  onclick="setTimeout(totalPrice, 100)">
 																			<label class="download_files-hide download_files" for="download_files_id" ><i class="fas fa-download"></i>Dateien hochladen</label>
 															</div>
 											</div>
 
-											<div class="words_input hide-block">
-												<label class="words_count"><input placeholder="Wortzahl" autocomplete="off" class="row_style" type="text" name="words" id="words"   tabindex="1" style="text-align:right;"></label>
+											<div class="words_input ">
+												<label class="words_count"><input onkeyup="pricePrintInt();" placeholder="Wortzahl" autocomplete="off" class="row_style" type="text" name="words" id="words1"   tabindex="1" style="text-align:right;"></label>
 											</div>
 
 											<div class="text_input hide-block">
 												<div id="countSimbol">
-												<textarea onkeyup="countSimbol(this)" name="text_input" placeholder="Text eingeben..."></textarea>
-												<label style="font-weight:400;">Total:<input type="text" class="total_input" id="countSimbols" value="5654" ><span>Wörter</span></label>
+												<textarea onkeyup="countSimbol(this); pricePrintTextarea();" name="text_input" placeholder="Text eingeben..." id="input_textarea"></textarea>
+												<label style="font-weight:400;">Total:<input type="text" class="total_input" value="0" id="countSimbols" readonly><span>Wörter</span></label>
 												</div>
 											</div>
 											<div class="files_input hide-block">
 												<div class="upload">
 													<img class="upload_img" src="img/download.gif" alt="">
 													<div id="queue_files">
-
+															<p>_ЦЕХИ.doc, количество слов - не определено</p>
+															<p>294ac1855f9155fcb82449add5cf3261.docx, количество слов - 136</p>
 													</div>
 												</div>
-												<label style="font-weight:400;">Total:<input class="total_input" type="text" value="56165" name="file_words" id="fileWords" disabled><span>Wörter</span></label>
+												<label class="total_prise_file" style="font-weight:400;">Total:<input  oninput="pricePrintFile(this.value);" class="total_input" type="text" name="file_words" id="fileWords"  value="0"><span>Wörter</span></label>
 												<div class="count_error hide-block">
 													<i class="fas fa-exclamation"></i>
 													<p>Ihre Datei ist erfolgreich zugefügt. Die Wörter sind leider nicht zahlbar, deshalb analysieren wir gern Ihre Datei und erstellen ein Angebot auf Basis des rechts angegebenen Wortpreises.</p>
@@ -274,23 +275,6 @@
 												<!-- <input id="fileSendButt" name="file[]" value="1" size="40" type="file" multiple />-->
 							</div>
 
-
-<!--
-							 <div class="third_container  blok-shadow">
-													 <div class="form-intro">
-													 	<i class="intro-numb">3</i>
-													 	<p class="intro-text">Ваші дані</p>
-													 </div>
-
-													<label>
-											 		 <input class="row_style" placeholder="Name" name="name" value="" type="text" required />
-											 	 </label>
-
-											 	 <label>
-											 	 	<input class="row_style" placeholder="E-mail" name="email" value=""  type="email" />
-											 	 </label>
-							 </div>
-						 -->
 							<div class="price-wrapper">
 
 							 <div class="price-info">
@@ -298,8 +282,8 @@
 														<p class="intro-text">Preis</p>
 													 </div>
 													<div class="price_container">
-										 				<input type="text" name="price"  value="" id="price" readonly>
-														<p class="price_word">ct./Wort</p>
+										 				<input type="text" name="price"  value="0,00 €" id="price" readonly>
+														<p class="price_word">0,00 €/Wort</p>
 													</div>
 									 				<div class="taxes">
 														zzgl. Grundpreis und MwSt.
@@ -308,11 +292,14 @@
 													<div class="price-discount price-discount-hide"><i class="fas fa-tags"></i><i>für Neukunden</i><span>-15%</span>
 													</div>
 				 			</div>
-							<p class="order_time"><i class="far fa-clock"></i>Erhalten Sie Ihre Übersetzung bis zum <strong> 20. Februar 2018, 10:00 Uhr</strong></p>
-							<button type="button" name="button_order" class="order_btn order_btn-hide">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
+							<p class="order_time"><i class="far fa-clock"></i>Erhalten Sie Ihre Übersetzung bis zum <strong class="order_data_time"></strong></p>
+							<button type="button" name="button_order" class="order_btn order_btn-hide" onclick="checkInputData()">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
 						</div>
 					</div>
-
+						<div class="user_order_data">
+								<input class="row_style" placeholder="Name" name="name" value="" type="text" required />
+								<input class="row_style" placeholder="E-mail" name="email" value=""  type="email" />
+						</div>
 
 
 				 <input type="hidden" name="orderDate" id="orderDate" value="" readonly>
@@ -574,15 +561,7 @@
 
 
 	<script type="text/javascript">
-	function countSimbol(t){
-	$(function(){
-	var Text=$(t).val();
-	var L=Text.length;
-	if(L>0){var noSpace=Text.match(/\S/g).length; var W=Text.match(/\S+?\s|\S+?$/g).length;}
-	else {var noSpace=0; var W=0;}
-	document.getElementById('countSimbols').value=W;
 
-	});}
 	</script>
 
 	<script type="text/javascript">
@@ -606,9 +585,11 @@ function onFileComplete(e, file, response) {
 
 	if ( response.count_word !== undefined) {
 			$("#fileWords").val( $("#fileWords").val()*1 + response.count_word*1 );
-		html = html + "" + file.name + ", количество слов - " + response.count_word +"</p>";
+		html = html + "<p>" + file.name + ", количество слов - " + response.count_word +"</p>";
+		pricePrintFile(document.getElementById('fileWords').value);
 	} else {
-		html = html + "" + file.name + ", количество слов - не определено</p>";
+		html = html + "<p>" + file.name + ", количество слов - не определено</p>";
+		showErrorInCalc();
 	};
 	$("#sendform").append('<input type="hidden" name="loaded_files[]" id="loaded_files" value="'+response.filename+'" />');
 
@@ -622,41 +603,7 @@ function onFileComplete(e, file, response) {
 </script>
 
 
-<script type="text/javascript">
-var login=document.querySelector(".button1");
-var popap=document.querySelector(".orderSuccessful");
-var close=document.querySelector(".orderSuccessful-close");
-var overlay=document.querySelector(".overlay");
 
-login.addEventListener("click",function(event){
-event.preventDefault();
-popap.classList.add("show-block");
-overlay.classList.add("show-block");
-if (storage) {
-	loginfocus.value = storage;
-	password.focus();
-} else {
-	loginfocus.focus();
-}
-});
-
-close.addEventListener("click",function(event){
-event.preventDefault();
-popap.classList.remove("modal-error");
-popap.classList.remove("show-block");
-overlay.classList.remove("show-block");
-});
-
-window.addEventListener("keydown", function(event){
-    if (event.keyCode === 27){
-      if (popap.classList.contains("show-block")  && overlay.classList.contains("show-block")){
-      popap.classList.remove("show-block");
-      overlay.classList.remove("show-block");
-      popap.classList.remove("modal-error");
-
-    }}
-  });
-</script>
 
 
 

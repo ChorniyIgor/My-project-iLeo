@@ -47,57 +47,7 @@ var type3=[
   "Niederländisch (Niederlande)",
   "Schwedisch"
 ]
-function dotToComa(int){
-  var str=int.toFixed(2)+"";
-  return str.replace(".",",");
-}
 
-
-function calculator(){
-var numberOfWords=document.getElementById('number_of_words_id').checked;
-var textofInput=document.getElementById('text_input_id').checked;
-var downloadFiles=document.getElementById('download_files_id').checked;
-
-
-
-
-
-
-
-if(sourceLanguage=="Deutsch"){alert("dsf");}
-
-
-
-if(numberOfWords){
-  var words=document.getElementById('words').value;
-  words=parseInt(words);
-  var price=words*pricePerSymbol;
-    if (isNaN(price)){document.getElementById('price').innerHTML="0 €"}
-    else{
-    document.getElementById('price').value=price+" €";
-    }
-  }
-  if(textofInput){
-    var words=document.getElementById('countSimbols').value;
-    words=parseInt(words);
-    var price=words*pricePerSymbol;
-      if (isNaN(price)){document.getElementById('price').innerHTML="0 €"}
-      else{
-      document.getElementById('price').value=price+" €";
-      }
-    }
-    if(downloadFiles){
-      var words=document.getElementById('fileWords').value;
-      words=parseInt(words);
-      var price=words*pricePerSymbol;
-        if (isNaN(price)){document.getElementById('price').innerHTML="0 €"}
-        else{
-        document.getElementById('price').value=price+" €";
-        }
-      }
-
-
-}
 /*забираємо оверлой і неактивну стилізацію кнопок*/
 var showCal=1;
 function showCalc(){
@@ -131,36 +81,254 @@ function daleteLang(){
   }
 }
 /*--------------------------*/
-var pricecoef1;
-var pricecoef2;
-var pricePer=0.10;
-var pricePerSymbol;
-function priceCoef1(lang){
-    if(type1.indexOf(lang)!==-1){
-      pricecoef1=1;
-    };
-    if(type2.indexOf(lang)!==-1){
-      pricecoef1=1.1;
-    };
-    if(type3.indexOf(lang)!==-1){
-      pricecoef1=1.2;
-    };
-}
-function priceCoef2(lang){
-    if(type1.indexOf(lang)!==-1){
-      pricecoef2=1;
-    };
-    if(type2.indexOf(lang)!==-1){
-      pricecoef2=1.1;
-    };
-    if(type3.indexOf(lang)!==-1){
-      pricecoef2=1.2;
-    };
-}
-function pricecalc(){
-  if (pricecoef1 && pricecoef2){
-      pricePerSymbol=pricePer*pricecoef1*pricecoef1;
-      document.querySelector( '.price_word' ).innerHTML=dotToComa(pricePerSymbol)+' ct./Wort';
-  }
+                /*розрахунок ціни за слово*/
+                var pricecoef1;
+                var pricecoef2;
+                var pricePer=0.10;
+                var pricePerWord;
+                function priceCoef1(lang){
+                    if(type1.indexOf(lang)!==-1){
+                      pricecoef1=1;
+                    };
+                    if(type2.indexOf(lang)!==-1){
+                      pricecoef1=1.1;
+                    };
+                    if(type3.indexOf(lang)!==-1){
+                      pricecoef1=1.2;
+                    };
+                }
+                function priceCoef2(lang){
+                    if(type1.indexOf(lang)!==-1){
+                      pricecoef2=1;
+                    };
+                    if(type2.indexOf(lang)!==-1){
+                      pricecoef2=1.1;
+                    };
+                    if(type3.indexOf(lang)!==-1){
+                      pricecoef2=1.2;
+                    };
+                }
+                function pricecalc(){
+                  if (pricecoef1 && pricecoef2){
+                      pricePerWord=pricePer*pricecoef1*pricecoef2;
+                      pricePerWord=pricePerWord.toFixed(2)
+                      document.querySelector( '.price_word' ).innerHTML=dotToComa(pricePerWord)+' €/Wort';
+                  }
 
+                }
+                function dotToComa(int){
+                  var str=int+"";
+                  return str.replace(".",",");
+                }
+            /*------------------------------------------------*/
+            /*Підрахунок кількосі слів у текстAреа*/
+                var countSimbolTa;
+                  function countSimbol(t){
+                  $(function(){
+                    var Text=$(t).val();
+                    var L=Text.length;
+                    if(L>0){var noSpace=Text.match(/\S/g).length; var W=Text.match(/\S+?\s|\S+?$/g).length;}
+                    else {var noSpace=0; var W=0;}
+                    document.getElementById('countSimbols').value=W;
+                    countSimbolTa=W;
+                  });
+                }
+            /*-------------------------------*/
+/*Функціії виводу ціни в відповідне поле в залежності від типу вводу*/
+        function pricePrintInt(){
+          var value=document.getElementById('words1').value;
+          if (isNaN(document.getElementById('words1').value) || document.getElementById('words1').value==""){
+            document.getElementById('price').value="0,00 €"
+          }
+          else{
+            document.getElementById('price').value=dotToComa((value*pricePerWord).toFixed(2))+" €";
+          }
+          if(document.querySelector('.price_word').classList.contains('hide-block')){
+            document.querySelector('.price_word').classList.remove('hide-block');
+          }
+          if(document.querySelector('.order_data_time').classList.contains('hide-block')){
+            document.querySelector('.order_data_time').classList.remove('hide-block');
+          }
+           dataCounter(value);
+        }
+
+        function pricePrintTextarea(){
+          if (isNaN(document.getElementById('countSimbols').value) || document.getElementById('countSimbols').value=="0" || countSimbols.value==undefined  ){
+            document.getElementById('price').value="0,00 €"
+          }
+          else{
+            document.getElementById('price').value=dotToComa((countSimbolTa*pricePerWord).toFixed(2))+" €";
+          }
+          if(document.querySelector('.price_word').classList.contains('hide-block')){
+            document.querySelector('.price_word').classList.remove('hide-block');
+          }
+
+          if(document.querySelector('.order_data_time').classList.contains('hide-block')){
+            document.querySelector('.order_data_time').classList.remove('hide-block');
+          }
+            dataCounter(countSimbolTa);
+        }
+
+        function pricePrintFile(value){
+          if(calcError){
+              document.getElementById('price').value=dotToComa(pricePerWord)+' €/Wort';
+            document.querySelector( '.price_word' ).classList.add('hide-block');
+            document.querySelector('.order_data_time').classList.add('hide-block');
+          }
+          else{
+            if (isNaN(document.getElementById('fileWords').value) || document.getElementById('fileWords').value=="" || isNaN(pricePerWord)){
+              document.getElementById('price').value="0,00 €"
+            }
+            else{
+              document.getElementById('price').value=dotToComa((value*pricePerWord).toFixed(2))+" €";
+              if(  document.querySelector('.order_data_time').classList.contains('hide-block')){
+                  document.querySelector('.order_data_time').classList.remove('hide-block');
+              }
+               dataCounter(value);
+            }
+          }
+        }
+/*-------------------------------------------------------------*/
+/*Механізм запуску виводу ціни в залежності від вибору способу вводу*/
+          function totalPrice(){
+            var priseType=document.querySelector("input[name=method_of_calculation]:checked");
+            var numberOfWordsId=document.getElementById('number_of_words_id');
+            var textInputId=document.getElementById('text_input_id');
+            var downloadFilesId=document.getElementById('download_files_id');
+
+
+
+            if(priseType==numberOfWordsId){
+              var words=document.getElementById('words1');
+              words.focus();
+              pricePrintInt(words.value);
+            }
+
+            if(priseType==textInputId){
+              var words=document.getElementById('input_textarea');
+              words.focus();
+              pricePrintTextarea();
+            }
+
+            if(priseType==downloadFilesId){
+              var fileWords=document.getElementById('fileWords');
+              pricePrintFile(fileWords.value);
+            }
+
+          }
+/*---------------------------------------------------------------------*/
+/* Функція виведення на екран повідомлення про помилку підрахунку слів*/
+          var calcError=0;
+          function showErrorInCalc(){
+            calcError=1;
+             document.querySelector('.count_error').classList.remove('hide-block');
+             document.querySelector('.total_prise_file').classList.add('hide-block');
+             totalPrice();
+          }
+/*-------------------------------*/
+/*Підрахунок приблизного часу виконання замовлення*/
+              /*перетворення назв місяців*/
+              function getmonthG(monthNum){
+                var monthG= ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+                return(monthG[monthNum]);
+              }
+              /*---------------------------*/
+              function dataCounter(wordsCount){
+                wordsCount=parseInt(wordsCount);
+                var dataoutput= document.querySelector('.order_data_time');
+                var timeNow= new Date();
+                var workTime;
+                var result;
+                if( wordsCount<=2500 ) {workTime=1;}
+                if( (wordsCount>2500) && (wordsCount<=4000) ){workTime=2;}
+                if( (wordsCount>4000) && (wordsCount<=5500) ){workTime=3;}
+                if( (wordsCount>5500) && (wordsCount<=8000) ){workTime=4;}
+                if( (wordsCount>8000) && (wordsCount<=10500) ){workTime=5;}
+                if( (wordsCount>10500) && (wordsCount<=13000) ){workTime=6;}
+                if( (wordsCount>13000) && (wordsCount<=15500) ){workTime=7;}
+                if( (wordsCount>15500) && (wordsCount<=18000) ){workTime=8;}
+                if( (wordsCount>18000) && (wordsCount<=20500) ){workTime=9;}
+                if( (wordsCount>20500) && (wordsCount<=23000) ){workTime=10;}
+                if( (wordsCount>23000) && (wordsCount<=25000) ){workTime=12;}
+                if(wordsCount>25000){workTime=14;}
+
+                timeNow.setDate(timeNow.getDate() + workTime);
+                if(wordsCount=="" || wordsCount==undefined || isNaN(wordsCount)){
+                  result="";
+                }
+                else{
+                  result=timeNow.getDate()+". "+getmonthG(timeNow.getMonth())+" "+timeNow.getFullYear()+", "+(timeNow.getHours()+1)+":00";
+                }
+                dataoutput.innerHTML=result;
+              }
+/*-----------------------------------------------------------------------------*/
+/*Функція перевірки введених даних в форму перед відкриттям вікна оформлення замовлення*/
+              function checkInputData(){
+                var priseType=document.querySelector("input[name=method_of_calculation]:checked");
+                var numberOfWordsId=document.getElementById('number_of_words_id');
+                var textInputId=document.getElementById('text_input_id');
+                var downloadFilesId=document.getElementById('download_files_id');
+
+
+
+                if(priseType==numberOfWordsId){
+                        alert("Завантажте документ або введіть текст");
+                        $(downloadFilesId).attr('checked',true);
+                        check();
+                        setTimeout(totalPrice, 100);
+                }
+
+                if(priseType==textInputId){
+                          var countSimbols=document.getElementById('countSimbols').value;
+                          if  (countSimbols<150) {
+                            alert('Мінімальне замовлення не менше 150 слів');
+                          }
+                          else {orderFormDataShow()}
+                }
+
+                if(priseType==downloadFilesId){
+                          var fileWords=document.getElementById('fileWords').value;
+                            if(calcError){
+                            orderFormDataShow();
+                          }
+                          else{
+                            if  (fileWords<150) {
+                              alert('Мінімальне замовлення не менше 150 слів');
+                            }
+                            else{
+                              orderFormDataShow();
+                            }
+                          }
+
+                }
+
+              }
+  /*-----------------------------------------------------------------------------------------------*/
+function orderFormDataShow(){
+    alert('vvid danih');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
