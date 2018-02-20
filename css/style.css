@@ -2925,7 +2925,7 @@ ul {
   background: white;
   padding-top: 0px;
   padding-bottom: 0px;
-  z-index: 2;
+  z-index: 20000;
   position: relative;
   top: -32px;
   width: 100%;
@@ -3406,7 +3406,7 @@ textarea[name="text_input"] {
 }
 .send_btn {
   position: absolute;
-  top: 410px;
+  bottom: 30px;
   z-index: 25;
   left: 50%;
   transform: translateX(-50%);
@@ -3421,6 +3421,7 @@ textarea[name="text_input"] {
   background: #EBA613;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 .fa-arrow-down {
   font-size: 87px;
@@ -3443,14 +3444,73 @@ textarea[name="text_input"] {
   border-top-right-radius: 20px;
 }
 .user_order_data {
+  width: 550px;
+  padding: 50px 80px;
   position: fixed;
-  height: 300px;
-  width: 300px;
-  background: red;
-  top: 50%;
-  left: 50%;
-  z-index: 10000000000000;
+  z-index: 50000;
+  background: #FFFFFF;
+  top: 160px;
+  left: 43%;
+  margin-left: -280px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   display: none;
+}
+.user_order_data {
+  font-size: 16px;
+  display: none;
+}
+.user_order_data textarea {
+  width: 100%;
+  margin-top: 15px;
+  height: 130px;
+  resize: none;
+  border: 1px solid #6F6153;
+  margin-bottom: 70px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.user_order_data_container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user_order_data_container input {
+  border: 1px solid #6F6153;
+  width: 49%;
+  margin-bottom: 5px;
+  color: #6F6153;
+}
+.user_order_data-close {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  position: absolute;
+  right: -34px;
+  top: 0;
+}
+.user_order_data-close::after,
+.user_order_data-close::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
+.user_order_data-close::after {
+  transform: rotate(45deg);
+}
+.user_order_data-close::before {
+  transform: rotate(-45deg);
 }
 .orderSuccessful {
   width: 400px;
@@ -3510,6 +3570,122 @@ textarea[name="text_input"] {
   margin-bottom: 14px;
   text-align: center;
 }
+.minimalError {
+  width: 400px;
+  padding: 50px 80px;
+  position: fixed;
+  background: #FFFFFF;
+  top: 160px;
+  left: 50%;
+  margin-left: -280px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 1000000;
+  display: none;
+}
+.minimalError-close {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  position: absolute;
+  right: -34px;
+  top: 0;
+}
+.minimalError-close::after,
+.minimalError-close::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
+.minimalError-close::after {
+  transform: rotate(45deg);
+}
+.minimalError-close::before {
+  transform: rotate(-45deg);
+}
+.minimalError-title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.minimalError-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.typeOfLoadError {
+  width: 400px;
+  padding: 50px 80px;
+  position: fixed;
+  background: #FFFFFF;
+  top: 160px;
+  left: 50%;
+  margin-left: -280px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 1000000;
+  display: none;
+}
+.typeOfLoadError-close {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  position: absolute;
+  right: -34px;
+  top: 0;
+}
+.typeOfLoadError-close::after,
+.typeOfLoadError-close::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+}
+.typeOfLoadError-close::after {
+  transform: rotate(45deg);
+}
+.typeOfLoadError-close::before {
+  transform: rotate(-45deg);
+}
+.typeOfLoadError-title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.typeOfLoadError-text {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+}
 .overlay {
   position: fixed;
   width: 100%;
@@ -3524,6 +3700,18 @@ textarea[name="text_input"] {
 }
 .show-block {
   display: block;
+}
+.overlay_user_data {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+.overlay_user_data {
+  display: none;
 }
 .specialty {
   background: white;

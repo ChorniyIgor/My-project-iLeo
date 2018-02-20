@@ -272,7 +272,7 @@ function daleteLang(){
 
 
                 if(priseType==numberOfWordsId){
-                        alert("Завантажте документ або введіть текст");
+                        typeOfLoadErrorShow();
                         $(downloadFilesId).attr('checked',true);
                         check();
                         setTimeout(totalPrice, 100);
@@ -281,7 +281,7 @@ function daleteLang(){
                 if(priseType==textInputId){
                           var countSimbols=document.getElementById('countSimbols').value;
                           if  (countSimbols<150) {
-                            alert('Мінімальне замовлення не менше 150 слів');
+                            minimalError();
                           }
                           else {orderFormDataShow()}
                 }
@@ -293,7 +293,7 @@ function daleteLang(){
                           }
                           else{
                             if  (fileWords<150) {
-                              alert('Мінімальне замовлення не менше 150 слів');
+                              minimalError();
                             }
                             else{
                               orderFormDataShow();
@@ -304,10 +304,36 @@ function daleteLang(){
 
               }
   /*-----------------------------------------------------------------------------------------------*/
-function orderFormDataShow(){
-    alert('vvid danih');
+/*Функція вспливання і закривання вікна помилки через малу кількість слів*/
+function minimalError(){
+  document.querySelector('.minimalError').classList.add('show-block');
+  document.querySelector('.overlay').classList.add('show-block');
 }
-
+function minimalErrorClose(){
+  document.querySelector('.minimalError').classList.remove('show-block');
+  document.querySelector('.overlay').classList.remove('show-block');
+}
+/*--------------------------------------------------------------------------*/
+/*Функція вспливання і закривання вікна помилки через недостатні дані*/
+function typeOfLoadErrorShow(){
+  document.querySelector('.typeOfLoadError').classList.add('show-block');
+  document.querySelector('.overlay').classList.add('show-block');
+}
+function typeOfLoadErrorClose(){
+  document.querySelector('.typeOfLoadError').classList.remove('show-block');
+  document.querySelector('.overlay').classList.remove('show-block');
+}
+/*--------------------------------------------------------------------------*/
+/*Функція вспливання і закривання вікна введення даних про замовника*/
+function orderFormDataShow(){
+  document.querySelector('.user_order_data').classList.add('show-block');
+  document.querySelector('.overlay_user_data').classList.add('show-block');
+}
+function orderFormDataClose(){
+  document.querySelector('.user_order_data').classList.remove('show-block');
+  document.querySelector('.overlay_user_data').classList.remove('show-block');
+}
+/*--------------------------------------------------------------------------*/
 
 
 

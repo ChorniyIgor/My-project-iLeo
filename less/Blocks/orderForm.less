@@ -2,7 +2,7 @@
   background:white;
   padding-top: 0px;
   padding-bottom: 0px;
-  z-index: 2;
+  z-index: 20000;
   position: relative;
   top: -32px;
   width: 100%;
@@ -487,7 +487,7 @@ textarea[name="text_input"]{
     }
     .send_btn{
       position: absolute;
-      top: 410px;
+      bottom: 30px;
       z-index: 25;
       left: 50%;
       transform: translateX(-50%);
@@ -502,6 +502,7 @@ textarea[name="text_input"]{
       background: #EBA613;
       font-weight: bold;
       color: white;
+      cursor: pointer;
     }
 
 
@@ -527,13 +528,77 @@ textarea[name="text_input"]{
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+
+
 .user_order_data{
+  width: 550px;
+  padding: 50px 80px;
   position: fixed;
-  height: 300px;
-  width: 300px;
-  background: red;
-  top: 50%;
-  left: 50%;
-  z-index: 10000000000000;
+  z-index: 50000;
+  background:  #FFFFFF;
+  top:160px;
+  left: 43%;
+  margin-left: -280px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   display: none;
+}
+.user_order_data{
+  font-size: 16px;
+
+  display: none;
+  textarea{
+    width: 100%;
+    margin-top: 15px;
+    height:130px;
+    resize: none;
+    border:1px solid #6F6153;
+    margin-bottom: 70px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
+.user_order_data_container{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  input {
+    border:1px solid #6F6153;
+    width: 49%;
+    margin-bottom: 5px;
+      color: #6F6153;
+  }
+
+}
+.user_order_data-close{
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  position: absolute;
+  right: -34px;
+  top:0;
+}
+.user_order_data-close::after,
+.user_order_data-close::before{
+  content: "";
+  display: block;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+  position: absolute;
+  top:10px;
+  left: 2px;
+}
+.user_order_data-close::after{
+  transform: rotate(45deg);
+}
+.user_order_data-close::before{
+  transform: rotate(-45deg);
 }
