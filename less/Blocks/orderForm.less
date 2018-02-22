@@ -487,7 +487,7 @@ textarea[name="text_input"]{
     }
     .send_btn{
       position: absolute;
-      bottom: 30px;
+      bottom: 50px;
       z-index: 25;
       left: 50%;
       transform: translateX(-50%);
@@ -495,14 +495,17 @@ textarea[name="text_input"]{
       outline: none;
       animation: blinking 7s infinite;
       animation-timing-function: ease;
-      padding: 15px;
-      text-transform: uppercase;
+      padding: 10px;
       height: auto;
-      width: 70%;
+      width: 552px;
       background: #EBA613;
       font-weight: bold;
       color: white;
       cursor: pointer;
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 400;
+
     }
 
 
@@ -533,11 +536,12 @@ textarea[name="text_input"]{
 
 .user_order_data{
   width: 550px;
-  padding: 50px 80px;
+  padding: 30px 80px;
+  padding-bottom: 50px;
   position: fixed;
   z-index: 50000;
   background:  #FFFFFF;
-  top:160px;
+  top:140px;
   left: 43%;
   margin-left: -280px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -545,19 +549,22 @@ textarea[name="text_input"]{
 }
 .user_order_data{
   font-size: 16px;
-
-  display: none;
   textarea{
     width: 100%;
-    margin-top: 15px;
+    margin-top: 0px;
     height:130px;
     resize: none;
     border:1px solid #6F6153;
-    margin-bottom: 70px;
-    padding: 5px;
+    margin-bottom: 60px;
+    padding: 8px 10px;
     box-sizing: border-box;
   }
 }
+.user_order_data__header{
+  color:#403D3B;
+  margin-bottom: 25px;
+}
+
 .user_order_data_container{
   display: -webkit-flex;
   display: -ms-flex;
@@ -566,11 +573,38 @@ textarea[name="text_input"]{
   justify-content:space-between;
   input {
     border:1px solid #6F6153;
-    width: 49%;
-    margin-bottom: 5px;
-      color: #6F6153;
+    width: 100%;
+    color:#403D3B;
+    padding-left: 32px;
   }
-
+  label{
+    width: 49%;
+    margin-bottom: 12px;
+    position: relative;
+    &:before{
+      content: "";
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      width: 35px;
+      text-align: center;
+      top: 0;
+      left: 0;
+      font-size: 18px;
+      line-height: 38px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color:#615E5C;
+      text-shadow: none;
+    }
+  }
+  .user_order_name:before{ content: '\f007';}
+  .user_order_surname:before{ content: '\f2c2';}
+  .user_order_email:before{ content: '\f1fa';}
+  .user_order_phone:before{ content: '\f2a0';}
+  .user_order_city:before{ content: '\f041';}
+  .user_order_address:before{ content: '\f015';}
 }
 .user_order_data-close{
   outline: 0;

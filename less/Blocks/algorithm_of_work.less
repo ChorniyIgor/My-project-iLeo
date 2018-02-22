@@ -1,0 +1,89 @@
+.algorithm_of_work{
+  height: 230px;
+  background: white;
+  position: relative;
+  top: -32px;
+}
+.algorithm_of_work__container{
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+.algorithm_of_work__list{
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 160px;
+
+  li{
+    display: block;
+    flex-basis: 200px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    &:first-child,&:nth-child(2){
+      padding-top: 14px;
+    }
+  }
+  li::before{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #EB5A13;
+    position: absolute;
+    top: -120px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    left: 50px;
+    color: white;
+  }
+  li::after{
+    content: "";
+    display: block;
+    width:80px;
+    height: 3px;
+    background: #EB5A13;
+    position: absolute;
+    top: -73px;
+    left: 180px;
+  }
+  li:last-child::after{
+    display: none;
+  }
+  li:nth-child(1)::before{content:'\f15c';}
+  li:nth-child(2)::before{content:'\f252'; font-weight: 900;}
+  li:nth-child(3)::before{content:'\f153'; font-weight: 900; }
+  li:nth-child(4)::before{content:'\f2b5';}
+  li:nth-child(5)::before{content:'\f164';}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

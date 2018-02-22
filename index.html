@@ -28,7 +28,7 @@
 
 <body>
 
-	<header class="page-header">
+	<header class="page-header ">
 		<nav class="main-nav main-nav--closed main-nav--no-js">
 			<button class="main-nav__toggle" type="button" >Открить меню</button>
 			<div class="borer-container">
@@ -153,7 +153,16 @@
 	</div>
 	</div>
 
-
+<section class="partners">
+	<ul class="partners_list">
+		<li><img src="img/partners/logo-erste-bank.png" alt="Logo erste bank"></li>
+		<li><img src="img/partners/logo-fischer.png" alt="Logo fischer"></li>
+		<li><img src="img/partners/logo-intersport.png" alt="Logo intersport"></li>
+		<li><img src="img/partners/logo-jacques-lemans.png" alt="Logo jacques-lemans"></li>
+		<li><img src="img/partners/logo-kenwood.png" alt="Logo kenwood"></li>
+		<li><img src="img/partners/logo-volvo.png" alt="Logo volvo"></li>
+	</ul>
+</section>
 
 
 
@@ -308,6 +317,7 @@
 												<div class="upload">
 													<img class="upload_img" src="img/download.gif" alt="">
 													<div id="queue_files">
+														<p>dsafdfa</p>
 													</div>
 												</div>
 												<label class="total_prise_file" style="font-weight:400;">Total:<input  oninput="pricePrintFile(this.value);" class="total_input" type="text" name="file_words" id="fileWords"  value="0"><span>Wörter</span></label>
@@ -340,16 +350,19 @@
 							<button type="button" name="button_order" class="order_btn order_btn-hide" onclick="checkInputData()">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
 						</div>
 					</div>
-						<div class="user_order_data">
+						<div class="user_order_data ">
 							<div class="user_order_data_container">
 								<button class="user_order_data-close" type="button" title="Закрить" onclick="orderFormDataClose()">Закрить</button>
-								<input class="row_style" placeholder="Name" name="name" value="" type="text" >
-								<input class="row_style" placeholder="E-mail" name="email" value=""  type="email">
-								<input class="row_style" placeholder="City" name="City" value=""  type="text">
-								<input class="row_style" placeholder="Address" name="Address" value=""  type="text">
+								<h3 class="user_order_data__header">Erhalten Sie Ihr Preisangebot innerhalb 5 Minuten (per E-Mail)</h3>
+								<label class="user_order_name"><input class="row_style" placeholder="Name" name="name" value="" type="text" ></label>
+								<label class="user_order_surname"><input class="row_style" placeholder="Surname" name="surname" value="" type="text" ></label>
+								<label class="user_order_email"><input class="row_style" placeholder="E-mail" name="email" value=""  type="email"></label>
+								<label class="user_order_phone"><input class="row_style" placeholder="Phone" name="phone" value=""  type="tel"></label>
+								<label class="user_order_city"><input class="row_style" placeholder="City" name="city" value=""  type="text"></label>
+								<label class="user_order_address"><input class="row_style" placeholder="Address" name="address" value=""  type="text"></label>
 							</div>
-								<textarea name="user_feedback" rows="8" cols="40"></textarea>
-								<input class="row_style send_btn" value="надіслати" name="sendMail" type="submit">
+								<textarea name="user_feedback" rows="8" cols="40" placeholder="Anmerkungen"></textarea>
+								<input class="row_style send_btn" value="Anfrage stellen" name="sendMail" type="submit">
 						</div>
 						<div class="overlay_user_data">
 
@@ -368,10 +381,20 @@
 
 
 
+<section class="algorithm_of_work">
+	<div class="algorithm_of_work__container">
+		<ul class="algorithm_of_work__list">
+			<li>Anfrage abschicken</li>
+			<li>Höchstens 5 minuten warten</li>
+			<li>Persöhnliches Angebot per E-Mail erhalten</li>
+			<li>Auftragsbestätigung  (einfach per E-Mail antworten)</li>
+			<li>Sie erhalten rechtzeitig hochwertige Übersetzung!</li>
+		</ul>
+	</div>
+</section>
 
-
-<section class="adventages data_site_container">
-		<ul class="advantages__list">
+<section class="adventages">
+		<ul class="advantages__list  data_site_container">
 				<div class="advantage__list-container">
 
  					<h1 class="advantages__title">Ihr bester Übersetzerpartner auf dem Übersetzungsmarkt sind</h1>
@@ -591,21 +614,25 @@
 	</footer>
 
 	<div class="orderSuccessful">
-		<button class="orderSuccessful-close" type="button" title="Закрить">Закрить</button>
-		<h2 class="orderSuccessful-title">Herzlichen Dank für Ihren Auftrag!</h2>
-  	<p class="orderSuccessful-text">In kürzester Zeit werden Sie mit Ihrem Ansprechpartner verbindet!</p>
+		<button class="orderSuccessful-close" type="button" title="Закрить"  onclick="orderSuccessfulClose()">Close</button>
+		<h2 class="orderSuccessful-title">Dankeschön für Ihre Anfrage!</h2>
+  	<p class="orderSuccessful-text">Sie erhalten unser Preisangebot für Sie innerhalb 5 Minuten per E-Mail.</p>
+		<button class="orderSuccessful-ok" type="button" onclick="orderSuccessfulClose()">OK</button>
 	</div>
 
 	<div class="typeOfLoadError">
-		<button class="typeOfLoadError-close" type="button" title="Закрить" onclick="typeOfLoadErrorClose()">Закрить</button>
-		<h2 class="typeOfLoadError-title">Для оформлення замовлення завантажте документ або введіть текст</h2>
-		<p class="typeOfLoadError-text">In kürzester Zeit werden Sie mit Ihrem Ansprechpartner verbindet!</p>
+		<button class="typeOfLoadError-close" type="button" title="Закрить" onclick="typeOfLoadErrorClose()">Close</button>
+		<h2 class="typeOfLoadError-title">Achtung!</h2>
+		<p class="typeOfLoadError-text">Um Preisangebot zu erhalten, laden SIe bitte zu übersetzende Dateien herunter oder geben SIe bitte den Text ein.</p>
+		<button class="typeOfLoadError-ok" type="button"  onclick="typeOfLoadErrorClose()">OK</button>
 	</div>
 
 	<div class="minimalError">
-		<button class="minimalError-close" type="button" title="Закрить" onclick="minimalErrorClose()">Закрить</button>
-		<h2 class="minimalError-title">Введена кількість слів є надто малою</h2>
-		<p class="minimalError-text">In kürzester Zeit werden Sie mit Ihrem Ansprechpartner verbindet!</p>
+		<button class="minimalError-close" type="button" title="Закрить" onclick="minimalErrorClose()">Close</button>
+		<h2 class="minimalError-title">Achtung!</h2>
+		<p class="minimalError-text">Die Anzahl der zu übersetzenden Wörter ist zu klein.
+			Wir nehmen Aufträge ab 100 Wörter.</p>
+		<button class="minimalError-ok" type="button"   onclick="minimalErrorClose()">OK</button>
 	</div>
 	<div class="overlay">
 
@@ -790,42 +817,7 @@ function check(){
 
 <!-- Зменшеннявисоти хедера-->
 
-<script type="text/javascript">
-var cbpAnimatedHeader = (function() {
-
-	var docElem = document.documentElement,
-			header = document.querySelector( '.page-header' ),
-			didScroll = false,
-			changeHeaderOn = 200;
-
-	function init() {
-			window.addEventListener( 'scroll', function( event ) {
-					if( !didScroll ) {
-							didScroll = true;
-							setTimeout( scrollPage, 250 );
-					}
-			}, false );
-	}
-
-	function scrollPage() {
-			var sy = scrollY();
-			if ( sy >= changeHeaderOn ) {
-					header.classList.add("page-header--small");
-			}
-			else {
-					header.classList.remove("page-header--small");
-			}
-			didScroll = false;
-	}
-
-	function scrollY() {
-			return window.pageYOffset || docElem.scrollTop;
-	}
-
-	init();
-
-})();
-</script>
+<script src="js/small-header.js" charset="utf-8"></script>
 
 
 

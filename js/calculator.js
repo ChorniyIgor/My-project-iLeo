@@ -280,7 +280,7 @@ function daleteLang(){
 
                 if(priseType==textInputId){
                           var countSimbols=document.getElementById('countSimbols').value;
-                          if  (countSimbols<150) {
+                          if  (countSimbols<100) {
                             minimalError();
                           }
                           else {orderFormDataShow()}
@@ -292,7 +292,7 @@ function daleteLang(){
                             orderFormDataShow();
                           }
                           else{
-                            if  (fileWords<150) {
+                            if  (fileWords<100) {
                               minimalError();
                             }
                             else{
@@ -324,8 +324,18 @@ function typeOfLoadErrorClose(){
   document.querySelector('.overlay').classList.remove('show-block');
 }
 /*--------------------------------------------------------------------------*/
+/*Функція вспливання і закривання вікна подяки за замовлення*/
+function orderSuccessfulShow(){
+  document.querySelector('.orderSuccessful').classList.add('show-block');
+  document.querySelector('.overlay').classList.add('show-block');
+}
+function orderSuccessfulClose(){
+  document.querySelector('.orderSuccessful').classList.remove('show-block');
+  document.querySelector('.overlay').classList.remove('show-block');
+}
+/*--------------------------------------------------------------------------*/
 /*Функція вспливання і закривання вікна введення даних про замовника*/
-function orderFormDataShow(){
+    function orderFormDataShow() {
   document.querySelector('.user_order_data').classList.add('show-block');
   document.querySelector('.overlay_user_data').classList.add('show-block');
 }
