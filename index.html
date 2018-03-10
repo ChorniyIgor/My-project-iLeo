@@ -29,24 +29,41 @@
 <body>
 
 	<header class="page-header ">
-		<nav class="main-nav main-nav--closed main-nav--no-js">
+		<nav class="main-nav main-nav--closed main-nav--no-js ">
 			<button class="main-nav__toggle" type="button" >Открить меню</button>
 			<div class="borer-container">
-			<div class="nav__wrapper">
+			<div class="nav__wrapper ">
 				<div class="nav__logo">
 					<a href="#">
 							<img src="img/logotype-deskto2.png" alt="iLeo">
 					</a>
 				</div>
-				<ul class="main__nav-list">
-					<li class="active"><span>Startseite</span></li>
+				<nav id="slow_nav">
+				<ul class="main__nav-list1" >
+					<li class="active"><span>Home</span></li>
 					<li><a href="price.html">Preise</a></li>
-					<li><a href="form.html">Qualität</a></li>
+					<li  class="list-item__castom">
+						<a href="fachbereiche.html" class="list-item__castom-main">Fachbereiche</a>
+						<ul>
+						<li><a href="#">Software & IT</a></li>
+						<li><a href="#">Technik</a></li>
+						<li><a href="#">Recht</a></li>
+						<li><a href="#">Medizinisch</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Wirtschaft</a></li>
+						<li><a href="#">Behörden</a></li>
+						<li><a href="#">Bautechnik</a></li>
+					</ul>
+				</li>
 					<li><a href="https://htmlacademy.ru/">HÜber uns</a></li>
 				</ul>
+				</nav>
 			</div>
+
 </div>
+
 		</nav>
+
 </header>
 
 <!--
@@ -95,17 +112,19 @@
 
 <main>
 
-	<div class="slider_content">
+	<div class="slider_content ">
 		<div class="slide">
 			<div class="slide_img slide1">
 				<!-- <img src="img/slider/slide1.png" alt="Höchste Geschwindigkeit"> -->
 			</div>
 
 				<div class="slide_text">
-					<div class="slide_text_container">
-					<div class="slideText-header">Höchste Geschwindigkeit</div>
-					<p class="slideText">Bis zu 10 Seiten der Übersetzung pro Tag erhalten Sie in  dem Tag der Bestellung garantiert und ohne Zuschlagkosten! <br>
-					Für unsere Kunden sind alle 7 Tage der Woche Arbeitstage!</p>
+
+					<div class="slide_text_container slide_text_container__castom">
+						<img src="img/lsp1.png" alt="" class="lsp1">
+						<img src="img/lsp3.png" alt="" class="lsp2">
+						<p class="slideText">"Zufriedenheit unserer Kunden steht im <br> Mittelpunkt unseres Unternehmens. Für immer."
+							<span class="boss">Geschäftsführer</span></p>
 				</div>
 				</div>
 	</div>
@@ -116,9 +135,9 @@
 			<div class="slide_container ">
 				<div class="slide_text">
 					<div class="slide_text_container">
-					<div class="slideText-header">Qualität</div>
-					<p class="slideText         ">4-Augen Prinzip ist immer für unsere Kunden eingeschaltet.<br>
-					Das Netzwerk von 1678 Übersetzern Weltweit und 17 Jahren Erfahrung sorgen für die Qualität unserer Übersetzungen</p>
+						<div class="slideText-header">Unser Team</div>
+						<p class="slideText">Ausschließlich diplomierte und hochqualifizierte muttersprachliche Fachübersetzer und
+							Projektmanager stehen für die Quaität unserer Übersetzungen</p>
 				</div>
 			</div>
 		</div>
@@ -130,9 +149,9 @@
 			<div class="slide_container ">
 				<div class="slide_text">
 					<div class="slide_text_container">
-					<div class="slideText-header">Preisen</div>
-					<p class="slideText         ">Wir bieten die schnellste Angebotserteilung für faire Preise. Lassen Sie sich bitte selbst von unseren Preisen Überzeugen <br> mithilfe unseres Preisrechners. Achtung! Der genannte Preis ist Endpreis.<br>
-					Wir sind für kleinste Hilfe für Sie verfügbar. Mindestauftrag ab 10 Euro.</p>
+						<div class="slideText-header">Qualität</div>
+						<p class="slideText">Wir finden immer die passenden Wörter für Sie.
+									17 Jahren Erfahrung und 230 stehen für die Qualität unserer Übersetzungen. <br>Sie können sich auf uns verlassen.</p>
 				</div>
 			</div>
 		</div>
@@ -144,13 +163,37 @@
 			<div class="slide_container ">
 				<div class="slide_text">
 					<div class="slide_text_container">
-					<div class="slideText-header">Preisen</div>
-					<p class="slideText         ">Wir bieten die schnellste Angebotserteilung für faire Preise. Lassen Sie sich bitte selbst von unseren Preisen Überzeugen <br> mithilfe unseres Preisrechners. Achtung! Der genannte Preis ist Endpreis.<br>
-					Wir sind für kleinste Hilfe für Sie verfügbar. Mindestauftrag ab 10 Euro.</p>
+					<div class="slideText-header">Unser Ziel ist es...</div>
+					<p class="slideText         ">Die Menschen aus aller Welt zu verbinden und die Grenzen, die
+						aufgrund der Sprachbarierre entsehen, zu überwinden.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="slide">
+		<div class="slide_img slide5">
+			<!-- <img src="img/slider/slide5.png" alt="Preisen"> -->
+		</div>
+		<div class="slide_container ">
+			<div class="slide_text">
+				<div class="slide_text_container">
+					<div class="slideText-header">Preise</div>
+					<p class="slideText">Was Sie von uns erhalten:<br>
+					Wir bieten flexible Wortpreise (Fachübersetzungen ab 8,5 ct. pro Wort)<br>
+					Flexibles Rabattsystem für Neu- und Stammkunden<br>
+					Sie erhalten Ihr Preisangebot  innerhalb 5 Minuten per E-Mail</p>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
 	</div>
 
 <section class="partners">
@@ -333,7 +376,7 @@
 
 							 <div class="price-info">
 													 <div class="form-intro form-intro--castom">
-														<p class="intro-text">Preis</p>
+														<p class="intro-text">Kostenforanschlag</p>
 													 </div>
 													<div class="price_container">
 										 				<input type="text" name="price"  value="0,00 €" id="price" readonly>
@@ -580,12 +623,12 @@
 	<section class="specialty data_site_container">
 		<h1 class="specialty__title">Wir sind spezialisten in</h1>
 		<ul class="specialty__list">
-				<li class="specialty__item"><i class="fas fa-laptop"></i>Digital</li>
+				<li class="specialty__item"><i class="fas fa-laptop"></i>Software&IT</li>
 				<li class="specialty__item"><i class="fas fa-cogs"></i>Technik</li>
-				<li class="specialty__item"><i class="fas fa-suitcase"></i>Juristisch</li>
+				<li class="specialty__item"><i class="fas fa-suitcase"></i>Recht</li>
 				<li class="specialty__item"><i class="fas fa-stethoscope"></i>Medizinisch</li>
 				<li class="specialty__item"><i class="fas fa-bullhorn"></i>Marketing</li>
-				<li class="specialty__item"><i class="fas fa-euro-sign"></i>Finanziell</li>
+				<li class="specialty__item"><i class="fas fa-euro-sign"></i>Wirtschaft</li>
 				<li class="specialty__item"><i class="fas fa-users"></i>Behörden</li>
 				<li class="specialty__item"><i class="far fa-building"></i>Bautechnik</li>
 		</ul>
@@ -668,8 +711,8 @@
 			$('#source-language').chosen();
 			$('#target-language').chosen();
 			$('.slider_content').slick({
-						autoplay : false,
-						autoplaySpeed : 3000,
+						autoplay : true,
+						autoplaySpeed : 4000,
 						speed: 1000,
 						dots : true,
 						arrows : false,
