@@ -28,10 +28,15 @@ gulp.task('less', function () {
 //функція локального браузера
 gulp.task("serve", ["less"], function(){
   browserSync.init({ //запуск проекта що у папці в браузері
-      server: "."
+    //активний лише один із двох пунктів
+    /*1*/  proxy: "ileoo.dev"  //Включає підтримку PHP через Open Server
+    /*2*/  //server: "."   //Запуск Gulp без підтримки PHP
   });
     gulp.watch("less/**/*.less",["less"]); //відстеження змін less файлів
     gulp.watch("*.html") //відстеження змін html файлів
+    .on("change",browserSync.reload); //перезагрузка якщо html змінився
+
+    gulp.watch("**/*.php") //відстеження змін html файлів
     .on("change",browserSync.reload); //перезагрузка якщо html змінився
 });
 

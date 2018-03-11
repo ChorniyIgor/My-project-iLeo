@@ -45,14 +45,14 @@
 					<li  class="list-item__castom">
 						<a href="fachbereiche.html" class="list-item__castom-main">Fachbereiche</a>
 						<ul>
-						<li><a href="#">Software & IT</a></li>
-						<li><a href="#">Technik</a></li>
-						<li><a href="#">Recht</a></li>
-						<li><a href="#">Medizinisch</a></li>
-						<li><a href="#">Marketing</a></li>
-						<li><a href="#">Wirtschaft</a></li>
-						<li><a href="#">Behörden</a></li>
-						<li><a href="#">Bautechnik</a></li>
+						<li><a href="fachbereiche.html#software-go">Software & IT</a></li>
+						<li><a href="fachbereiche.html#technik-go">Technik</a></li>
+						<li><a href="fachbereiche.html#recht-go">Recht</a></li>
+						<li><a href="fachbereiche.html#medizinisch-go">Medizinisch</a></li>
+						<li><a href="fachbereiche.html#marketing-go">Marketing</a></li>
+						<li><a href="fachbereiche.html#wirtschaft-go">Wirtschaft</a></li>
+						<li><a href="fachbereiche.html#behorden-go">Behörden</a></li>
+						<li><a href="fachbereiche.html#bautechnik-go">Bautechnik</a></li>
 					</ul>
 				</li>
 					<li><a href="https://htmlacademy.ru/">HÜber uns</a></li>
@@ -360,7 +360,6 @@
 												<div class="upload">
 													<img class="upload_img" src="img/download.gif" alt="">
 													<div id="queue_files">
-														<p>dsafdfa</p>
 													</div>
 												</div>
 												<label class="total_prise_file" style="font-weight:400;">Total:<input  oninput="pricePrintFile(this.value);" class="total_input" type="text" name="file_words" id="fileWords"  value="0"><span>Wörter</span></label>

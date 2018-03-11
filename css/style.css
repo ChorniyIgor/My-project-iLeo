@@ -3727,6 +3727,13 @@ textarea[name="text_input"] {
   text-align: right;
   margin-right: 12px;
 }
+.industry .industry_item--pos {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  top: -60px;
+  left: 0;
+}
 .industry .industry_item_img {
   flex-basis: 45%;
 }
