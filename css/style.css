@@ -485,7 +485,7 @@ template {
 #slow_nav > ul > li > a {
   font-size: 20px;
   padding: 5px;
-  color: black;
+  color: #403D3B;
 }
 #slow_nav .active span {
   font-size: 20px;
@@ -496,11 +496,12 @@ template {
   position: absolute;
   list-style: none;
   text-align: center;
-  top: 15px;
+  top: 28px;
   font-size: 15px;
   left: 0;
   margin: 0;
   padding: 0;
+  width: 100%;
   /* Данные строки нужны для правильной работы анимации */
   max-height: 0px;
   overflow: hidden;
@@ -514,14 +515,13 @@ template {
 }
 #slow_nav li ul li {
   background-color: white;
-  border-bottom: #8f4508 solid 1px;
 }
 #slow_nav li ul li:last-child {
-  border-bottom: none;
+  border-bottom: 3px solid #8F4508;
 }
 #slow_nav li ul li a {
   padding: 5px 12px;
-  color: black;
+  color: #403D3B;
   display: block;
   font-size: 16px;
 }
@@ -529,19 +529,19 @@ template {
   background-color: #444;
 }
 #slow_nav li ul li:first-child {
-  margin-top: 22px;
+  margin-top: 0px;
   position: relative;
 }
-#slow_nav li ul li:first-child:before {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 5px solid transparent;
-  border-bottom-color: white;
-  left: 10px;
-  top: -10px;
-}
+/*  #slow_nav li ul li:first-child:before{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:1px;
+    border:5px solid transparent;
+    border-bottom-color:white;
+    left:10px;
+    top:-10px;
+}*/
 /*---------------------------------*/
 .nav__logo a {
   display: block;
@@ -3584,6 +3584,14 @@ textarea[name="text_input"] {
   display: flex;
   padding-bottom: 20px;
 }
+.last-page__content--noflex {
+  min-height: 600px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  padding-bottom: 20px;
+}
 .last-page__order-form {
   width: 25%;
   margin-left: 2%;
@@ -3701,6 +3709,9 @@ textarea[name="text_input"] {
   width: 50px;
   text-align: center;
 }
+.price-list__adv--full {
+  width: 100%;
+}
 .fachbereiche .photo {
   background: url("../img/headers/fachbereiche_header.jpg") center no-repeat;
 }
@@ -3791,6 +3802,105 @@ textarea[name="text_input"] {
   -ms-transform: skew(8deg) rotate(3deg);
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg);
+}
+.about-company .photo {
+  background: url("../img/headers/company_header.jpg") center no-repeat;
+  background-size: cover;
+}
+.about-company__header-text {
+  position: relative;
+  width: 600px;
+  top: 350px;
+  left: 0;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+.about-company-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+.about-company-content .photo-company {
+  flex-basis: 30%;
+  position: relative;
+}
+.about-company-content .photo-company span {
+  display: block;
+  position: absolute;
+  bottom: 7px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.about-company-content .descr-company {
+  flex-basis: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about-company-content .descr-company h2 {
+  margin: 0;
+  margin-top: 10px;
+}
+.about-company-content .descr-company p {
+  margin: 0;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  text-indent: 15px;
+  margin-top: 7px;
+  color: #403D3B;
+  font-weight: 400;
+}
+.about-company-founders .about-company-founder {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.about-company-founders .about-company-founder .company-founder--photo {
+  flex-basis: 30%;
+  position: relative;
+}
+.about-company-founders .about-company-founder .company-founder--photo span {
+  display: block;
+  position: absolute;
+  bottom: 7px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.about-company-founders .about-company-founder .founder-descr {
+  flex-basis: 70%;
+  margin-left: 20px;
+}
+.about-company-founders .about-company-founder .founder-descr p {
+  font-style: italic;
+  color: #403D3B;
+}
+.our_achievement table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.our_achievement table tr:first-child td {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.our_achievement table td {
+  width: 25%;
+  text-align: center;
+  outline: 1px solid red;
+  border: 1px solid red;
 }
 /* Slider */
 .slick-loading .slick-list {
@@ -3947,7 +4057,7 @@ textarea[name="text_input"] {
 /*-------------------------------------*/
 .slider_content {
   margin-bottom: 0px;
-  padding-top: 67px;
+  padding-top: 64px;
   height: 720px;
   background: #E6E4EA;
 }

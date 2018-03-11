@@ -26,26 +26,7 @@
 
 <body>
 
-	<header class="page-header ">
-		<nav class="main-nav main-nav--closed main-nav--no-js">
-			<button class="main-nav__toggle" type="button" >Открить меню</button>
-			<div class="borer-container">
-			<div class="nav__wrapper">
-				<div class="nav__logo">
-					<a href="index.html">
-								<img src="img/logotype-deskto2.png" alt="iLeo">
-					</a>
-				</div>
-				<ul class="main__nav-list">
-					<li><a href="index.html">Startseite</a></li>
-					<li class="active"><span>Preise</span></li>
-					<li><a href="form.html">Qualität</a></li>
-					<li><a href="https://htmlacademy.ru/">HÜber uns</a></li>
-				</ul>
-			</div>
-</div>
-		</nav>
-</header>
+<?php	include 'header.html';?>
 
 <main class="last-page fachbereiche">
  <div class="photo">
@@ -167,42 +148,8 @@
  </div>
 </main>
 
+	<?php	include 'footer.html';?>
 
-
-
-
-
-
-
-
-
-
-
-	<footer class="page-footer">
-		<span class="page-footer__promo">#visitSEDONA</span>
-		<div class="page-footer__social">
-				<ul class="social-links">
-					<li><a  class="social-links-tw" href="#">Twitter</a></li>
-					<li><a class="social-links-fb" href="#">Facebook</a></li>
-					<li><a class="social-links-yt" href="#">YouTube</a></li>
-				</ul>
-		</div>
-		<p class="page-footer__copyright">
-			Разработано
-			<a href="" class="page-footer__copiright-link">HTML Academy</a>
-		</p>
-	</footer>
-
-	<div class="orderSuccessful">
-		<button class="orderSuccessful-close" type="button" title="Закрить">Закрить</button>
-		<h2 class="orderSuccessful-title">Herzlichen Dank für Ihren Auftrag!</h2>
-  	<p class="orderSuccessful-text">In kürzester Zeit werden Sie mit Ihrem Ansprechpartner verbindet!</p>
-	</div>
-	<div class="overlay">
-
-	</div>
-
-</main>
 
 
 

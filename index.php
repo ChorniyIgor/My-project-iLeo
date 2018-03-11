@@ -28,87 +28,7 @@
 
 <body>
 
-	<header class="page-header ">
-		<nav class="main-nav main-nav--closed main-nav--no-js ">
-			<button class="main-nav__toggle" type="button" >Открить меню</button>
-			<div class="borer-container">
-			<div class="nav__wrapper ">
-				<div class="nav__logo">
-					<a href="#">
-							<img src="img/logotype-deskto2.png" alt="iLeo">
-					</a>
-				</div>
-				<nav id="slow_nav">
-				<ul class="main__nav-list1" >
-					<li class="active"><span>Home</span></li>
-					<li><a href="price.html">Preise</a></li>
-					<li  class="list-item__castom">
-						<a href="fachbereiche.html" class="list-item__castom-main">Fachbereiche</a>
-						<ul>
-						<li><a href="fachbereiche.html#software-go">Software & IT</a></li>
-						<li><a href="fachbereiche.html#technik-go">Technik</a></li>
-						<li><a href="fachbereiche.html#recht-go">Recht</a></li>
-						<li><a href="fachbereiche.html#medizinisch-go">Medizinisch</a></li>
-						<li><a href="fachbereiche.html#marketing-go">Marketing</a></li>
-						<li><a href="fachbereiche.html#wirtschaft-go">Wirtschaft</a></li>
-						<li><a href="fachbereiche.html#behorden-go">Behörden</a></li>
-						<li><a href="fachbereiche.html#bautechnik-go">Bautechnik</a></li>
-					</ul>
-				</li>
-					<li><a href="https://htmlacademy.ru/">HÜber uns</a></li>
-				</ul>
-				</nav>
-			</div>
-
-</div>
-
-		</nav>
-
-</header>
-
-<!--
-<div class="slider-conteiner">
-<div class="slideshow-container" >
-		<div class="mySlides fade">
-			<img src="img/slide1.jpg" alt="Höchste Geschwindigkeit">
-			<div class="slideText-header slideText1 slide1Pos1">Höchste Geschwindigkeit auf dem Übersetzungsmarkt in Deutschland!</div>
-			<p class="slideText          slideText2 slide1Pos2">-Bis zu 10 Seiten der Übersetzung pro Tag erhalten Sie in  dem Tag der Bestellung garantiert und ohne Zuschlagkosten! </p>
-			<p class="slideText          slideText3 slide1Pos3">-Für unsere Kunden sind alle 7 Tage der Woche Arbeitstage!</p>
-		</div>
-		<div class="mySlides fade">
-			<img src="img/slide2.jpg" alt="Qualität">
-			<div class="slideText-header slideText1 slide2Pos1">Qualität</div>
-			<p class="slideText          slideText2 slide2Pos2">-4-Augen Prinzip ist immer für unsere Kunden eingeschaltet.</p>
-			<p class="slideText          slideText3 slid21Pos3">-Das Netzwerk von 1678 Übersetzern Weltweit und 17 Jahren Erfahrung sorgen für die Qualität unserer Übersetzungen</p>
-		</div>
-		<div class="mySlides fade">
-			<img src="img/slide3.jpg" alt="Preisen">
-			<div class="slideText-header slideText1 slide3Pos1">Preisen</div>
-			<p class="slideText          slideText2 slide3Pos2">-Wir bieten die schnellste Angebotserteilung für faire Preise. Lassen Sie sich bitte selbst von unseren Preisen Überzeugen <br> mithilfe unseres Preisrechners. Achtung! Der genannte Preis ist Endpreis.</p>
-			<p class="slideText          slideText3 slide3Pos3">-Wir sind für kleinste Hilfe für Sie verfügbar. Mindestauftrag ab 10 Euro.</p>
-		</div>
-		<div class="mySlides fade">
-			<img src="img/slide5.jpg" alt="Preisen">
-			<div class="slideText-header slideText1 slide3Pos1">Preisen</div>
-			<p class="slideText          slideText2 slide3Pos2">-Wir bieten die schnellste Angebotserteilung für faire Preise. Lassen Sie sich bitte selbst von unseren Preisen Überzeugen <br> mithilfe unseres Preisrechners. Achtung! Der genannte Preis ist Endpreis.</p>
-			<p class="slideText          slideText3 slide3Pos3">-Wir sind für kleinste Hilfe für Sie verfügbar. Mindestauftrag ab 10 Euro.</p>
-		</div>
-
-	<div class="slidebtn">
-		<a class="prev" id="prev" onclick="plusSlides(-1);efects()">&#10094</a>
-		<a class="next" onclick="plusSlides(1);efects()">&#10095</a>
-	</div>
-
-		<div class="dots" style="text-align: center;">
-			<span class="dot" onclick="currentSlide(1);efects()"></span>
-			<span class="dot" onclick="currentSlide(2);efects()"></span>
-			<span class="dot" onclick="currentSlide(3);efects()"></span>
-			<span class="dot" onclick="currentSlide(3);efects()"></span>
-		</div>
-	</div>
-</div>
-
--->
+	<?php	include 'header.html';?>
 
 <main>
 
@@ -634,26 +554,13 @@
 	</section>
 
 </main>
+	<?php	include 'footer.html';?>
 
 
 
 
 
 
-	<footer class="page-footer">
-		<span class="page-footer__promo">#visitSEDONA</span>
-		<div class="page-footer__social">
-				<ul class="social-links">
-					<li><a  class="social-links-tw" href="#">Twitter</a></li>
-					<li><a class="social-links-fb" href="#">Facebook</a></li>
-					<li><a class="social-links-yt" href="#">YouTube</a></li>
-				</ul>
-		</div>
-		<p class="page-footer__copyright">
-			Разработано
-			<a href="" class="page-footer__copiright-link">HTML Academy</a>
-		</p>
-	</footer>
 
 	<div class="orderSuccessful">
 		<button class="orderSuccessful-close" type="button" title="Закрить"  onclick="orderSuccessfulClose()">Close</button>
