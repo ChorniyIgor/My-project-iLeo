@@ -51,6 +51,7 @@
    </div>
 
    <div class="about-company-founders">
+		 		<h2>Wer dahinter steht?</h2>
       <div class="about-company-founder">
           <div class="company-founder--photo">
             <img src="img/photo/1.jpg" alt="">
@@ -75,6 +76,7 @@
 
 
    <div class="data_site_container">
+		 <h2>Welche Vorteile haben Sie als Kunde?</h2>
    <ul class="price-list__adv price-list__adv--full">
      <li><i class="fab fa-whmcs"></i>Unsere Fachübersetzer nutzen modernste CAT-Tools wie memoQ, SDL-Trados, was uns ermöglicht, effizienter, hochwertiger und schneller zu arbeiten und als Folge Übersetzungskosten um 30% im Vergleich zum Marktniveau zu reduzieren. </li>
      <li><i class="fas fa-tachometer-alt"></i>Wir legen einen großen Wert auf die Zeit unserer Kunden und kümmern uns um das schnellste Preisangebot für Sie! Durch unseren Preiskalkulator erhalten Sie Ihr ENDPREISangebot! Sie können dieses Angebot per Klick herunterladen, um die Einzelheiten Ihren Auftrag zu bekommen. </li>
@@ -88,6 +90,9 @@
 
 
  </div>
+ <div class="data_site_container">
+ <h2>Unser Unternehmen in Zahlen</h2>
+</div>
  <div class="our_achievement r">
     <div class="data_site_container">
      <table>
@@ -107,6 +112,48 @@
      </div>
  </div>
 
+	<div class="about-company-review data_site_container">
+		<h2>Was unsere Kunden sagen</h2>
+			<div class="about-company-reviews-slider">
+				<div class="about-company-review__slide">
+						<p class="review">“Der Service von iLeoo ist sehr zuverlässig und schnell bei einer konstant sehr guten Qualität. Besonders hervorzuheben ist das reibungslose Projektmanagement und die unterstützende Kommunikation“</p>
+						<div class="review-info">
+								<img src="../img/partners/logo-erste-bank_full.jpg" alt="Erste bank logo">
+								<span class="review__slide__manager_name">Jörg Arndt</span>
+								<span class="review__slide__manager_post">Geschäftsführer</span>
+				  	</div>
+				</div>
+
+				<div class="about-company-review__slide">
+						<p class="review">“Am meisten schätze ich tolingos Online-Auftritt, der es mir erlaubt, in wenigen Augenblicken ein Angebot und eine Deadline zu erhalten.“</p>
+						<div class="review-info">
+								<img src="../img/partners/logo-fischer_full.svg" alt="Fischer logo">
+								<span class="review__slide__manager_name">Andrea Richter</span>
+								<span class="review__slide__manager_post">Sekretariat</span>
+				  	</div>
+				</div>
+
+				<div class="about-company-review__slide">
+						<p class="review">“Vielen Dank für die pünktliche Lieferung. Ich bin mit der Qualität der Arbeit sehr zufrieden und werde Sie bei zukünftigen derartigen Arbeiten gerne wieder beauftragen.“</p>
+						<div class="review-info">
+								<img src="../img/partners/logo-intersport_full.png" alt="Intersport logo">
+								<span class="review__slide__manager_name">Bernd Haase</span>
+								<span class="review__slide__manager_post">PM-Operations</span>
+				  	</div>
+				</div>
+
+				<div class="about-company-review__slide">
+						<p class="review">“Haben Sie recht vielen Dank für die zeitgerechte und inhaltlich sehr gute Übersetzung. Sehr gern nehmen wir Ihre Leistung in Zukunft wieder in Anspruch.“</p>
+						<div class="review-info">
+								<img src="../img/partners/logo-jacques-lemans_full.png" alt="Intersport logo">
+								<span class="review__slide__manager_name">Achim Fleischle</span>
+								<span class="review__slide__manager_post">Geschäftsführer</span>
+				  	</div>
+				</div>
+
+			</div>
+	</div>
+
 </main>
 
 	<?php	include 'footer.html';?>
@@ -119,6 +166,22 @@
 
 <script src="js/small-header.js" charset="utf-8"></script>
 
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/particles/slick.js"></script>
+
+
+<script type="text/javascript">
+	jQuery('document').ready(function($){
+		$('.about-company-reviews-slider').slick({
+					autoplay : true,
+					autoplaySpeed : 4000,
+					speed: 1000,
+					dots : false,
+					arrows : true,
+		});
+	});
+
+</script>
 
 
 
