@@ -7,7 +7,7 @@
   top: 200px;
   left: 0;
   display: inline-block;
-  color: #8C4001;
+  color: @main-color;
   padding: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -19,6 +19,8 @@
   margin-top:64px;
   overflow:hidden;
   position: relative;
+  margin-bottom: 60px;
+//  border-bottom:3px solid #009EE0;
 }
 .last-page__content{
   min-height: 600px;
@@ -41,11 +43,14 @@
 .last-page__order-form{
   width: 25%;
   margin-left: 2%;
-  background: #8C4001;
+  background: @main-color;
   text-decoration: none;
   height: 120px;
   color: white;
   cursor: pointer;
+  &:hover{
+    background: @site-color;
+  }
   p{
     text-align: center;
     margin-top: 0;

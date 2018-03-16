@@ -1,0 +1,52 @@
+.castom-title{
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  width: 100%;
+  h1{
+    text-transform:  none;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    background: white;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 60%;
+    color: @main-color;
+  }
+  h2{
+    margin-bottom: 0;
+    text-transform: none;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    background: white;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 60%;
+    color: @main-color;
+  }
+  &::after {
+    width: 100%;
+    content: "";
+    height: 2px;
+    background: black;
+    display: block;
+    position: absolute;
+    bottom: 55%;
+    transform: translateY(2px);
+    z-index: 1;
+    background: @main-color;
+}
+}
+.castom-title--greybg{
+  h1{
+    background: @gray-color;
+  }
+}

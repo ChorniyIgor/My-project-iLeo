@@ -26,7 +26,49 @@
 
 <body>
 
-<?php	include 'header.html';?>
+	<header class="page-header">
+	  <nav class="main-nav main-nav--closed main-nav--no-js ">
+	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+
+	    			<?php	include 'header.html';?>
+	    <div class="borer-container">
+
+	    <div class="nav__wrapper">
+	      <div class="nav__logo ">
+	        <a href="index.php">
+	            <img src="img/logo.jpg" alt="iLeoo">
+	        </a>
+	      </div>
+	      <nav id="slow_nav">
+	      <ul class="main-nav__items" >
+	        <li><a href="index.php">Home</a></li>
+	        <li><a href="price.php">Preise</a></li>
+	        <li  class="list-item__castom">
+	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+	          <ul class="menu5 drop">
+	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
+	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
+	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
+	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
+	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
+	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
+	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
+	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+	        </ul>
+	      </li>
+					<li class="active"><span>Unternehmen</span></li>
+	        <li><a href="quality.php">Qualität</a></li>
+	        <li><a href="team.php">Unser Team</a></li>
+	        <li><a href="contact.php">Contact</a></li>
+	      </ul>
+	      </nav>
+	    </div>
+
+	</div>
+
+	  </nav>
+
+	</header>
 
 <main class="last-page about-company">
  <div class="photo">
@@ -38,9 +80,11 @@
  </div>
 
  <div class="last-page__content last-page__content--noflex">
+	 <div class=" castom-title">
+		 <h2>Über iLeoo</h2>
+	</div>
    <div class="about-company-content">
      <div class="descr-company">
-       <h2>Über iLeoo</h2>
        <p>Im Jahr 2007 gegründet, zählt iLeoo heute zu Deutschlands führenden Online-Übersetzungsagenturen. Aktuell liefern wir allein für unsere deutschen Kunden täglich ca. 250 Übersetzungen aus. Dabei finden unsere Dienstleistungen nicht nur bei Businesskunden, sondern auch bei Endverbrauchern großen Anklang. Ihr Erfolg ist unser Anspruch. Die Qualität unserer Übersetzungen hat für uns daher höchste Priorität. </p>
        <p>Mit 230 Fachübersetzern haben wir als Übersetzungsunternehmen eine Größe erreicht, die uns erlaubt sehr viele verschiedene Fachgebiete abzudecken. Für fast jeden Bereich stehen uns erfahrene Experten zur Verfügung. Alle Übersetzer können auf moderne CAT-Tools wie TRADOS/SDLX, Across, MemoQ zurückgreifen. Diese Hilfsmittel erleichtern den Übersetzungsprozess und steigern unsere Effizienz. Wir können Ihnen deshalb höchste Qualität zu einem Preis bieten, der 20%-30% unter dem Marktniveau liegt.</p>
     </div>
@@ -51,7 +95,9 @@
    </div>
 
    <div class="about-company-founders">
-		 		<h2>Wer dahinter steht?</h2>
+		 	 <div class=" castom-title">
+		 		<h2>Die Gesichter hinter den Kulissen</h2>
+			</div>
       <div class="about-company-founder">
           <div class="company-founder--photo">
             <img src="img/photo/1.jpg" alt="">
@@ -76,7 +122,9 @@
 
 
    <div class="data_site_container">
+		  <div class=" castom-title">
 		 <h2>Welche Vorteile haben Sie als Kunde?</h2>
+	 </div>
    <ul class="price-list__adv price-list__adv--full">
      <li><i class="fab fa-whmcs"></i>Unsere Fachübersetzer nutzen modernste CAT-Tools wie memoQ, SDL-Trados, was uns ermöglicht, effizienter, hochwertiger und schneller zu arbeiten und als Folge Übersetzungskosten um 30% im Vergleich zum Marktniveau zu reduzieren. </li>
      <li><i class="fas fa-tachometer-alt"></i>Wir legen einen großen Wert auf die Zeit unserer Kunden und kümmern uns um das schnellste Preisangebot für Sie! Durch unseren Preiskalkulator erhalten Sie Ihr ENDPREISangebot! Sie können dieses Angebot per Klick herunterladen, um die Einzelheiten Ihren Auftrag zu bekommen. </li>
@@ -91,9 +139,11 @@
 
  </div>
  <div class="data_site_container">
+	 <div class=" castom-title">
  <h2>Unser Unternehmen in Zahlen</h2>
 </div>
- <div class="our_achievement r">
+</div>
+ <div class="our_achievement">
     <div class="data_site_container">
      <table>
        <tr>
@@ -113,7 +163,9 @@
  </div>
 
 	<div class="about-company-review data_site_container">
-		<h2>Was unsere Kunden sagen</h2>
+			 <div class=" castom-title">
+					<h2>Was unsere Kunden sagen</h2>
+			</div>
 			<div class="about-company-reviews-slider">
 				<div class="about-company-review__slide">
 						<p class="review">“Der Service von iLeoo ist sehr zuverlässig und schnell bei einer konstant sehr guten Qualität. Besonders hervorzuheben ist das reibungslose Projektmanagement und die unterstützende Kommunikation“</p>

@@ -26,7 +26,49 @@
 
 <body>
 
-	<?php	include 'header.html';?>
+	<header class="page-header">
+	  <nav class="main-nav main-nav--closed main-nav--no-js ">
+	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+
+	    			<?php	include 'header.html';?>
+	    <div class="borer-container">
+
+	    <div class="nav__wrapper">
+	      <div class="nav__logo ">
+	        <a href="index.php">
+	            <img src="img/logo.jpg" alt="iLeoo">
+	        </a>
+	      </div>
+	      <nav id="slow_nav">
+	      <ul class="main-nav__items" >
+					<li><a href="index.php">Home</a></li>
+	        <li class="active"><span>Preise</span></li>
+	        <li  class="list-item__castom">
+	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+	          <ul class="menu5 drop">
+	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
+	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
+	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
+	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
+	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
+	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
+	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
+	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+	        </ul>
+	      </li>
+	        <li><a href="about-company.php">Unternehmen</a></li>
+	        <li><a href="quality.php">Qualität</a></li>
+	        <li><a href="team.php">Unser Team</a></li>
+	        <li><a href="contact.php">Contact</a></li>
+	      </ul>
+	      </nav>
+	    </div>
+
+	</div>
+
+	  </nav>
+
+	</header>
 
 <main class="last-page price-page">
  <div class="photo" >
@@ -34,10 +76,13 @@
 	 <h1 class="last-page__title">Unsere Preisgestaltung</h1>
 </div>
  </div>
- <p class="last-page__promo"><span class="last-page__promo__header">Flexible Wortpreise</span>
-Sprache ist nicht gleich Sprache. Daher variieren auch die Preise für eine Übersetzung. Die Wortpreise bei <br>iLeo liegen je nach Sprachkombination
-zwischen 10 und 14 Cent.
-</p>
+ <div class="castom-title  data_site_container">
+	 <h2>Flexible Wortpreise</h2>
+ </div>
+ <p class="data_site_container">Sprache ist nicht gleich Sprache. Daher variieren auch die Preise für eine Übersetzung. Die Wortpreise bei <br>iLeoo liegen je nach Sprachkombination
+ zwischen 10 und 14 Cent.
+ </p>
+
  <div class="last-page__content">
 		<ul class="price-list">
 			<li class="list-item">

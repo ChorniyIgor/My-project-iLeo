@@ -28,7 +28,50 @@
 
 <body>
 
-	<?php	include 'header.html';?>
+	<header class="page-header">
+	  <nav class="main-nav main-nav--closed main-nav--no-js ">
+	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+
+	    			<?php	include 'header.html';?>
+	    <div class="borer-container">
+
+	    <div class="nav__wrapper">
+	      <div class="nav__logo ">
+	        <a href="index.php">
+	            <img src="img/logo.jpg" alt="iLeoo">
+	        </a>
+	      </div>
+	      <nav id="slow_nav">
+	      <ul class="main-nav__items" >
+	        <li class="active"><span>Home</span></li>
+	        <li><a href="price.php">Preise</a></li>
+	        <li  class="list-item__castom">
+	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+	          <ul class="menu5 drop">
+	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
+	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
+	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
+	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
+	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
+	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
+	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
+	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+	        </ul>
+	      </li>
+	        <li><a href="about-company.php">Unternehmen</a></li>
+	        <li><a href="quality.php">Qualität</a></li>
+	        <li><a href="team.php">Unser Team</a></li>
+	        <li><a href="contact.php">Contact</a></li>
+	      </ul>
+	      </nav>
+	    </div>
+
+	</div>
+
+	  </nav>
+
+	</header>
+
 
 <main>
 
@@ -132,6 +175,7 @@
 <div class="orderForm" id="Formorder">
 	<div id="particles-js"></div>
 	<div class="data_site_container">
+		<h2 class="orderForm_main-title">Erhalten Sie Ihr Preisangebot</h2>
 	<form action="#" method="post" id="sendform" enctype="multipart/form-data" >
 
 			<div class="iLeo-orderForm"  id="box">
@@ -345,6 +389,9 @@
 
 <section class="algorithm_of_work">
 	<div class="algorithm_of_work__container">
+		<div class="castom-title">
+			<h2>Einfacher Prozessablauf</h2>
+		</div>
 		<ul class="algorithm_of_work__list">
 			<li>Anfrage abschicken</li>
 			<li>Höchstens 5 minuten warten</li>
@@ -358,9 +405,9 @@
 <section class="adventages">
 		<ul class="advantages__list  data_site_container">
 				<div class="advantage__list-container">
-
+				<div class="castom-title castom-title--greybg">
  					<h1 class="advantages__title">Ihr bester Übersetzerpartner auf dem Übersetzungsmarkt sind</h1>
-
+				</div>
 					<li class="advantages__item">
 								<div class="advantages__container">
 										<div class="advantages__card">
@@ -539,17 +586,19 @@
 		</ul>
 	</section>
 
-	<section class="specialty data_site_container">
-		<h1 class="specialty__title">Wir sind spezialisten in</h1>
+	<section class="specialty data_site_container ">
+		<div class=" castom-title">
+			<h1 class="specialty__title">Wir sind spezialisten in</h1>
+		</div>
 		<ul class="specialty__list">
-				<li class="specialty__item"><i class="fas fa-laptop"></i>Software&IT</li>
-				<li class="specialty__item"><i class="fas fa-cogs"></i>Technik</li>
-				<li class="specialty__item"><i class="fas fa-suitcase"></i>Recht</li>
-				<li class="specialty__item"><i class="fas fa-stethoscope"></i>Medizinisch</li>
-				<li class="specialty__item"><i class="fas fa-bullhorn"></i>Marketing</li>
-				<li class="specialty__item"><i class="fas fa-euro-sign"></i>Wirtschaft</li>
-				<li class="specialty__item"><i class="fas fa-users"></i>Behörden</li>
-				<li class="specialty__item"><i class="far fa-building"></i>Bautechnik</li>
+				<li class="specialty__item"><a href="fachbereiche.php#software-go"><p><i class="fas fa-laptop"></i><span>Software&IT</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#technik-go"><p><i class="fas fa-cogs"></i><span>Technik</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#recht-go"><p><i class="fas fa-suitcase"></i><span>Recht</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#medizinisch-go"><p><i class="fas fa-stethoscope"></i><span>Medizinisch</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#marketing-go"><p><i class="fas fa-bullhorn"></i><span>Marketing</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#wirtschaft-go"><p><i class="fas fa-euro-sign"></i><span>Wirtschaft</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#behorden-go"><p><i class="fas fa-users"></i><span>Behörden</span></p></a></li>
+				<li class="specialty__item"><a href="fachbereiche.php#bautechnik-go"><p><i class="far fa-building"></i><span>Bautechnik</span></p></a></li>
 		</ul>
 	</section>
 

@@ -30,7 +30,9 @@
 	  <nav class="main-nav main-nav--closed main-nav--no-js ">
 	    <button class="main-nav__toggle" type="button" >Открить меню</button>
 
-	   			<?php	include 'header.html';?>
+	    <div class="header-contact">
+	      <p class="data_site_container">info@ileoo.de</p>
+	    </div>
 	    <div class="borer-container">
 
 	    <div class="nav__wrapper">

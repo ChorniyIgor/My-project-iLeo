@@ -1,37 +1,114 @@
 .specialty{
   background: white;
   padding-bottom: 50px;
-  color:#D67C54;
+  color:@site-color;
 }
 .specialty__list{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
 .specialty__title{
   margin-top: 0;
   margin-bottom: 0px;
-  padding-top: 80px;
+  padding-top: 30px;
   text-align: center;
+  padding-bottom: 30px;
+
+}
+.specialty__item:hover{
+  p{
+      background: rgba(42,119,187,0.6);
+      transition: all 0.5s;
+  }
+  i{
+    color:white;
+    transition: all 0.5s;
+  }
+  span{
+    background: white;
+    transition: all 0.5s;
+  }
 }
 .specialty__item{
-  flex-basis: 10%;
+  flex-basis: 24%;
+  margin-bottom: 1.2vw;
   display: block;
+  height: 250px;
   position: relative;
-  margin-top: 140px;
   vertical-align: bottom;
   font-size: 24px;
+  line-height: 250px;
   text-align: center;
+  cursor: pointer;
   color: #403D3B;
+  a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  p{
+    background: rgba(42,119,187,0.25);
+    margin: 0;
+    display: block;
+    height: 100%;
+  }
+  span{
+    color:rgba(0,0,0,0.8);
+    position: relative;
+    top: 155px;
+    padding: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.9);
+
+    }
   i{
     font-size: 70px;
     line-height: 70px;
     position: absolute;
-    top: -90px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
-      color:#D67C54;
+      color:rgba(255,255,255,0.9);
   }
+  &:nth-child(1){
+    background: url('../img/industry/it-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(2){
+    background: url('../img/industry/tech-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(3){
+    background: url('../img/industry/recht-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(4){
+    background: url('../img/industry/med-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(5){
+    background: url('../img/industry/market-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(6){
+    background: url('../img/industry/eco-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(7){
+    background: url('../img/industry/service-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+  &:nth-child(8){
+    background: url('../img/industry/build-small.jpg') center no-repeat;
+    background-size: cover;
+  }
+
 
 }
