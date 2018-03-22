@@ -8,8 +8,8 @@
 
 	<meta charset="utf-8">
 
-	<title>SEDONA - Главная</title>
-	<meta name="description" content="">
+	<title>Fachbereiche | iLeoo</title>
+	<meta name="description" content="Wir sind Spezialisten in Marketing, Technik, Bauanlagen, Medizin, Wirtschaft, Recht, Software und IT.">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -27,53 +27,64 @@
 <body>
 
 	<header class="page-header">
-	  <nav class="main-nav main-nav--closed main-nav--no-js ">
-	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+		<nav class="main-nav main-nav--closed main-nav--no-js ">
+			<button class="main-nav__toggle" type="button" >Открить меню</button>
 
-	  			<?php	include 'header.html';?>
-	    <div class="borer-container">
+						<?php	include 'header.html';?>
+			<div class="borer-container">
 
-	    <div class="nav__wrapper">
-	      <div class="nav__logo ">
-	        <a href="index.php">
-	            <img src="img/logo.jpg" alt="iLeoo">
-	        </a>
-	      </div>
-	      <nav id="slow_nav">
-	      <ul class="main-nav__items" >
+			<div class="nav__wrapper">
+				<div class="nav__logo ">
+					<a href="index.php">
+							<img src="img/logo.jpg" alt="iLeoo logo">
+					</a>
+				</div>
+				<button type="button" name="button" class=" mobile_button"><i class="fas fa-bars"></i>Menu</button>
+				<div class="close_overlay_backg close-block"></div>
+				<nav id="slow_nav" class="nav_close">
+				<ul class="main-nav__items" >
+					<button type="button" name="button" class="close_menu_btn"><i class="fas fa-angle-left"></i>Zurück</button>
 					<li><a href="index.php">Home</a></li>
-	        <li><a href="price.php">Preise</a></li>
+					<li><a href="price.php">Preise</a></li>
 					<li class="active"><span>Fachbereiche</span></li>
-	        <li><a href="about-company.php">Unternehmen</a></li>
-	        <li><a href="quality.php">Qualität</a></li>
-	        <li><a href="team.php">Unser Team</a></li>
-	        <li><a href="contact.php">Contact</a></li>
-	      </ul>
-	      </nav>
-	    </div>
+					<li><a href="about-company.php">Unternehmen</a></li>
+					<li><a href="quality.php">Qualität</a></li>
+					<li><a href="team.php">Team</a></li>
+					<li><a href="contact.php">Kontakt</a></li>
+				</ul>
+				</nav>
+	<a href="index.php#Formorder" class="angebot_href">Angebot anfordern</a>
+			</div>
 
 	</div>
 
-	  </nav>
+		</nav>
 
 	</header>
 
 <main class="last-page fachbereiche">
- <div class="photo">
-	 <div class="last-page__header-container">
-		 <h1 class="last-page__title">Fachbereiche</h1>
-	 </div>
- </div>
+	<div class="photo" >
+ 	 <div class="data_site_container">
+ 			<h1 class="last-page__title">Fachbereiche</h1>
+ 	 </div>
+ 	 <picture>
+ 			<source srcset="img/headers/fachbereiche_header--mobile.jpg" media="(max-width: 767px)">
+ 		 	<img src="img/headers/fachbereiche_header.jpg" alt="Fachbereiche Seite">
+ 	 </picture>
+  </div>
  <div class=" castom-title data_site_container">
 	 <h1 class="specialty__title">Wir sind spezialisten in</h1>
  </div>
- <div class="last-page__content">
-		 <div class="industry">
+ <div class="last-page__content data_site_container">
+		 <div class="industry castom-box">
 		 		<ul class="industry_items">
 		 			<li class="industry_item ">
 						<span id="software-go" class="industry_item--pos"></span>
 		 				<div class="industry_item_img">
-								<img src="img/industry/it.jpg" alt="Software & IT">
+							<picture>
+								 <source srcset="img/industry/it--mobile.jpg" media="(max-width: 1100px)">
+									 <img src="img/industry/it.jpg" alt="Software & IT">
+							</picture>
 		 				</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Software & IT</h3>
@@ -86,7 +97,10 @@
 					<li class="industry_item">
 		 				<div class="industry_item_img">
 							<span id="technik-go" class="industry_item--pos"></span>
-							<img src="img/industry/tech.jpg" alt="Technik">
+							<picture>
+								 <source srcset="img/industry/tech--mobile.jpg" media="(max-width: 1100px)">
+									 <img src="img/industry/tech.jpg" alt="Technik">
+							</picture>
 		 				</div>
 						<div class="industry_item_content ">
 								<h3 class="industry_item_content_title">Technik</h3>
@@ -100,7 +114,11 @@
 					<li class="industry_item ">
 		 				<div class="industry_item_img">
 							<span id="recht-go" class="industry_item--pos"></span>
-								<img src="img/industry/recht.jpg" alt="Recht">
+
+								<picture>
+									 <source srcset="img/industry/recht--mobile.jpg" media="(max-width: 1100px)">
+										 <img src="img/industry/recht.jpg" alt="Recht">
+								</picture>
 		 				</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Recht</h3>
@@ -114,10 +132,14 @@
 					<li class="industry_item ">
 						<div class="industry_item_img">
 							<span id="medizinisch-go" class="industry_item--pos"></span>
-								<img src="img/industry/med.jpg" alt="Medizinisch">
+
+								<picture>
+									 <source srcset="img/industry/med--mobile.jpg" media="(max-width: 1100px)">
+										 <img src="img/industry/med.jpg" alt="Medizinisch">
+								</picture>
 						</div>
 						<div class="industry_item_content">
-									<h3 class="industry_item_content_title">Medizinisch</h3>
+									<h3 class="industry_item_content_title">Medizin</h3>
 									<p>Der Bereich der medizinischen Übersetzungen gehört zu den anspruchsvollsten und zugleich sensibelsten Themengebieten. iLeoo bietet seinen Kunden hochwertige medizinische Übersetzungen zum fairen Preis. Diese Übersetzungen werden ausschließlich von muttersprachlichen Fachübersetzern angefertigt. Wir wissen, dass fehlerhafte medizinische Übersetzungen verheerende Folgen haben können. Daher sind unsere medizinischen Übersetzer Spezialisten in ihrem Fach. Zusätzlich arbeiten wir eng mit Ärzten und Pharmazeuten zusammen, die Ihre Übersetzung einer fachlichen Überprüfung unterziehen. Dadurch können wir Ihnen die Sicherheit und hohe Qualität bieten, die unsere Agentur auszeichnet.
 									</p>
 									<p>Zahlreiche führende Hersteller medizinischer Geräte und Produkte, namhafte Unternehmen der Pharmaindustrie sowie Privatkunden vertrauen seit über 15 Jahren auf medizinische und pharmazeutische Fachübersetzungen der iLeoo.
@@ -128,7 +150,11 @@
 					<li class="industry_item ">
 						<div class="industry_item_img">
 							<span id="marketing-go" class="industry_item--pos"></span>
+
+								<picture>
+									 <source srcset="img/industry/market--mobile.jpg" media="(max-width: 1100px)">
 								<img src="img/industry/market.jpg" alt="Marketing">
+								</picture>
 						</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Marketing</h3>
@@ -142,7 +168,11 @@
 					<li class="industry_item ">
 						<div class="industry_item_img">
 							<span id="wirtschaft-go" class="industry_item--pos"></span>
-								<img src="img/industry/eco.jpg" alt="Wirtschaft">
+
+								<picture>
+									 <source srcset="img/industry/eco--mobile.jpg" media="(max-width: 1100px)">
+										<img src="img/industry/eco.jpg" alt="Wirtschaft">
+								</picture>
 						</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Wirtschaft</h3>
@@ -155,7 +185,11 @@
 					<li class="industry_item ">
 						<div class="industry_item_img">
 							<span id="behorden-go" class="industry_item--pos"></span>
-								<img src="img/industry/service.jpg" alt="Behörden">
+
+								<picture>
+									 <source srcset="img/industry/service--mobile.jpg" media="(max-width: 1100px)">
+							    	<img src="img/industry/service.jpg" alt="Behörden">
+								</picture>
 						</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Behörden</h3>
@@ -166,7 +200,11 @@
 					<li class="industry_item ">
 						<div class="industry_item_img">
 							<span id="bautechnik-go" class="industry_item--pos"></span>
+
+								<picture>
+									 <source srcset="img/industry/build--mobile.jpg" media="(max-width: 1100px)">
 								<img src="img/industry/build.jpg" alt="Bautechnik">
+								</picture>
 						</div>
 						<div class="industry_item_content">
 									<h3 class="industry_item_content_title">Bautechnik</h3>
@@ -189,21 +227,8 @@
 
 <!-- Зменшеннявисоти хедера-->
 
-<script src="js/small-header.js" charset="utf-8"></script>
+<script src="js/small-header.js" charset="utf-8" type="text/javascript"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-<script src="js/form.js" defer></script>
 
 
 

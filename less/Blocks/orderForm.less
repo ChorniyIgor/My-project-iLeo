@@ -4,37 +4,38 @@
   padding-bottom: 0px;
   z-index: 20000;
   position: relative;
-  top: -32px;
+  top: 0px;
   width: 100%;
   background: #F9F9F9;
-  height: 600px;
+  height: 640px;
   .orderForm_header{
     text-align: center;
-    margin-top: 0;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: bold;
-    color:#EAA460;
-     position: relative;
-     z-index: 20;
-     margin-bottom: 10px;
+    padding:10px 18px;
+    margin-bottom: 0;
+    margin-top: 40px;
+    color:@main-color;
+    background: white;
+    position: relative;
+    z-index: 20001;
+    background: white;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 32px;
   }
 }
-.orderForm_main-title{
+.data_site_container--text-center{
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  color:@main-color;
-
+}
+.data_site_container--text-center * {
+  text-align: initial;
 }
 #particles-js{
   position: absolute;
-  top: 0;
+  top:85px;
   left: 0;
   width: 100%;
   z-index: 1;
-  height: 600px;
+  height: 555px;
 }
 .iLeo-orderForm{
   position: relative;
@@ -209,16 +210,10 @@ textarea[name="text_input"]{
     .blok-shadow::after{
       content: "";
       display: block;
-  /*    width: 11px;
-      height: 700px;
-      background: url('../img/shadow.png') no-repeat;
-      background-size: contain;*/
       width: 2px;
       height: 400px;
       background: rgba(0,0,0,0.3);
       position: absolute;
-      /*  right: -20px;
-      top:-75px;*/
       top: -70px;
       right: -18px;
     }
@@ -330,6 +325,7 @@ textarea[name="text_input"]{
           background: white;
           border-radius: 10px;
           padding:  10px;
+          padding-bottom: 0;
           margin-top: 10px;
           color: white;
     }
@@ -339,10 +335,20 @@ textarea[name="text_input"]{
       text-shadow: none;
       text-align: center;
       margin: 0;
-        color: rgb(64, 61, 59);
-            font-weight: 400;
+      position: absolute;
+      bottom: 0px;
+      padding-bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(64, 61, 59);
+      font-weight: 400;
+      width: 100%;
+      background: white;
+      z-index: 2;
+
     }
-    #price{
+    #price,
+    #priceDiscountOut{
       font-weight: bold;
       outline: none;
       border: none;
@@ -363,7 +369,9 @@ textarea[name="text_input"]{
       text-shadow: none;
       font-weight: 400;
     }
-
+.price-discount__checkbox{
+  display: none;
+}
     .price-discount{
       position: relative;
       top: 10px;
@@ -378,7 +386,10 @@ textarea[name="text_input"]{
       padding-right: 10px;
       height: 50px;
       box-sizing:border-box;
-
+      cursor: pointer;
+      -webkit-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+      -moz-box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
       i{
         font-size: 14px;
         position: absolute;
@@ -399,6 +410,17 @@ textarea[name="text_input"]{
 
       }
     }
+    input[name="discount"]:checked~.price-discount{
+      margin-top: 2px;
+      left: 2px;
+  //    -webkit-box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.8);
+    //    -moz-box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+        background: #F1A65E;
+    }
+
+
+
     .price-discount-hide{
       background: #F0B882;
     }
@@ -494,11 +516,10 @@ textarea[name="text_input"]{
       }
     }
     .send_btn{
-      position: absolute;
+    //  position: absolute;
       bottom: 50px;
       z-index: 25;
       left: 50%;
-      transform: translateX(-50%);
       border: none;
       outline: none;
       animation: blinking 7s infinite;
@@ -508,12 +529,16 @@ textarea[name="text_input"]{
       width: 552px;
       background: #EBA613;
       font-weight: bold;
-      color: white;
+      color: white!important;
       cursor: pointer;
       font-size: 26px;
       line-height: 26px;
       font-weight: 400;
+      border: none!important;
 
+    }
+    .ds{
+      width: 100%;
     }
 
 
@@ -543,15 +568,15 @@ textarea[name="text_input"]{
 
 
 .user_order_data{
-  width: 550px;
+  width: 38%;
   padding: 30px 80px;
   padding-bottom: 50px;
   position: fixed;
   z-index: 50000;
   background:  #FFFFFF;
-  top:140px;
-  left: 43%;
-  margin-left: -280px;
+  top:120px;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   display: none;
 }
@@ -571,6 +596,12 @@ textarea[name="text_input"]{
 .user_order_data__header{
   color:#403D3B;
   margin-bottom: 25px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  br{
+    display: none;
+  }
 }
 
 .user_order_data_container{
@@ -582,7 +613,7 @@ textarea[name="text_input"]{
   input {
     border:1px solid #6F6153;
     width: 100%;
-    color:#403D3B;
+      color:#403D3B;
     padding-left: 32px;
   }
   label{
@@ -643,4 +674,223 @@ textarea[name="text_input"]{
 }
 .user_order_data-close::before{
   transform: rotate(-45deg);
+}
+@media @tablet-widths {
+  .user_order_data{
+    width: 58%;
+    top: 100px;
+    .user_order_data-close{
+      right: 15px;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+      &::before
+      ,&::after{
+        width: 35px;
+        height: 5px;
+        top: 15px;
+      }
+    }
+    .user_order_data__header{
+      font-size: 18px;
+      line-height: 24px;
+      br:first-child{
+        display: none;
+      }
+      br:last-child{
+        display: block;
+      }
+    }
+    .user_order_data_container{
+      textarea{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .orderForm_header{
+    font-size: 24px!important;
+  }
+  .iLeo-orderForm{
+      padding: 10px 70px;
+  }
+  .form-content-data{
+    flex-direction: column;
+  }
+.blok-shadow{
+  position: relative;
+}
+      .blok-shadow::after{
+          display: none!important;
+
+      }
+      .form-intro{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+  .first_container{
+    margin-bottom: 100px;
+    &::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      bottom: -40px;
+      background: rgba(0,0,0,0.3);
+
+    }
+    .security{
+      position: absolute;
+      bottom: -40px;
+      left: 10px;
+    }
+  }
+  .second_container{
+    margin-bottom: 80px;
+    &::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      bottom: -20px;
+      background: rgba(0,0,0,0.3);
+
+    }
+    .fa-exclamation{
+      top: 10px;
+        }
+    .form-intro--castom2{
+      left: 0;
+    }
+  }
+  .price-wrapper{
+    .price-info{
+
+    }
+    .order_time{
+      margin-bottom: 80px;
+      text-align: center;
+      vertical-align: baseline;
+      i{
+        position: relative;
+        padding-right: 5px;
+      }
+    }
+    .form-intro--castom{
+      width: 100%;
+      left: 0;
+      .intro-text{
+        display: block;
+        width: 100%;
+      }
+    }
+
+  }
+  .orderForm{
+    height: 1232px;
+  }
+  #particles-js{
+
+    height: 1150px;
+  }
+  .hide_this_block{
+    width: 100%;
+    left: 0;
+    top: -60px;
+    height: 680px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+
+}
+@media @mobile-widths-only {
+  .user_order_data{
+    position: absolute;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+    margin-left: 0;
+    .user_order_data-close{
+      right: 2px;
+      top: 2px;
+    }
+    .user_order_data__header{
+      font-size: 16px;
+      line-height:22px;
+      br:first-child{
+        display: block;
+      }
+      br:last-child{
+        display: none;
+      }
+    }
+    .user_order_data_container{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      label{
+        width: 100%;
+      }
+    }
+  }
+  .iLeo-orderForm{
+      padding: 10px 10px;
+  }
+  .orderForm_header{
+    font-size: 18px!important;
+  }
+  .methods_of_calculation label{
+      font-size: 15px;
+      padding-left: 28px;
+      i{
+        font-size: 20px;
+        left: 2px;
+      }
+  }
+
+}
+@media (max-width: 508px) {
+  .iLeo-orderForm{
+      padding: 10px 2px;
+  }
+  .methods_of_calculation label{
+      font-size: 15px;
+      padding-left: 3px;
+      i{
+        display: none;
+      }
+  }
+}
+.price_container{
+  max-height: 70px;
+  overflow: hidden;
+}
+.price_container-hide{
+  .real_price{
+    top: -55px;
+    position: relative;
+    transition: top 0.5s;
+  }
+  .dis_price{
+      position: relative;
+      top: -45px;
+     transition: top 0.5s;
+  }
+}
+.real_price{
+  top: 0px;
+  position: relative;
+  transition: top 0.5s;
+}
+.dis_price{
+  position: relative;
+  top: 30px;
+    transition: top 0.5s;
 }

@@ -1,12 +1,25 @@
 .partners{
+background: white;
+height: 85px;
 }
 .partners_list{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   max-width: 1150px;
-  height: 85px;
+  height: 100%;
   margin: auto;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+
+}
+@media @tablet-widths {
+  .partners{
+      height: 65px;
+  }
+}
+@media @mobile-widths-only {
+  .partners{
+      height: 55px;
+  }
 }

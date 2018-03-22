@@ -1,7 +1,20 @@
 .team{
+  .photo{
+    margin-top: 82px;
+  }
+  .data_site_container{
+    position: relative;
+  }
   .team-slider-title{
     position: absolute;
-    top: 50px;
+    left: 20px;
+    top: 250px;
+    display: inline-block;
+    color: @main-color;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(255,255,255,0.8);
     z-index: 50;
   }
   .photo-slider{
@@ -38,7 +51,7 @@
               flex-basis: 23%;
               position: relative;
               background: white;
-              margin-bottom: 2.9vw;
+              margin-top: 2vw;
             //  border:1px solid @main-color;
             }
             @border-color-team: #555555;
@@ -157,5 +170,60 @@
                 line-height: 16px;
             }
 
+  }
+  .translators-team__slider{
+    padding-top: 30px;
+  }
+}
+@media @tablet-widths {
+.team .team-slider-title{
+  top: 100px;
+  left: 30px;
+  font-size: 28px;
+  line-height: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.team-list__text{
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.team .team-list{
+  justify-content:flex-start;
+  .card-wrapper{
+    flex-basis: 32%;
+    margin-right: 2%;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+}
+}
+@media @mobile-widths-only {
+  .team .team-slider-title{
+    top: 90px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 5px;
+  }
+  .team-list__text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .team .team-list{
+    justify-content:flex-start;
+    .card-wrapper{
+      flex-basis: 49%;
+      margin-right: 2%;
+      &:nth-child(3n){
+        margin-right: 2%;
+      }
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+    }
   }
 }

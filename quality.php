@@ -8,8 +8,8 @@
 
 	<meta charset="utf-8">
 
-	<title>SEDONA - Главная</title>
-	<meta name="description" content="">
+	<title>Qualität | iLeoo</title>
+	<meta name="description" content="Unsere Qualität basiert auf vier Grundprinzipien wie Muttersprachenprinzip, Einhaltung der weltweiten Standards, gutes Branchenwissen, Nutzen der zeitgemäßen CAT-Tools. Wir haben ganz einfacher Prozessablauf.">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -27,61 +27,71 @@
 <body>
 
 	<header class="page-header">
-	  <nav class="main-nav main-nav--closed main-nav--no-js ">
-	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+		<nav class="main-nav main-nav--closed main-nav--no-js ">
+			<button class="main-nav__toggle" type="button" >Открить меню</button>
 
-				<?php	include 'header.html';?>
-	    <div class="borer-container">
+						<?php	include 'header.html';?>
+			<div class="borer-container">
 
-	    <div class="nav__wrapper">
-	      <div class="nav__logo ">
-	        <a href="index.php">
-	            <img src="img/logo.jpg" alt="iLeoo">
-	        </a>
-	      </div>
-	      <nav id="slow_nav">
-	      <ul class="main-nav__items" >
-	        <li><a href="index.php">Home</a></li>
-	        <li><a href="price.php">Preise</a></li>
-	        <li  class="list-item__castom">
-	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
-	          <ul class="menu5 drop">
-	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
-	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
-	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
-	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
-	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
-	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
-	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
-	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
-	        </ul>
-	      </li>
-	        <li><a href="about-company.php">Unternehmen</a></li>
-					<li class="active"><span>Qualität</span></li>
-	        <li><a href="team.php">Unser Team</a></li>
-	        <li><a href="contact.php">Contact</a></li>
-	      </ul>
-	      </nav>
-	    </div>
+			<div class="nav__wrapper">
+				<div class="nav__logo ">
+					<a href="index.php">
+							<img src="img/logo.jpg" alt="iLeoo logo">
+					</a>
+				</div>
+				<button type="button" name="button" class=" mobile_button"><i class="fas fa-bars"></i>Menu</button>
+				<div class="close_overlay_backg close-block"></div>
+				<nav id="slow_nav" class="nav_close">
+				<ul class="main-nav__items" >
+					<button type="button" name="button" class="close_menu_btn"><i class="fas fa-angle-left"></i>Zurück</button>
+					<li><a href="index.php">Home</a></li>
+				 <li><a href="price.php">Preise</a></li>
+				 <li  class="list-item__castom">
+					 <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+					 <ul class="menu5 drop">
+					 <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
+					 <li><a href="fachbereiche.php#technik-go">Technik</a></li>
+					 <li><a href="fachbereiche.php#recht-go">Recht</a></li>
+					 <li><a href="fachbereiche.php#medizinisch-go">Medizin</a></li>
+					 <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
+					 <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
+					 <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
+					 <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+				 </ul>
+			 </li>
+				 <li><a href="about-company.php">Unternehmen</a></li>
+				 <li class="active"><span>Qualität</span></li>
+				 <li><a href="team.php">Team</a></li>
+				 <li><a href="contact.php">Kontakt</a></li>
+				</ul>
+				</nav>
+				<a href="index.php#Formorder" class="angebot_href">Angebot anfordern</a>
+			</div>
 
 	</div>
 
-	  </nav>
+		</nav>
 
 	</header>
 
 <main class="last-page quality">
-	<div class="photo">
-		<div class="last-page__header-container">
+	<div class="photo" >
+		<div class="data_site_container">
+				<h1 class="last-page__title">Qualität</h1>
 		</div>
+		<picture>
+			 <source srcset="img/headers/quality_header--mobile.jpg" media="(max-width: 767px)">
+			 <img src="img/headers/quality_header.jpg" alt="Qualität Seite">
+		</picture>
 	</div>
 
-  	 <div class="last-page__content last-page__content--noflex">
-			 	<p>Die Zufriedenheit unserer Kunden ist unser oberstes Ziel. Daher legen wir großen Wert auf Qualitätssicherung durch gut organisierte Arbeitsprozesse, geeignete CAT-Unterstützung sowie die sorgfältige Auswahl unserer Fachübersetzer.</p>
+  	 <div class="last-page__content last-page__content--noflex data_site_container castom-box">
+			 	<p class="quality-text castom-box--top">Die Zufriedenheit unserer Kunden ist unser oberstes Ziel. Daher legen wir großen Wert auf Qualitätssicherung durch gut organisierte Arbeitsprozesse, geeignete CAT-Unterstützung sowie die sorgfältige Auswahl unserer Fachübersetzer.</p>
 			 	<ul class="quality-list">
 			 		<li class="quality-list__item">
 			 			<div class="item__icon">
-			 				<i class="far fa-clock"></i>
+			 				<i class="item_iso">ISO 17100</i>
+							<i class="item_iso">DIN EN15038</i>
 			 			</div>
 						<div class="item__content">
 							<h2 class="item__title">Weltweite Standards </h2>
@@ -91,7 +101,7 @@
 
 					<li class="quality-list__item">
 			 			<div class="item__icon">
-			 				<i class="far fa-clock"></i>
+			 				<i class="fas fa-globe"></i>
 			 			</div>
 						<div class="item__content">
 							<h2 class="item__title">Muttersprachenprinzip</h2>
@@ -101,7 +111,7 @@
 
 					<li class="quality-list__item">
 			 			<div class="item__icon">
-			 				<i class="far fa-clock"></i>
+			 				<i class="fas fa-user-md"></i>
 			 			</div>
 						<div class="item__content">
 							<h2 class="item__title">Branchenwissen</h2>
@@ -111,7 +121,7 @@
 
 					<li class="quality-list__item">
 			 			<div class="item__icon">
-			 				<i class="far fa-clock"></i>
+			 				<i class="fab fa-whmcs"></i>
 			 			</div>
 						<div class="item__content">
 							<h2 class="item__title">TECHNIKEINSATZ</h2>
@@ -121,9 +131,12 @@
 			 	</ul>
 	 	</div>
 
-		<section class="algorithm_of_work">
+		<section class="algorithm_of_work castom-block--greybg castom-box">
 			<div class="algorithm_of_work__container">
-							<h2>Und so funktioniert’s</h2>
+				<div class=" castom-title castom-title--greybg">
+					<h2>Und so funktioniert’s</h2>
+	 			</div>
+
 				<ul class="algorithm_of_work__list">
 					<li>Anfrage abschicken</li>
 					<li>Höchstens 5 minuten warten</li>
@@ -144,39 +157,6 @@
 
 <!-- Зменшеннявисоти хедера-->
 
-<script src="js/small-header.js" charset="utf-8"></script>
-
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/particles/slick.js"></script>
-
-
-<script type="text/javascript">
-	jQuery('document').ready(function($){
-		$('.about-company-reviews-slider').slick({
-					autoplay : true,
-					autoplaySpeed : 4000,
-					speed: 1000,
-					dots : false,
-					arrows : true,
-		});
-	});
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-<script src="js/form.js" defer></script>
-
-
-
+<script src="js/small-header.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>

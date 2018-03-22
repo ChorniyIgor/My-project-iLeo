@@ -2,8 +2,7 @@
   display: block;
   text-align: center;
   position: relative;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   width: 100%;
   h1{
     text-transform:  none;
@@ -11,12 +10,14 @@
     display: inline-block;
     position: relative;
     z-index: 2;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: white;
     font-size: 30px;
     line-height: 40px;
     max-width: 60%;
     color: @main-color;
+    
   }
   h2{
     margin-bottom: 0;
@@ -25,7 +26,8 @@
     display: inline-block;
     position: relative;
     z-index: 2;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: white;
     font-size: 30px;
     line-height: 40px;
@@ -45,8 +47,91 @@
     background: @main-color;
 }
 }
+
+.castom-block--greybg{
+  background: @gray-color;
+}
 .castom-title--greybg{
   h1{
     background: @gray-color;
+  }
+  h2{
+    background: @gray-color;
+  }
+}
+.castom-box{
+  padding-bottom: 50px;
+}
+.castom-box-top{
+  padding-top: 30px;
+}
+
+
+
+/*==================================================
+ * Effect 6
+ * ===============================================*/
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+@media @tablet-widths {
+  .castom-title{
+     h1{
+       margin-top: 15px;
+       margin-bottom: 15px;
+       font-size: 26px;
+       line-height: 30px;
+     }
+     h2{
+       margin-top: 15px;
+       margin-bottom: 15px;
+       font-size: 26px;
+       line-height: 30px;
+     }
+  }
+}
+@media @mobile-widths-only {
+  .castom-title{
+     h1{
+       margin-top: 5px;
+       margin-bottom: 5px;
+       font-size: 18px;
+       line-height: 24px;
+     }
+     h2{
+       margin-top: 5px;
+       margin-bottom: 5px;
+       font-size: 18px;
+       line-height: 24px;
+     }
   }
 }

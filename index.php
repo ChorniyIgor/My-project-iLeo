@@ -8,8 +8,11 @@
 
 	<meta charset="utf-8">
 
-	<title>SEDONA - Главная</title>
-	<meta name="description" content="">
+	<title>iLeoo | Übersetzen und Dolmetschen in allen Weltsprachen</title>
+		<meta name="keywords" content="Übersetzung, Deutsch, Englisch, Spanisch, Französisch, Italienisch, Russisch, Arabisch, Dänisch, Bosnisch, Bulgarisch, Japanisch, Chinesisch, Lektorat, Sprachendienst, übersetzt
+		Übersetzungsbüro, Übersetzer, Übersetzungen, Übersetzungsdienstleister, Lokalisierung, Internationalisierung, Korrektorat, Übersetzungsagentur, Sprachdienstleister, online Übersetzungsbüro, online Übersetzungsagentur
+		Deskription">
+		<meta name="description" content="iLeoo Translations bietet Ihnen Seit 2007 hochwertige Übersetzungen in viele Sprachen weltweit an. Lassen Sie sich jetzt von unserer Qualität und unseren Preisen überzeugen. Wir sind echte Fachübersetzer und spezialisieren uns auf Marketing, Technik, Bauanlagen, Medizin, Wirtschaft, Recht, Software und IT. Sekundenschneller Kostenvoranschlag und ganz einfacher Prozessablauf. Hier Informieren.">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -36,34 +39,38 @@
 	    <div class="borer-container">
 
 	    <div class="nav__wrapper">
-	      <div class="nav__logo ">
-	        <a href="index.php">
-	            <img src="img/logo.jpg" alt="iLeoo">
+	      <div class="nav__logo " >
+	        <a href="index.php" tabindex="-1">
+	            <img src="img/logo.jpg" alt="iLeoo logo">
 	        </a>
 	      </div>
-	      <nav id="slow_nav">
+				<button type="button" name="button" class=" mobile_button"><i class="fas fa-bars"></i>Menu</button>
+				<div class="close_overlay_backg close-block"></div>
+				<nav id="slow_nav" class="nav_close">
 	      <ul class="main-nav__items" >
+					<button type="button" name="button" class="close_menu_btn"><i class="fas fa-angle-left"></i>Zurück</button>
 	        <li class="active"><span>Home</span></li>
-	        <li><a href="price.php">Preise</a></li>
+	        <li><a href="price.php" tabindex="1">Preise</a></li>
 	        <li  class="list-item__castom">
-	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+	          <a href="fachbereiche.php" class="list-item__castom-main" tabindex="2">Fachbereiche</a>
 	          <ul class="menu5 drop">
-	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
-	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
-	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
-	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
-	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
-	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
-	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
-	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+	          <li><a href="fachbereiche.php#software-go"  tabindex="-1">Software & IT</a></li>
+	          <li><a href="fachbereiche.php#technik-go"  tabindex="-1">Technik</a></li>
+	          <li><a href="fachbereiche.php#recht-go"  tabindex="-1">Recht</a></li>
+	          <li><a href="fachbereiche.php#medizinisch-go"  tabindex="-1">Medizin</a></li>
+	          <li><a href="fachbereiche.php#marketing-go"  tabindex="-1">Marketing</a></li>
+	          <li><a href="fachbereiche.php#wirtschaft-go"  tabindex="-1">Wirtschaft</a></li>
+	          <li><a href="fachbereiche.php#behorden-go"  tabindex="-1">Behörden</a></li>
+	          <li><a href="fachbereiche.php#bautechnik-go"  tabindex="-1">Bautechnik</a></li>
 	        </ul>
 	      </li>
-	        <li><a href="about-company.php">Unternehmen</a></li>
-	        <li><a href="quality.php">Qualität</a></li>
-	        <li><a href="team.php">Unser Team</a></li>
-	        <li><a href="contact.php">Contact</a></li>
+	        <li><a href="about-company.php" tabindex="3">Unternehmen</a></li>
+	        <li><a href="quality.php" tabindex="4">Qualität</a></li>
+	        <li><a href="team.php" tabindex="5">Team</a></li>
+	        <li><a href="contact.php" tabindex="6">Kontakt</a></li>
 	      </ul>
 	      </nav>
+				<a href="index.php#Formorder" class="angebot_href">Angebot anfordern</a>
 	    </div>
 
 	</div>
@@ -74,120 +81,133 @@
 
 
 <main>
+	<div class="slider_container">
+			<div class="slide slide1">
+				<picture>
+					 <source srcset="img/slider/slide1-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/slider/slide1.jpg" alt="Folie photo 1">
+				</picture>
 
-	<div class="slider_content ">
-		<div class="slide">
-			<div class="slide_img slide1">
-				<!-- <img src="img/slider/slide1.png" alt="Höchste Geschwindigkeit"> -->
-			</div>
-
-				<div class="slide_text">
-
-					<div class="slide_text_container slide_text_container__castom">
-						<img src="img/lsp1.png" alt="" class="lsp1">
-						<img src="img/lsp3.png" alt="" class="lsp2">
-						<p class="slideText">"Zufriedenheit unserer Kunden steht im <br> Mittelpunkt unseres Unternehmens. Für immer."
-							<span class="boss">Geschäftsführer</span></p>
-				</div>
-				</div>
-	</div>
-		<div class="slide">
-			<div class="slide_img slide2">
-				<!-- <img src="img/slider/slide2.png" alt="Qualität"> -->
-			</div>
-			<div class="slide_container ">
-				<div class="slide_text">
 					<div class="slide_text_container">
-						<div class="slideText-header">Unser Team</div>
-						<p class="slideText">Ausschließlich diplomierte und hochqualifizierte muttersprachliche Fachübersetzer und
-							Projektmanager stehen für die Quaität unserer Übersetzungen</p>
-				</div>
+						<div class="data_site_container str_pos">
+							<img src="img/lsp1.png" alt="Qualitätszeichen 2015"   class="achievement1">
+							<img src="img/lsp3.png" alt="Qualitätszeichen 2017"   class="achievement2">
+							<p class="slide_text">"Zufriedenheit unserer Kunden steht im <br> Mittelpunkt unseres Unternehmens. Immer."
+								<span class="boss">Helmut Hartmann, Geschäftsführer</span></p>
+						</div>
+					</div>
 			</div>
-		</div>
-	</div>
-		<div class="slide">
-			<div class="slide_img slide3">
-				<!-- <img src="img/slider/slide3.png" alt="Preisen"> -->
-			</div>
-			<div class="slide_container ">
-				<div class="slide_text">
+
+			<div class="slide slide2">
+				<picture>
+					 <source srcset="img/slider/slide2-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/slider/slide2.jpg" alt="Folie photo 2">
+				</picture>
 					<div class="slide_text_container">
-						<div class="slideText-header">Qualität</div>
-						<p class="slideText">Wir finden immer die passenden Wörter für Sie.
-									17 Jahren Erfahrung und 230 stehen für die Qualität unserer Übersetzungen. <br>Sie können sich auf uns verlassen.</p>
-				</div>
+						<div class="data_site_container str_pos">
+
+								<div class="slide_text_box">
+										<div class="slideText-header">Unser Team</div>
+										<p class="slideText">Ausschließlich diplomierte und hochqualifizierte muttersprachliche Fachübersetzer und
+											Projektmanager stehen für die Quaität unserer Übersetzungen</p>
+								</div>
+
+						</div>
+					</div>
 			</div>
-		</div>
-	</div>
-		<div class="slide">
-			<div class="slide_img slide4">
-				<!-- <img src="img/slider/slide5.png" alt="Preisen"> -->
-			</div>
-			<div class="slide_container ">
-				<div class="slide_text">
+
+			<div class="slide slide3">
+				<picture>
+					 <source srcset="img/slider/slide3-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/slider/slide3.jpg" alt="Folie photo 3">
+				</picture>
 					<div class="slide_text_container">
-					<div class="slideText-header">Unser Ziel ist es...</div>
-					<p class="slideText         ">Die Menschen aus aller Welt zu verbinden und die Grenzen, die
-						aufgrund der Sprachbarierre entsehen, zu überwinden.</p>
-				</div>
+						<div class="data_site_container str_pos">
+
+								<div class="slide_text_box">
+									<div class="slideText-header">Qualität</div>
+									<p class="slideText">Wir finden immer die passenden Wörter für Sie.
+												17 Jahren Erfahrung und 230 festangestellte Fachübersetzer stehen für die Qualität unserer Übersetzungen. <br>Sie können sich auf uns verlassen.</p>
+								</div>
+
+						</div>
+					</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="slide">
-		<div class="slide_img slide5">
-			<!-- <img src="img/slider/slide5.png" alt="Preisen"> -->
-		</div>
-		<div class="slide_container ">
-			<div class="slide_text">
-				<div class="slide_text_container">
-					<div class="slideText-header">Preise</div>
-					<p class="slideText">Was Sie von uns erhalten:<br>
-					Wir bieten flexible Wortpreise (Fachübersetzungen ab 8,5 ct. pro Wort)<br>
-					Flexibles Rabattsystem für Neu- und Stammkunden<br>
-					Sie erhalten Ihr Preisangebot  innerhalb 5 Minuten per E-Mail</p>
+			<div class="slide slide4">
+				<picture>
+					 <source srcset="img/slider/slide4-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/slider/slide4.jpg" alt="Folie photo 4">
+				</picture>
+					<div class="slide_text_container">
+						<div class="data_site_container str_pos">
 
-
-
+								<div class="slide_text_box">
+									<div class="slideText-header"><span class="mobile_hide__text">Unser Ziel ist es... </span><span class="mobile_show__text">Wir verbinden</span>	</div>
+									<p class="slideText         ">Die Menschen aus aller Welt zu verbinden und die Grenzen, die
+										aufgrund der Sprachbarierre entsehen, zu überwinden.</p>
+								</div>
+						</div>
+					</div>
 			</div>
-		</div>
+
+			<div class="slide slide5">
+				<picture>
+					 <source srcset="img/slider/slide5-mobile.jpg" media="(max-width: 767px)">
+					<img src="img/slider/slide5.jpg" alt="Folie photo 5">
+				</picture>
+					<div class="slide_text_container">
+						<div class="data_site_container str_pos">
+
+								<div class="slide_text_box slide_text_box5">
+									<div class="slideText-header">Preise</div>
+									<p class="slideText">Was Sie von uns erhalten:</p>
+										<ul class="slide_text__list_price">
+											<li>Wir bieten flexible Wortpreise (Fachübersetzungen ab 8,5 ct. pro Wort)</li>
+											<li>Flexibles Rabattsystem für Neu- und Stammkunden</li>
+											<li>Sie erhalten Ihr Preisangebot  innerhalb 5 Minuten per E-Mail</li>
+										</ul>
+
+
+
+								</div>
+						</div>
+					</div>
+			</div>
 	</div>
-</div>
 
-
-
-
-	</div>
-
-<section class="partners">
-	<ul class="partners_list">
-		<li><img src="img/partners/logo-erste-bank.png" alt="Logo erste bank"></li>
-		<li><img src="img/partners/logo-fischer.png" alt="Logo fischer"></li>
-		<li><img src="img/partners/logo-intersport.png" alt="Logo intersport"></li>
-		<li><img src="img/partners/logo-jacques-lemans.png" alt="Logo jacques-lemans"></li>
-		<li><img src="img/partners/logo-kenwood.png" alt="Logo kenwood"></li>
-		<li><img src="img/partners/logo-volvo.png" alt="Logo volvo"></li>
-	</ul>
-</section>
 
 
 
 <div class="orderForm" id="Formorder">
+	<div class="partners">
+		<ul class="partners_list">
+			<li><img src="img/partners/logo-erste-bank.png" alt="Logo erste bank"></li>
+			<li><img src="img/partners/logo-fischer.png" alt="Logo fischer"></li>
+			<li><img src="img/partners/logo-intersport.png" alt="Logo intersport"></li>
+			<li><img src="img/partners/logo-jacques-lemans.png" alt="Logo jacques-lemans"></li>
+			<li><img src="img/partners/logo-kenwood.png" alt="Logo kenwood"></li>
+			<li><img src="img/partners/logo-volvo.png" alt="Logo volvo"></li>
+		</ul>
+	</div>
+
+
 	<div id="particles-js"></div>
 	<div class="data_site_container">
-		<h2 class="orderForm_main-title">Erhalten Sie Ihr Preisangebot</h2>
 	<form action="#" method="post" id="sendform" enctype="multipart/form-data" >
 
 			<div class="iLeo-orderForm"  id="box">
 
 
+			<div class="data_site_container--text-center">
+				<h2 class="orderForm_header" >Erhalten Sie Ihr Preisangebot</h2>
+			</div>
 
-			<!--		<h2 class="orderForm_header" >Preisrechner</h2> -->
 
 
 					<div class="form-content-data">
 
-						<div class="first_container  blok-shadow">
+						<div class="first_container blok-shadow">
 												<div class="form-intro">
 													<i class="intro-numb">1</i>
 													<p class="intro-text">Sprache wählen</p>
@@ -322,7 +342,7 @@
 											</div>
 											<div class="files_input hide-block">
 												<div class="upload">
-													<img class="upload_img" src="img/download.gif" alt="">
+													<img class="upload_img" src="img/download.gif" alt="Dateiformat">
 													<div id="queue_files">
 													</div>
 												</div>
@@ -339,36 +359,41 @@
 
 							 <div class="price-info">
 													 <div class="form-intro form-intro--castom">
-														<p class="intro-text">Kostenforanschlag</p>
+														<p class="intro-text">Kostenvoranschlag</p>
 													 </div>
 													<div class="price_container">
-										 				<input type="text" name="price"  value="0,00 €" id="price" readonly>
+										 				<input type="text" name="price"  value="0,00 €" id="price" class="show-block-price real_price" readonly>
+														<input type="text" name="price"  value="0,00 €" id="priceDiscountOut"  class="hide-block-price dis_price" readonly>
 														<p class="price_word">0,00 €/Wort</p>
 													</div>
 									 				<div class="taxes">
 														zzgl. Grundpreis und MwSt.
 									 				</div>
-
-													<div class="price-discount price-discount-hide"><i class="fas fa-tags"></i><i>für Neukunden</i><span>-15%</span>
+													<label>
+														<input type="checkbox" name="discount" class="price-discount__checkbox" onchange="discountCheck()">
+														<div class="price-discount price-discount-hide"><i class="fas fa-tags"></i><i>für Neukunden</i><span>-15%</span>
+													</label>
 													</div>
 				 			</div>
 							<p class="order_time"><i class="far fa-clock"></i>Erhalten Sie Ihre Übersetzung bis zum <strong class="order_data_time"></strong></p>
 							<button type="button" name="button_order" class="order_btn order_btn-hide" onclick="checkInputData()">Preisangebot erhalten  <i class="fas fa-caret-right"></i></button>
 						</div>
 					</div>
-						<div class="user_order_data ">
+						<div class="user_order_data">
 							<div class="user_order_data_container">
 								<button class="user_order_data-close" type="button" title="Закрить" onclick="orderFormDataClose()">Закрить</button>
-								<h3 class="user_order_data__header">Erhalten Sie Ihr Preisangebot innerhalb 5 Minuten (per E-Mail)</h3>
-								<label class="user_order_name"><input class="row_style" placeholder="Name" name="name" value="" type="text" ></label>
-								<label class="user_order_surname"><input class="row_style" placeholder="Surname" name="surname" value="" type="text" ></label>
+								<h3 class="user_order_data__header">Erhalten Sie Ihr Preisangebot innerhalb <br>5 Minuten <br>(per E-Mail)</h3>
+								<label class="user_order_name"><input class="row_style" placeholder="Vorname" name="name" value="" type="text" ></label>
+								<label class="user_order_surname"><input class="row_style" placeholder="Nachname" name="surname" value="" type="text" ></label>
 								<label class="user_order_email"><input class="row_style" placeholder="E-mail" name="email" value=""  type="email"></label>
-								<label class="user_order_phone"><input class="row_style" placeholder="Phone" name="phone" value=""  type="tel"></label>
-								<label class="user_order_city"><input class="row_style" placeholder="City" name="city" value=""  type="text"></label>
-								<label class="user_order_address"><input class="row_style" placeholder="Address" name="address" value=""  type="text"></label>
-							</div>
+								<label class="user_order_phone"><input class="row_style" placeholder="Telefonnummer" name="phone" value=""  type="tel"></label>
+								<label class="user_order_city"><input class="row_style" placeholder="Stadt" name="city" value=""  type="text"></label>
+								<label class="user_order_address"><input class="row_style" placeholder="Addresse" name="address" value=""  type="text"></label>
 								<textarea name="user_feedback" rows="8" cols="40" placeholder="Anmerkungen"></textarea>
-								<input class="row_style send_btn" value="Anfrage stellen" name="sendMail" type="submit">
+								<div class="ds">
+										<input class="row_style send_btn" value="Anfrage stellen" name="sendMail" type="submit">
+								</div>
+						</div>
 						</div>
 						<div class="overlay_user_data">
 
@@ -387,7 +412,7 @@
 
 
 
-<section class="algorithm_of_work">
+<section class="algorithm_of_work castom-box">
 	<div class="algorithm_of_work__container">
 		<div class="castom-title">
 			<h2>Einfacher Prozessablauf</h2>
@@ -402,13 +427,13 @@
 	</div>
 </section>
 
-<section class="adventages">
+<section class="adventages castom-box">
 		<ul class="advantages__list  data_site_container">
 				<div class="advantage__list-container">
 				<div class="castom-title castom-title--greybg">
- 					<h1 class="advantages__title">Ihr bester Übersetzerpartner auf dem Übersetzungsmarkt sind</h1>
+ 					<h1 class="advantages__title">Das Übersetzungsbüro iLeoo ist Ihr bester Partner für Übersetzungen</h1>
 				</div>
-					<li class="advantages__item">
+					<li class="advantages__item advantages__item--margin">
 								<div class="advantages__container">
 										<div class="advantages__card">
 											<div class="face front">
@@ -436,7 +461,7 @@
 									</div>
 				     </li>
 
-						 <li class="advantages__item">
+						 <li class="advantages__item advantages__item--margin">
 		 					<div class="advantages__container">
 		 							<div class="advantages__card">
 		 								<div class="face front">
@@ -446,9 +471,9 @@
 		 										</i>
 		 										<h2 class="adventage__title">Schnell</h2>
 
-		 										<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Sekundenschnelles ENDPreisangebot und definierte Liefertermine über unseren Preiskalkulator (Online shop)</p>
+		 										<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Sekundenschneller Kostenvoranschlag und definierte Liefertermine über unseren  <a href="index.php#Formorder">Preiskalkulator</a></p>
 		 										<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Aufträge bis 10 Seiten erledigen wir am Tag der Bestellung, garantiert und ohne Zuschlagkosten! Probieren Sie denn!</p>
-		 										<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Qualität auch in kürzester Zeit. Für Expressaufträge gelten bei iLeo die gleichen Qualitätsstandards wie für jeden Übersetzungsauftrag.</p>
+		 										<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Qualität auch in kürzester Zeit. Für Expressaufträge gelten bei iLeoo die gleichen Qualitätsstandards wie für jeden Übersetzungsauftrag.</p>
 		 								</div>
 		 								</div>
 		 								<div class="face back">
@@ -465,7 +490,7 @@
 		 						</div>
 		 				</li>
 
-						<li class="advantages__item">
+						<li class="advantages__item advantages__item--margin">
 								<div class="advantages__container">
 										<div class="advantages__card">
 											<div class="face front">
@@ -475,9 +500,9 @@
 													</i>
 													<h2 class="adventage__title">Faire Preise</h2>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Fachübersetzungen ab 7,5ct. pro Wort/ 55ct. pro Normzeile!</p>
-													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Aus unserem Preisrechner erhalten Sie ENDPREISangebot! (<a href="#Formorder">Online Shop</a>)</p>
+													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Über den integrierten Preisrechner erhalten Sie ENDpreise für Ihre Übersetzungen!</p>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Zweitkorrektur ist für unsere Kunden immer eingeschaltet!</p>
-													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Wir sind für kleinste Hilfe bereit! (Aufträge ab 5 Euro)</p>
+													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Wir sind für kleinste Hilfe bereit! (Aufträge ab 10 Euro)</p>
 												</div>
 											</div>
 											<div class="face back">
@@ -507,7 +532,7 @@
 
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Rund um die Uhr für Sie da – wir Übersetzen zu jeder Zeit!</p>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Jeder Tag der Woche ist bei uns – Arbeitstag!</p>
-													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Unser Online Shop ist für Sie zu jeder Zeit geöffnet! Nur in 3 Klicks erhalten Sie Ihr ENDPREISangebot!</p>
+													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Unser Preisrechner ist für Sie zu jeder Zeit geöffnet! Nur in 3 Klicks erhalten Sie Ihr ENDpreis!</p>
 												</div>
 											</div>
 											<div class="face back">
@@ -535,7 +560,7 @@
 													<h2 class="adventage__title">Kundenberatung</h2>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Qualifizierte feste- und online- Ansprechpartner gehören zum Service. Sie sind für Ihre Fragen rund um die Uhr bereit!</p>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Dank unserem Live-Chat können Sie sich sekundenschnell beraten lassen</p>
-													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Antwortzeit per E-Mail bis 8 Minuten</p>
+													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Antwortzeit per E-Mail bis 5 Minuten</p>
 											</div>
 											</div>
 											<div class="face back">
@@ -557,14 +582,13 @@
 												<div class="advantage__descr advantage__descr-icon--castom">
 													<div class="advantage__descr-icon">
 														<i  class="fas fa-certificate"></i>
-														<br>
 														<i id="cas" class="far fa-bookmark"></i>
 													</div>
 													<h2 class="adventage__title">Weltweite Standards</h2>
 
 												<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Einhaltung der Vorschriften, die im ISO 17100 vorgeschrieben sind</p>
 													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Wir schätzen weltweite Standards in der Übersetzungsindustrie</p>
-													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Uunser Unternehmen entspricht in jeder Hinsicht den Qualitätsstandards der ISO-Norme</p>
+													<p  class="advantage__descr-promo"><i class="fas fa-check"></i>Unser Unternehmen entspricht in jeder Hinsicht den Qualitätsstandards der ISO-Normen</p>
 												</div>
 											</div>
 											<div class="face back">
@@ -586,24 +610,77 @@
 		</ul>
 	</section>
 
-	<section class="specialty data_site_container ">
-		<div class=" castom-title">
-			<h1 class="specialty__title">Wir sind spezialisten in</h1>
+
+	<section class="specialty castom-box">
+		<div class="data_site_container">
+			<div class=" castom-title">
+				<h1 class="specialty__title">Wir sind spezialisten in</h1>
+			</div>
+			<ul class="specialty__list">
+					<li class="specialty__item specialty__item--margin"><a href="fachbereiche.php#software-go"><p><i class="fas fa-laptop"></i><span>Software&IT</span></p></a></li>
+					<li class="specialty__item specialty__item--margin"><a href="fachbereiche.php#technik-go"><p><i class="fas fa-cogs"></i><span>Technik</span></p></a></li>
+					<li class="specialty__item specialty__item--margin"><a href="fachbereiche.php#recht-go"><p><i class="fas fa-suitcase"></i><span>Recht</span></p></a></li>
+					<li class="specialty__item specialty__item--margin"><a href="fachbereiche.php#medizinisch-go"><p><i class="fas fa-stethoscope"></i><span>Medizin</span></p></a></li>
+					<li class="specialty__item"><a href="fachbereiche.php#marketing-go"><p><i class="fas fa-bullhorn"></i><span>Marketing</span></p></a></li>
+					<li class="specialty__item"><a href="fachbereiche.php#wirtschaft-go"><p><i class="fas fa-euro-sign"></i><span>Wirtschaft</span></p></a></li>
+					<li class="specialty__item"><a href="fachbereiche.php#behorden-go"><p><i class="fas fa-users"></i><span>Behörden</span></p></a></li>
+					<li class="specialty__item"><a href="fachbereiche.php#bautechnik-go"><p><i class="far fa-building"></i><span>Bautechnik</span></p></a></li>
+			</ul>
 		</div>
-		<ul class="specialty__list">
-				<li class="specialty__item"><a href="fachbereiche.php#software-go"><p><i class="fas fa-laptop"></i><span>Software&IT</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#technik-go"><p><i class="fas fa-cogs"></i><span>Technik</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#recht-go"><p><i class="fas fa-suitcase"></i><span>Recht</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#medizinisch-go"><p><i class="fas fa-stethoscope"></i><span>Medizinisch</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#marketing-go"><p><i class="fas fa-bullhorn"></i><span>Marketing</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#wirtschaft-go"><p><i class="fas fa-euro-sign"></i><span>Wirtschaft</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#behorden-go"><p><i class="fas fa-users"></i><span>Behörden</span></p></a></li>
-				<li class="specialty__item"><a href="fachbereiche.php#bautechnik-go"><p><i class="far fa-building"></i><span>Bautechnik</span></p></a></li>
-		</ul>
+
 	</section>
+
+	<div class="about-company-review castom-box">
+		<div class="data_site_container">
+			<div class=" castom-title  castom-title--greybg">
+				 <h2>Was unsere Kunden sagen</h2>
+		 </div>
+<div class="about-company-reviews-slider">
+			 <div class="about-company-review__slide">
+					 <p class="review">“Der Service von iLeoo ist sehr zuverlässig und schnell bei einer konstant sehr guten Qualität. Besonders hervorzuheben ist das reibungslose Projektmanagement und die unterstützende Kommunikation“</p>
+					 <div class="review-info">
+							 <img src="../img/partners/logo-erste_bank.png" alt="Erste bank logo">
+							 <span class="review__slide__manager_name">Jörg Arndt</span>
+							 <span class="review__slide__manager_post">Geschäftsführer</span>
+					 </div>
+			 </div>
+
+			 <div class="about-company-review__slide">
+					 <p class="review">“Am meisten schätze ich tolingos Online-Auftritt, der es mir erlaubt, in wenigen Augenblicken ein Angebot und eine Deadline zu erhalten.“</p>
+					 <div class="review-info">
+							 <img src="../img/partners/logo-fischer_full.svg" alt="Fischer logo">
+							 <span class="review__slide__manager_name">Andrea Richter</span>
+							 <span class="review__slide__manager_post">Sekretariat</span>
+					 </div>
+			 </div>
+
+			 <div class="about-company-review__slide">
+					 <p class="review">“Vielen Dank für die pünktliche Lieferung. Ich bin mit der Qualität der Arbeit sehr zufrieden und werde Sie bei zukünftigen derartigen Arbeiten gerne wieder beauftragen.“</p>
+					 <div class="review-info">
+							 <img src="../img/partners/logo-intersport_full.png" alt="Intersport logo">
+							 <span class="review__slide__manager_name">Bernd Haase</span>
+							 <span class="review__slide__manager_post">PM-Operations</span>
+					 </div>
+			 </div>
+
+			 <div class="about-company-review__slide">
+					 <p class="review">“Haben Sie recht vielen Dank für die zeitgerechte und inhaltlich sehr gute Übersetzung. Sehr gern nehmen wir Ihre Leistung in Zukunft wieder in Anspruch.“</p>
+					 <div class="review-info">
+							 <img src="../img/partners/logo-jacques-lemans_full.png" alt="Intersport logo">
+							 <span class="review__slide__manager_name">Achim Fleischle</span>
+							 <span class="review__slide__manager_post">Geschäftsführer</span>
+					 </div>
+			 </div>
+		</div>
+
+
+
+			</div>
+	</div>
 
 </main>
 	<?php	include 'footer.html';?>
+
 
 
 
@@ -615,6 +692,9 @@
 		<button class="orderSuccessful-close" type="button" title="Закрить"  onclick="orderSuccessfulClose()">Close</button>
 		<h2 class="orderSuccessful-title">Dankeschön für Ihre Anfrage!</h2>
   	<p class="orderSuccessful-text">Sie erhalten unser Preisangebot für Sie innerhalb 5 Minuten per E-Mail.</p>
+		<div class="mobile_hide__text">
+			<script src="js/timer.js"></script>
+		</div>
 		<button class="orderSuccessful-ok" type="button" onclick="orderSuccessfulClose()">OK</button>
 	</div>
 
@@ -639,198 +719,18 @@
 
 
 
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/jquery.validate.js" type="text/javascript"></script>
-<script src="js/multiengine.js" type="text/javascript"></script>
-	<script src="js/core.js" type="text/javascript"></script>
-	<script src="js/upload.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-	<script src="js/form.js" defer></script>
-	<script src="js/calculator.js"></script>
-<script src="js/particles/chosen.jquery.min.js"></script>
-<script src="js/particles/slick.js"></script>
-
-
-
-	<script type="text/javascript">
-
-	</script>
-
-	<script type="text/javascript">
-		jQuery('document').ready(function($){
-			$('.upload').upload({
-					action:'php/multisend.php',
-					label:'',
-					postKey:'file',
-			}).on("filecomplete.upload", onFileComplete);
-			$('#source-language').chosen();
-			$('#target-language').chosen();
-			$('.slider_content').slick({
-						autoplay : true,
-						autoplaySpeed : 4000,
-						speed: 1000,
-						dots : true,
-						arrows : false,
-			});
-		});
-
-
-
-function onFileComplete(e, file, response) {
-	console.log("File Complete");
-	console.info(response);
-	var html = $("#queue_files").html();
-	response = jQuery.parseJSON(response);
-
-	if ( response.count_word !== undefined) {
-			$("#fileWords").val( $("#fileWords").val()*1 + response.count_word*1 );
-		html = html + "<p>" + file.name + ", количество слов - " + response.count_word +"</p>";
-		pricePrintFile(document.getElementById('fileWords').value);
-	} else {
-		html = html + "<p>" + file.name + ", количество слов - не определено</p>";
-		showErrorInCalc();
-	};
-	$("#sendform").append('<input type="hidden" name="loaded_files[]" id="loaded_files" value="'+response.filename+'" />');
-
-
-	$("#queue_files").html( html );
-	//console.info(file);
-	//console.info(response);
-};
-
-
-</script>
-
-
-
-
-
-
-<!--  плавное появление контента */ -->
-
-<script type="text/javascript">
- function sBlock1() {
- $(".slideText1").show(1400);
- }
- function sBlock2() {
- $(".slideText2").slideToggle(1800);
- }
- function sBlock3() {
- $(".slideText3").slideToggle(1800);
- }
-
-
- function efects(){
- 	 $(".slideText1").css("display", "none");
- 	 $(".slideText2").css("display", "none");
- 	 $(".slideText3").css("display", "none");
- 	sBlock1();
-	sBlock2();
-	sBlock3();
- }
-	 $(document).ready(efects());
-
-</script>
-
-
-
-
-	<script>
-    var button=document.querySelector(".main-nav__toggle");
-    var nav=document.querySelector(".main-nav");
-
-    nav.classList.remove("main-nav--no-js");
-
-    button.addEventListener("click", function(){
-      if (nav.classList.contains("main-nav--closed")){
-        nav.classList.remove("main-nav--closed");
-        nav.classList.add("main-nav--opened");
-      }
-      else {
-        nav.classList.add("main-nav--closed");
-        nav.classList.remove("main-nav--opened");
-      }
-
-    });
-  </script>
-
-<script type="text/javascript">
-check();
-function check(){
-	var numberOfWords=document.getElementById('number_of_words_id').checked;
-	var textofInput=document.getElementById('text_input_id').checked;
-	var downloadFiles=document.getElementById('download_files_id').checked;
-	var wordsInput=document.querySelector('.words_input');
-	var textInput=document.querySelector('.text_input');
-	var filesInput=document.querySelector('.files_input');
-
-
-
-
-	if(numberOfWords==true){
-			wordsInput.classList.add("show-block");
-			if(wordsInput.classList.contains("hide-block")){wordsInput.classList.remove("hide-block");}
-
-			if(textInput.classList.contains("show-block")){textInput.classList.remove("show-block");}
-			if(!textInput.classList.contains("hide-block")){textInput.classList.add("hide-block")}
-
-			if(filesInput.classList.contains("show-block")){filesInput.classList.remove("show-block");}
-			if(!filesInput.classList.contains("hide-block")){filesInput.classList.add("hide-block");}
-			}
-
-			if(textofInput==true){
-					textInput.classList.add("show-block");
-					if(textInput.classList.contains("hide-block")){textInput.classList.remove("hide-block");}
-
-					if(wordsInput.classList.contains("show-block")){wordsInput.classList.remove("show-block");}
-					if(!wordsInput.classList.contains("hide-block")){wordsInput.classList.add("hide-block")}
-
-					if(filesInput.classList.contains("show-block")){filesInput.classList.remove("show-block");}
-					if(!filesInput.classList.contains("hide-block")){filesInput.classList.add("hide-block");}
-					}
-
-					if(downloadFiles==true){
-							filesInput.classList.add("show-block");
-							if(filesInput.classList.contains("hide-block")){filesInput.classList.remove("hide-block");}
-
-							if(wordsInput.classList.contains("show-block")){wordsInput.classList.remove("show-block");}
-							if(!wordsInput.classList.contains("hide-block")){wordsInput.classList.add("hide-block")}
-
-							if(textInput.classList.contains("show-block")){textInput.classList.remove("show-block");}
-							if(!textInput.classList.contains("hide-block")){textInput.classList.add("hide-block");}
-							}
-}
-	</script>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Зменшеннявисоти хедера-->
-
-<script src="js/small-header.js" charset="utf-8"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="js/jquery.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/jquery.validate.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/multiengine.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/core.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/upload.js" charset="utf-8" type="text/javascript"></script>
+	<!-- Зменшеннявисоти хедера-->
+<script src="js/small-header.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/particles/particles.js" charset="utf-8" type="text/javascript" defer></script>
+	<script src="js/form.js" charset="utf-8" type="text/javascript" defer></script>
+	<script src="js/calculator.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/particles/chosen.jquery.min.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/particles/slick.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/index.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>

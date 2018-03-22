@@ -8,8 +8,8 @@
 
 	<meta charset="utf-8">
 
-	<title>SEDONA - Главная</title>
-	<meta name="description" content="">
+	<title>Preise | iLeoo</title>
+	<meta name="description" content="Faire Preise bei iLeoo Translations. Transparente und nachvollziehbare Preise. Sie können innerhalb 5 Minuten einen persönlichen Kostenvoranschlag per E-Mail erhalten.">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -27,63 +27,69 @@
 <body>
 
 	<header class="page-header">
-	  <nav class="main-nav main-nav--closed main-nav--no-js ">
-	    <button class="main-nav__toggle" type="button" >Открить меню</button>
+		<nav class="main-nav main-nav--closed main-nav--no-js ">
+			<button class="main-nav__toggle" type="button" >Открить меню</button>
 
-	    			<?php	include 'header.html';?>
-	    <div class="borer-container">
+						<?php	include 'header.html';?>
+			<div class="borer-container">
 
-	    <div class="nav__wrapper">
-	      <div class="nav__logo ">
-	        <a href="index.php">
-	            <img src="img/logo.jpg" alt="iLeoo">
-	        </a>
-	      </div>
-	      <nav id="slow_nav">
-	      <ul class="main-nav__items" >
+			<div class="nav__wrapper">
+				<div class="nav__logo ">
+					<a href="index.php">
+							<img src="img/logo.jpg" alt="iLeoo logo">
+					</a>
+				</div>
+				<button type="button" name="button" class=" mobile_button"><i class="fas fa-bars"></i>Menu</button>
+				<div class="close_overlay_backg close-block"></div>
+				<nav id="slow_nav" class="nav_close">
+				<ul class="main-nav__items" >
+					<button type="button" name="button" class="close_menu_btn"><i class="fas fa-angle-left"></i>Zurück</button>
 					<li><a href="index.php">Home</a></li>
 	        <li class="active"><span>Preise</span></li>
-	        <li  class="list-item__castom">
-	          <a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
-	          <ul class="menu5 drop">
-	          <li><a href="fachbereiche.php#software-go">Software & IT</a></li>
-	          <li><a href="fachbereiche.php#technik-go">Technik</a></li>
-	          <li><a href="fachbereiche.php#recht-go">Recht</a></li>
-	          <li><a href="fachbereiche.php#medizinisch-go">Medizinisch</a></li>
-	          <li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
-	          <li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
-	          <li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
-	          <li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
-	        </ul>
-	      </li>
-	        <li><a href="about-company.php">Unternehmen</a></li>
-	        <li><a href="quality.php">Qualität</a></li>
-	        <li><a href="team.php">Unser Team</a></li>
-	        <li><a href="contact.php">Contact</a></li>
-	      </ul>
-	      </nav>
-	    </div>
+					<li  class="list-item__castom">
+						<a href="fachbereiche.php" class="list-item__castom-main">Fachbereiche</a>
+						<ul class="menu5 drop">
+						<li><a href="fachbereiche.php#software-go">Software & IT</a></li>
+						<li><a href="fachbereiche.php#technik-go">Technik</a></li>
+						<li><a href="fachbereiche.php#recht-go">Recht</a></li>
+						<li><a href="fachbereiche.php#medizinisch-go">Medizin</a></li>
+						<li><a href="fachbereiche.php#marketing-go">Marketing</a></li>
+						<li><a href="fachbereiche.php#wirtschaft-go">Wirtschaft</a></li>
+						<li><a href="fachbereiche.php#behorden-go">Behörden</a></li>
+						<li><a href="fachbereiche.php#bautechnik-go">Bautechnik</a></li>
+					</ul>
+				</li>
+					<li><a href="about-company.php">Unternehmen</a></li>
+					<li><a href="quality.php">Qualität</a></li>
+					<li><a href="team.php">Team</a></li>
+					<li><a href="contact.php">Kontakt</a></li>
+				</ul>
+				</nav>
+	<a href="index.php#Formorder" class="angebot_href">Angebot anfordern</a>
+			</div>
 
 	</div>
 
-	  </nav>
 
 	</header>
-
 <main class="last-page price-page">
  <div class="photo" >
-	 <div class="last-page__header-container">
-	 <h1 class="last-page__title">Unsere Preisgestaltung</h1>
-</div>
+	 <div class="data_site_container">
+			 <h1 class="last-page__title">Unsere Preisgestaltung</h1>
+	 </div>
+	 <picture>
+			<source srcset="img/headers/price_header--mobile.jpg" media="(max-width: 767px)">
+		 	<img src="img/headers/price_header.jpg" alt="Preise Seite">
+	 </picture>
  </div>
- <div class="castom-title  data_site_container">
+ <div class="castom-title  data_site_container ">
 	 <h2>Flexible Wortpreise</h2>
  </div>
  <p class="data_site_container">Sprache ist nicht gleich Sprache. Daher variieren auch die Preise für eine Übersetzung. Die Wortpreise bei <br>iLeoo liegen je nach Sprachkombination
  zwischen 10 und 14 Cent.
  </p>
 
- <div class="last-page__content">
+ <div class="last-page__content castom-box data_site_container">
 		<ul class="price-list">
 			<li class="list-item">
 				<h2 class="list-item__title">Gruppe 1 - Grundsprachen</h2>
@@ -147,20 +153,27 @@
 				</ul>
 			</li>
 		</ul>
-		<a href="index.html#Formorder" class="last-page__order-form">
+		<a href="index.php#Formorder" class="last-page__order-form">
 			<p class="last-page__order-form__title">Angebot einholen</p>
 				<p>Unverbindlich über unser Anfrageformular</p>
 		</a>
  </div>
- <div class="data_site_container">
- <ul class="price-list__adv">
-		<li><i class="fab fa-whmcs"></i>Unsere Fachübersetzer nutzen modernste CAT-Tools wie memoQ, SDL-Trados, was uns ermöglicht, effizienter, hochwertiger und schneller zu arbeiten und als Folge Übersetzungskosten um 30% im Vergleich zum Marktniveau zu reduzieren. </li>
-		<li><i class="fas fa-tachometer-alt"></i>Wir legen einen großen Wert auf die Zeit unserer Kunden und kümmern uns um das schnellste Preisangebot für Sie! Durch unseren Preiskalkulator erhalten Sie Ihr ENDPREISangebot! Sie können dieses Angebot per Klick herunterladen, um die Einzelheiten Ihren Auftrag zu bekommen. </li>
-		<li><i class="far fa-money-bill-alt"></i>Wir schätzen unsere Kunden, deshalb sind wir für kleinste Hilfe für Sie bereit! (Aufträge ab 10 Euro) </li>
-		<li><i class="fas fa-tags"></i>Stammkunde erhalten von uns eine Ermäßigung in Höhe von 10%.</li>
-		<li><i class="fas fa-bomb"></i>An großen Projekten sind wir gerne beteiligt. Große Auftraggeber können mit einem Rabatt in Höhe von 25% rechnen.</li>
-		<li><i class="far fa-handshake"></i>Für große Aufträge bieten wir unseren Kunden eine kostenlose Übersetzung eines Abschnittes Ihres Projektes, um Sie von unserer Qualität zu überzeugen!</li>
-</ul>
+ <div class="castom-block--greybg castom-box">
+	 <div class="data_site_container">
+
+	 <ul class="price-list__adv">
+		 <div class=" castom-title castom-title--greybg">
+		<h2>Welche Vorteile haben Sie als Kunde?</h2>
+	</div>
+			<li><i class="fab fa-whmcs"></i>Unsere Fachübersetzer nutzen modernste CAT-Tools wie memoQ, SDL-Trados, was uns ermöglicht, effizienter, hochwertiger und schneller zu arbeiten und als Folge Übersetzungskosten um 30% im Vergleich zum Marktniveau zu reduzieren. </li>
+			<li><i class="fas fa-tachometer-alt"></i>Wir legen einen großen Wert auf die Zeit unserer Kunden und kümmern uns um das schnellste Preisangebot für Sie! Durch unseren Preiskalkulator erhalten Sie sekundenschnell Ihr kostenvoranschlag! </li>
+			<li><i class="far fa-money-bill-alt"></i>Wir schätzen unsere Kunden, deshalb sind wir für kleinste Hilfe für Sie bereit! (Aufträge ab 10 Euro) </li>
+			<li><i class="fas fa-tags"></i>Stammkunde erhalten von uns eine Ermäßigung in Höhe von 10%.</li>
+			<li><i class="fas fa-bomb"></i>An großen Projekten sind wir gerne beteiligt. Große Auftraggeber können mit einem Rabatt in Höhe von 25% rechnen.</li>
+			<li><i class="far fa-handshake"></i>Für große Aufträge bieten wir unseren Kunden eine kostenlose Übersetzung eines Abschnittes Ihres Projektes, um Sie von unserer Qualität zu überzeugen!</li>
+	</ul>
+	 </div>
+
 </div>
 </main>
 <?php	include 'footer.html';?>
@@ -170,21 +183,9 @@
 
 <!-- Зменшеннявисоти хедера-->
 
-<script src="js/small-header.js" charset="utf-8"></script>
+<script src="js/small-header.js" charset="utf-8" type="text/javascript"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-<script src="js/form.js" defer></script>
 
 
 

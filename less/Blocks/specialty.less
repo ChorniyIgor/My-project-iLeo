@@ -1,6 +1,5 @@
 .specialty{
   background: white;
-  padding-bottom: 50px;
   color:@site-color;
 }
 .specialty__list{
@@ -9,6 +8,8 @@
   display: flex;
   justify-content:space-between;
   flex-wrap: wrap;
+  width: 97%;
+  margin: auto;
 }
 .specialty__title{
   margin-top: 0;
@@ -34,7 +35,6 @@
 }
 .specialty__item{
   flex-basis: 24%;
-  margin-bottom: 1.2vw;
   display: block;
   height: 250px;
   position: relative;
@@ -109,6 +109,28 @@
     background: url('../img/industry/build-small.jpg') center no-repeat;
     background-size: cover;
   }
+}
+.specialty__item--margin{
+    margin-bottom: 1.2vw;
+}
+@media @tablet-widths {
+  .specialty {
+    .specialty__list{
+      justify-content: space-around;
+      .specialty__item{
+        flex-basis: 47%;
+        margin-bottom: 3vw;
+        &:nth-child(7),
+        &:nth-child(8){
+          margin-bottom: 0;
+        }
+      }
 
+    }
+  }
+}
+@media @mobile-widths-only {
+  .specialty {
 
+  }
 }

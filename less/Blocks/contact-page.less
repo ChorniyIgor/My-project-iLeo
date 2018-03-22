@@ -1,19 +1,9 @@
-.contact{
-  .photo{
-    background: url("../img/headers/contact_header.jpg") center no-repeat;
-    background-size: cover;
-    //background-position-y:-130px;
-  //  min-height: 600px;
-  }
-}
-
 .contact-list{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
   margin-top: 170px;
-  margin-bottom: 15px;
   li{
     flex-basis: 31%;
     .effect6;
@@ -135,6 +125,9 @@
 .contact-tel{
   position: relative;
   padding-bottom: 60px!important;
+  p{
+    text-align: justify;
+  }
   a{
     display: block;
     padding: 10px;
@@ -168,4 +161,39 @@
     .effect6;
     padding: 8px;
     box-sizing: border-box;
+}
+
+@media @tablet-widths {
+  .contact-list{
+    width: 95%;
+    margin: auto;
+    margin-top: 110px;
+    li{
+      &::before{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 50px;
+        top: -120px;
+      }
+    }
+  }
+  .contact-map {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media @mobile-widths-only {
+  .contact-list{
+    flex-direction: column;
+    margin-top: 140px;
+    width: 60%;
+    li{
+      margin-top: 140px;
+      min-height: 350px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
 }

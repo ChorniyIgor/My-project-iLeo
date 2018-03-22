@@ -3,11 +3,30 @@
     padding-top: 20px;
     border-top: 5px solid #009ee0;
     padding-bottom: 20px;
-    margin-top: 50px;
 }
 .footer-main-menu{
   padding-top: 10px;
   padding-bottom: 0px;
+  li{
+    position: relative;
+  }
+  li:before{
+    content: "\f0da";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color:#009ee0;
+    display: block;
+    width: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: -9px;
+  }
+  li:hover:before{
+    color:@main-color;
+  }
 }
 .footer-list-style{
   li:hover a{
@@ -51,7 +70,7 @@ padding-top:0px;
 margin-right: 70px;
 img{
   width: 150px;
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
   display: block;
   margin: auto;
 }
@@ -67,4 +86,64 @@ span{
 }
 .footer-industry{
   margin-right: auto;
+}
+.footer-info{
+  text-align: right;
+  i{
+    margin-right: 8px;
+  }
+  a{
+    color:@main-color;
+    text-decoration: none;
+    &:hover{
+      color: @site-color;
+    }
+  }
+  .fa-map-marker-alt{
+    color:@site-color;
+    padding-right: 5px;
+  }
+}
+
+@media @tablet-widths {
+  .footer-info{
+    font-size: 14px;
+  }
+  .footer-info{
+    padding-right: 10px;
+  }
+  .footer-company{
+    padding-left: 10px;
+  }
+}
+
+@media @mobile-widths-only {
+  .footer-industry{
+      display: none;
+  }
+
+  .footer-company{
+    margin-right: 10px;
+    padding-right: 0;
+    padding-left: 10px;
+    img{
+      width: 100px;
+    }
+    span{
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+  .footer-main-menu{
+    margin-right: 5px;
+  }
+  .footer-info{
+    span{
+        font-size: 14px;
+        line-height: 18px;
+      a{
+        font-size: 14px;
+      }
+    }
+  }
 }

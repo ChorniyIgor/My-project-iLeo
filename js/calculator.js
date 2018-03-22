@@ -50,6 +50,7 @@ var type3=[
 
 /*забираємо оверлой і неактивну стилізацію кнопок*/
 var showCal=1;
+var discount=0.85;
 function showCalc(){
   if(showCal){
   var sourceLanguage=document.getElementById('source-language').value;
@@ -81,6 +82,13 @@ function daleteLang(){
   }
 }
 /*--------------------------*/
+
+
+
+
+
+
+
                 /*розрахунок ціни за слово*/
                 var pricecoef1;
                 var pricecoef2;
@@ -345,10 +353,78 @@ function orderFormDataClose(){
 }
 /*--------------------------------------------------------------------------*/
 
+<!-- Скрипт який переключає 	типи введеної інформації в форму -->
+check();
+function check(){
+	var numberOfWords=document.getElementById('number_of_words_id').checked;
+	var textofInput=document.getElementById('text_input_id').checked;
+	var downloadFiles=document.getElementById('download_files_id').checked;
+	var wordsInput=document.querySelector('.words_input');
+	var textInput=document.querySelector('.text_input');
+	var filesInput=document.querySelector('.files_input');
+  var Prise=document.querySelector('.price_container');
+
+  if (Prise.classList.contains('price_container-hide')){
+    Prise.classList.remove('price_container-hide');
+    document.querySelector('.price-discount__checkbox').checked=false;
+  }
+
+	if(numberOfWords==true){
+			wordsInput.classList.add("show-block");
 
 
 
 
+			if(wordsInput.classList.contains("hide-block")){wordsInput.classList.remove("hide-block");}
+
+			if(textInput.classList.contains("show-block")){textInput.classList.remove("show-block");}
+			if(!textInput.classList.contains("hide-block")){textInput.classList.add("hide-block")}
+
+			if(filesInput.classList.contains("show-block")){filesInput.classList.remove("show-block");}
+			if(!filesInput.classList.contains("hide-block")){filesInput.classList.add("hide-block");}
+			}
+
+			if(textofInput==true){
+					textInput.classList.add("show-block");
+
+
+					if(textInput.classList.contains("hide-block")){textInput.classList.remove("hide-block");}
+
+					if(wordsInput.classList.contains("show-block")){wordsInput.classList.remove("show-block");}
+					if(!wordsInput.classList.contains("hide-block")){wordsInput.classList.add("hide-block")}
+
+					if(filesInput.classList.contains("show-block")){filesInput.classList.remove("show-block");}
+					if(!filesInput.classList.contains("hide-block")){filesInput.classList.add("hide-block");}
+					}
+
+					if(downloadFiles==true){
+							filesInput.classList.add("show-block");
+							if(filesInput.classList.contains("hide-block")){filesInput.classList.remove("hide-block");}
+
+							if(wordsInput.classList.contains("show-block")){wordsInput.classList.remove("show-block");}
+							if(!wordsInput.classList.contains("hide-block")){wordsInput.classList.add("hide-block")}
+
+							if(textInput.classList.contains("show-block")){textInput.classList.remove("show-block");}
+							if(!textInput.classList.contains("hide-block")){textInput.classList.add("hide-block");}
+							}
+}
+
+
+function discountCheck(){
+  var discount_value=document.querySelector('.price-discount__checkbox').checked;
+  var Prise=document.querySelector('.price_container');
+  var realPrise=document.getElementById('price');
+  var discountPrise=document.getElementById('priceDiscountOut');
+  discountPrise.value=0;
+  discountPrise.value=dotToComa((parseFloat(realPrise.value.replace(",","."))*discount).toFixed(2))+" €";
+  //console.log(realPrise.value);
+  if(discount_value){
+    Prise.classList.add("price_container-hide");
+  }
+  else{
+    Prise.classList.remove("price_container-hide");
+  }
+}
 
 
 
